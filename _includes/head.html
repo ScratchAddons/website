@@ -1,0 +1,41 @@
+<!-- Title and Meta -->
+
+<title>{{ page.title }} - Scratch Addons</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="{{ page.description }}" />
+<meta name="author" content="" />
+<link rel="icon" href="/assets/images/icon.png">
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://scratchaddons.github.io{{ page.url }}">
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:site_name" content="Scratch Addons" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary" />
+<!-- <meta name="twitter:site" content="@ScratchAddons" />
+<meta name="twitter:creator" content="@ScratchAddons" /> -->
+<meta name="twitter:url" content="https://scratchaddons.github.io{{ page.url }}" />
+<meta name="twitter:title" content="{{ page.title }} - Scratch Addons" />
+<meta name="twitter:description" content="{{ page.description }}" />
+
+<!-- Require Script and Loading Page -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/base.css" />
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flash.min.css" /> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+<script>Pace.on("done", () => setTimeout(() => Pace.options.ajax = false, 300));</script> -->
+<script async src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script async defer src="/assets/js/website-base.js"></script>
+
+{% unless page.no-analytics %}
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49890594-3"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments)}; gtag("js", new Date); gtag("config", "UA-49890594-3")</script> -->
+{% endunless %}

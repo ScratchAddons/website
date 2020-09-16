@@ -1,0 +1,9 @@
+title: ""
+email: ""
+description: ""
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+exclude: ["README.md", "CODE_OF_CONDUCT.md"]
