@@ -13,7 +13,7 @@ const run = async () => {
 
 		let contribCountEl = document.createElement("p")
 		contribCountEl.className = "contribution-count"
-		contribCountEl.textContent = `${contributor.contributions} contributions`
+		contribCountEl.textContent = contributor.contributions == 1 ? `1 contribution` : `${contributor.contributions} contributions`;
 
 		let iconEl
 		iconEl = document.createElement("img")
