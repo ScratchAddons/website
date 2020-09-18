@@ -65,6 +65,15 @@
 	
 }
 
+#install {
+	
+	.btn {
+		font-size: 1.25rem;
+		color: white
+	}
+
+}
+
 main {
 	padding: 0
 }
@@ -98,6 +107,23 @@ body.dark {
 			background-color: lighten($dark-neutral, 5%);
 		}
 
+	}
+
+	#install {
+		
+		.btn {
+			color: black;
+			background-color: darken(#f8f9fa, 25%);
+			border-color: darken(#f8f9fa, 25%);
+
+			&:hover {
+				color: #212529;
+				background-color: darken(#e2e6ea, 25%);
+				border-color: darken(#dae0e5, 25%);
+			}
+
+		}
+		
 	}
 
 }
