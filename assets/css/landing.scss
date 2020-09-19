@@ -24,7 +24,7 @@
 	}
 	
 	.btn-light {
-		color: black;	
+		color: $bs-default-black;	
 	}
 	
 }
@@ -37,18 +37,14 @@
 	}
 	
 	.features-circle {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: -moz-box;
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		height: 9rem;
 		width: 9rem;
 		margin: auto;
 		background: $scratch-orange;
 		color: white;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
 		border-radius: 50%;
 	}
 
@@ -76,13 +72,13 @@
 
 main {
 	padding: 0
+
+	section {
+		text-align: center;
+		margin-bottom: 2.5rem
+	}
 }
 
-main section {
-	text-align: center;
-	margin-bottom: 2.5rem
-	
-}
 
 h2 {
 	margin-bottom: 1rem
@@ -112,12 +108,11 @@ body.dark {
 	#install {
 		
 		.btn {
-			color: black;
+			color: $bs-default-black;
 			background-color: darken(#f8f9fa, 25%);
 			border-color: darken(#f8f9fa, 25%);
 
 			&:hover {
-				color: #212529;
 				background-color: darken(#e2e6ea, 25%);
 				border-color: darken(#dae0e5, 25%);
 			}

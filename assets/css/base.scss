@@ -9,17 +9,7 @@ html {
 }
 
 body {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-moz-box-orient: vertical;
-	-moz-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	min-height: 100vh;
 	margin: 0
@@ -27,16 +17,10 @@ body {
 
 main {
 	padding: 1.5rem 0;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1 0 auto;
-	-moz-box-flex: 1;
-	-ms-flex: 1 0 auto;
 	flex: 1 0 auto
 }
 
 header, footer {
-	-webkit-flex-shrink: 0;
-	-ms-flex-negative: 0;
 	flex-shrink: 0;
 }
 
@@ -67,12 +51,7 @@ header {
 	.navbar-nav .nav-link {
 		color: white !important;
 		@media (min-width: 768px) {
-			-webkit-border-radius: .25rem;
-			-moz-border-radius: .25rem;
 			border-radius: .25rem;
-			-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out;
-			-o-transition: color .15s ease-in-out, background-color .15s ease-in-out;
-			-moz-transition: color .15s ease-in-out, background-color .15s ease-in-out;
 			transition: color .15s ease-in-out, background-color .15s ease-in-out;
 			margin-left: 0.125rem
 		}
@@ -88,10 +67,6 @@ header {
 	img {
 		height: 30px;
 		width: 30px;
-		-webkit-transform: scale(1.75);
-		-moz-transform: scale(1.75);
-		-ms-transform: scale(1.75);
-		-o-transform: scale(1.75);
 		transform: scale(1.75);
 	}
 	
@@ -107,18 +82,8 @@ footer {
 	
 	div {
 		padding: 1rem 0;
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -moz-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-moz-box-pack: justify;
-		-ms-flex-pack: justify;
 		justify-content: space-between;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 	
@@ -143,18 +108,10 @@ footer {
 		}
 
 		&:nth-of-type(1) {
-			-webkit-box-flex: 0;
-			-webkit-flex: 0 0 100%;
-			-moz-box-flex: 0;
-			-ms-flex: 0 0 100%;
 			flex: 0 0 100%;
 			max-width: 100%;
 
 			@media (min-width: 768px) {
-				-webkit-box-flex: 1;
-				-webkit-flex: 1 0 0;
-				-moz-box-flex: 1;
-				-ms-flex: 1 0 0px;
 				flex: 1 0 0;
 				max-width: 100%
 			}
@@ -171,16 +128,10 @@ footer {
 button#dark-toggle {
 	width: 4rem;
 	height: 4rem;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border-radius: 50%;
 	background-color: $dark-neutral;
 	position: fixed;
-	top: -webkit-calc(100% - 5rem);
-	top: -moz-calc(100% - 5rem);
 	top: calc(100% - 5rem);
-	left: -webkit-calc(100% - 5rem);
-	left: -moz-calc(100% - 5rem);
 	left: calc(100% - 5rem);
 	opacity: 25%;
 	padding: 1rem;
@@ -205,10 +156,6 @@ body.dark {
 		background-color: lighten($dark-neutral, 7%);
 
 		img {
-			-webkit-transform: scale(1.25);
-			-moz-transform: scale(1.25);
-			-ms-transform: scale(1.25);
-			-o-transform: scale(1.25);
 			transform: scale(1.25);
 		}
 	}
