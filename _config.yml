@@ -7,3 +7,11 @@ url: ""
 markdown: kramdown
 
 exclude: ["README.md", "CODE_OF_CONDUCT.md"]
+
+plugins:
+- jekyll-autoprefixer
+- jekyll-minifier
+
+autoprefixer:
+  browsers:
+  - last 10 versions
