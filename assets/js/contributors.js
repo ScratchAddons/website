@@ -1,11 +1,10 @@
 const run = async () => {
-	response = await fetch("https://api.github.com/repos/ScratchAddons/ScratchAddons/contributors")
+	response = await fetch("https://sa-contributors.hans5958.workers.dev")	
 	contributors = await response.json()
-	humanContributors = contributors.filter(contributor => contributor.type === "User")
 
 	document.querySelector(".lds-ellipsis").hidden = true
 
-	humanContributors.forEach((contributor, index) => {
+	contributors.forEach((contributor, index) => {
 		
 		let nameEl = document.createElement("p")
 		nameEl.className = "user-name"
@@ -13,7 +12,7 @@ const run = async () => {
 
 		let contribCountEl = document.createElement("p")
 		contribCountEl.className = "contribution-count"
-		contribCountEl.textContent = contributor.contributions == 1 ? `1 contribution` : `${contributor.contributions} contributions`;
+		contribCountEl.textContent = `${contributor.contributions} contribution${contributor.contributions == 1 ? "" : "s"}`;
 
 		let iconEl
 		iconEl = document.createElement("img")
