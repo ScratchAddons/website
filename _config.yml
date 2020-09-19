@@ -6,7 +6,7 @@ url: ""
 
 markdown: kramdown
 
-exclude: ["README.md", "CODE_OF_CONDUCT.md"]
+exclude: ["README.md", "CODE_OF_CONDUCT.md", "LICENSE"]
 
 plugins:
 - jekyll-autoprefixer
@@ -15,3 +15,7 @@ plugins:
 autoprefixer:
   browsers:
   - last 10 versions
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
