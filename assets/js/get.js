@@ -52,6 +52,10 @@ else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) <
   if (browserName.toLowerCase() == browserName.toUpperCase()) {
     browserName = navigator.appName;
   }
+  else if (navigator.brave && await navigator.brave.isBrave() || false) {
+      browserName = "Brave";
+      fullVersion = "1.14.81" //Script doesn't get version, latest version at time of coding used. Version is used in case version specific detecting is ever needed.
+  }
 }
 // trim the fullVersion string at semicolon/space if present
 if ((ix = fullVersion.indexOf(";")) != -1)
