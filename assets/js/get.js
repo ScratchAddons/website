@@ -70,5 +70,10 @@ if (browserName == 'Chrome' || browserName == 'Opera' || browserName == 'NewEdge
 } else {
   if (browserName == 'Firefox') {
     window.location.href = "https://addons.mozilla.org/en-US/firefox/addon/scratch-messaging-extension/";
+  } else {
+    var h = document.createElement("H1"); // Create the H1 element 
+    var t = document.createTextNode("You Couldn't be redirected. Your browser," + browserName + "might not support this extension."); // Create a text element 
+    h.appendChild(t); // Append the text node to the H1 element
+    document.body.appendChild(h); // Append the H1 element to the document body
   }
 }
