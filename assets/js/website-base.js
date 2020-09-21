@@ -25,16 +25,13 @@ window.addEventListener('load', () => {
 			update()
 		}
 	} else {
-		// if (window.matchMedia("(prefers-color-scheme: dark)")) {
-		// 	update()
-		// } else {
-		// 	localStorage.setItem("darkTheme", false)
-		// }
 		localStorage.setItem("darkTheme", false)
+		update()
 	}	
 	
 	toggle.addEventListener("click", () => {
 		update()
 	})
 
+	document.body.style.display = "block";
 })

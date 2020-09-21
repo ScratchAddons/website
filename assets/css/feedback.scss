@@ -1,0 +1,26 @@
+---
+---
+
+@import "variables";
+
+#main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+textarea {
+	width: 500px;
+	height: 200px;
+	display: block;
+}
+
+body.dark textarea {
+	background-color: #242424;
+	color: white;
+}
+
+#send-feedback {
+	border: 2px solid black;
+}

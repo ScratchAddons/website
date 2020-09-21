@@ -56,8 +56,14 @@ header {
 			margin-left: 0.125rem
 		}
 	}
+	.navbar-nav #nav-install {
+		margin-left: 25px;
+		background: white;
+		color: black !important;
+		border-radius: 10%;
+	}
 	
-	.navbar-nav .nav-link:hover {
+	.navbar-nav .nav-link:hover, #nav-install > a {
 		@media (min-width: 768px) {
 			background: white;
 			color: black !important;

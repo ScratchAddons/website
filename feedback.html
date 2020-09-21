@@ -1,0 +1,21 @@
+---
+layout: default
+title: Feedback
+description: Send feedback to Scratch Addons developers.
+---
+
+<h1>Send feedback</h1>
+
+<link rel="stylesheet" href="/assets/css/feedback.css" />
+<script defer src="/assets/js/feedback.js"></script>
+
+<div id="main">
+    <div>
+        <textarea autofocus maxlength="1500" placeholder="Feedback is anonymous. If you'd like a response, please provide your Scratch username or an email that does not include your real name."></textarea>
+    </div>
+    <div style="margin-top: 25px;">
+        <button id="send-feedback" class="btn btn-light">Send</button>
+        <div id="sending" style="display: none; color: red;">Sending, please do not close the page yet...<br>This might take some few seconds.</div>
+        <div id="thanks" style="display: none;">Thanks for the feedback!</div>
+    </div>
+</div>
