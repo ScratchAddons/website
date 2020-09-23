@@ -12,6 +12,7 @@ document.getElementById("send-feedback").onclick = async function() {
         const res = await fetch("https://scratchaddons-feedback.glitch.me/send", {method:"POST", body});
         if (!res.ok) throw "";
         document.getElementById("thanks").style.display = "block";
+        document.getElementsByTagName("textarea")[0].setAttribute("readonly", "true"); 
     } catch(err) {
         alert("Error sending feedback! Try again?");
         sent = false;
