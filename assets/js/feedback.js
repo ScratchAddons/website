@@ -1,3 +1,4 @@
+fetch("https://scratchaddons-feedback.glitch.me/", {mode:'no-cors'})
 const version = new URL(location.href).searchParams.get("version");
 let sent = false;
 
