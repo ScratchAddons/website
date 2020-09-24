@@ -11,9 +11,12 @@
 }
 
 textarea {
+	display: block;
+}
+
+#mainfeedback {
 	width: 500px;
 	height: 200px;
-	display: block;
 }
 
 body.dark textarea {
