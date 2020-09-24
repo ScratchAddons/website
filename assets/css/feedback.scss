@@ -18,11 +18,18 @@ textarea {
 	width: 500px;
 	height: 200px;
 }
+
 #username {
 	width:215px;
 	margin-bottom:10px;
 }
+
 body.dark textarea {
+	background-color: #242424;
+	color: white;
+}
+
+body.dark input {
 	background-color: #242424;
 	color: white;
 }
