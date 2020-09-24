@@ -14,6 +14,8 @@ document.getElementById("send-feedback").onclick = async function() {
         if (!res.ok) throw "";
         document.getElementById("thanks").style.display = "block";
         document.getElementsByTagName("textarea")[0].setAttribute("readonly", "true"); 
+        document.getElementById("username")[0].setAttribute("readonly", "true"); 
+
     } catch(err) {
         alert("Error sending feedback! Try again?");
         sent = false;
