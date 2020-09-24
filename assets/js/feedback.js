@@ -7,7 +7,7 @@ document.getElementById("send-feedback").onclick = async function() {
     sent = true;
     this.style.display = "none";
     document.getElementById("sending").style.display = "block";
-    const body = {version, userAgent: navigator.userAgent, language: navigator.language, content: document.getElementById('mainfeedback').value username: document.getElementById('username').value };
+    const body = {version, userAgent: navigator.userAgent, language: navigator.language, content: document.getElementById('mainfeedback').value, username: document.getElementById('username').value };
     try {
         const res = await fetch("https://scratchaddons-feedback.glitch.me/send", {method:"POST", body: JSON.stringify(body)});
         if (!res.ok) throw "";
