@@ -26,7 +26,6 @@ window.addEventListener('load', () => {
 		}
 	} else {
 		localStorage.setItem("darkTheme", false)
-		update()
 	}	
 	
 	toggle.addEventListener("click", () => {
