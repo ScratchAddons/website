@@ -33,5 +33,4 @@ window.addEventListener('load', () => {
 		update()
 	})
 
-	document.body.style.display = "block";
 })
