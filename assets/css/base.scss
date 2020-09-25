@@ -57,7 +57,7 @@ header {
 		}
 	}
 	
-	.navbar-nav .nav-link:hover, .navbar-nav #install-nav {
+	.navbar-nav .nav-link:hover, .navbar-nav #install-nav .nav-link {
 		@media (min-width: 768px) {
 			background: white;
 			color: black !important;
