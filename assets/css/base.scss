@@ -12,7 +12,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	margin: 0
+	margin: 0;
+}
+
+* {
+	transition-property: color, background-color, border-color, transform, transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
 }
 
 main {
@@ -45,23 +52,54 @@ header {
 	color: white;
 	
 	.navbar-nav {
-		margin-left: auto
-	}
-	
-	.navbar-nav .nav-link {
-		color: white !important;
-		@media (min-width: 768px) {
-			border-radius: .25rem;
-			transition: color .15s ease-in-out, background-color .15s ease-in-out;
-			margin-left: 0.125rem
+		margin-left: auto;
+
+		.nav-link {
+			color: white !important;
+			@media (min-width: 768px) {
+				border-radius: .25rem;
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+				margin-left: 0.125rem
+			}
 		}
-	}
+
+		#install-nav .nav-link {
+			margin-left: 0.5rem;
 	
-	.navbar-nav .nav-link:hover, .navbar-nav #install-nav .nav-link {
-		@media (min-width: 768px) {
-			background: white;
-			color: black !important;
+			@media (min-width: 768px) {
+				color: $bs-default-black !important;
+				background-color: white;
+				border-color: white;
+	
+				&:hover {
+					color: $bs-default-black !important;
+					background-color: #e2e6ea;
+					border-color: #dae0e5;	
+				}
+			}
+	
+			&.install-firefox:hover {	
+				&:after {
+					content: " for Firefox"
+				}
+			}
+	
+			&.install-chrome:hover {	
+				&:after {
+					content: " for Chrome"
+				}
+			}
+	
 		}
+
+		.nav-link:hover {
+			@media (min-width: 768px) {
+				color: $bs-default-black !important;
+				background-color: white;
+				border-color: white;
+			}
+		}
+
 	}
 	
 	img {
@@ -122,18 +160,18 @@ footer {
 }
 
 .author-notes {
-	color: lighten(black, 50%)
+	color: gray
 }
 
 button#dark-toggle {
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
-	background-color: $dark-neutral;
+	background-color: gray;
 	position: fixed;
 	top: calc(100% - 5rem);
 	left: calc(100% - 5rem);
-	opacity: 25%;
+	opacity: 50%;
 	padding: 1rem;
 	color: white;
 
@@ -162,11 +200,6 @@ body.dark {
 
 	footer {
 		background-color: lighten($dark-neutral, 7%);
-	}
-
-	button#dark-toggle {
-		background-color: white;
-		color: $dark-neutral
 	}
 
 	.author-notes {

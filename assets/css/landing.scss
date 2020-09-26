@@ -18,15 +18,29 @@
 		width: 150px;
 		height: 150px
 	}
-	
-	.btn {
-		color: white;	
-		font-size: 1.3rem;
+
+	#install-intro {
+
+		box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+		background-color: white;
+		border-color: white;
+		color: $bs-default-black;
+		
+		p {
+			margin-bottom: 0;
+
+			&:nth-of-type(1) {
+				font-size: 1.5rem
+			}
+			&:nth-of-type(2) {
+				font-size: 0.75rem
+			}
+
+		}
+
 	}
 	
-	.btn-light {
-		color: $bs-default-black;	
-	}
+	
 	
 }
 
@@ -109,14 +123,23 @@ body.dark {
 	#install {
 		
 		.btn {
-			color: $bs-default-black;
-			background-color: darken(#f8f9fa, 25%);
-			border-color: darken(#f8f9fa, 25%);
+			color: $bs-default-black !important;
+			background-color: white;
+			border-color: white;
 
 			&:hover {
-				background-color: darken(#e2e6ea, 25%);
-				border-color: darken(#dae0e5, 25%);
+				background-color: #e2e6ea;
+				border-color: #dae0e5;	
 			}
+
+			// color: white;
+			// background-color: lighten($dark-neutral, 15%);
+			// border-color: lighten($dark-neutral, 15%);
+
+			// &:hover {
+			// 	background-color: lighten($dark-neutral, 5%);
+			// 	border-color: lighten($dark-neutral, 5%);
+			// }
 
 		}
 		

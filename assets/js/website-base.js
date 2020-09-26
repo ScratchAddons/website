@@ -1,3 +1,60 @@
+/* =============================================================
+                         INSTALL BUTTON
+============================================================= */
+
+window.addEventListener('load', () => {
+
+	let browser; // "chrome", "firefox", null
+	const bowserResult = bowser.getParser(navigator.userAgent).parsedResult;
+	switch (bowserResult.engine.name) {
+		case "Blink":
+			browser = "chrome"
+			break
+		case "Gecko":
+			browser = "firefox"
+			break
+		default:
+			browser = "unsupported"
+			break
+	}
+
+	const storeLinks = {
+		"chrome": "https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco",
+		"firefox": "https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/",
+		"unsupported": "/#install"
+	}
+
+	const url = storeLinks[browser]
+
+	document.querySelector("#install-nav").classList.add(`install-${browser}`)
+	if (document.querySelector("#install-intro")) {
+		switch (browser) {
+			case "chrome":
+				document.querySelector("#install-browser-icon").innerHTML = '<span class="iconify" data-icon="simple-icons:googlechrome"></span>'
+				document.querySelector("#install-browser").innerHTML = "Install for Chrome"
+				break
+			case "firefox":
+				document.querySelector("#install-browser-icon").innerHTML = '<span class="iconify" data-icon="simple-icons:firefoxbrowser"></span>'
+				document.querySelector("#install-browser").innerHTML = "Install for Firefox"
+				break
+			default:
+				document.querySelector("#install-browser-icon").innerHTML = ""
+				document.querySelector("#install-browser").innerHTML = "Install"
+				break;
+		}
+	}
+
+	for (const element of document.querySelectorAll(".install-btn")) {
+		element.href = url
+		if (location.pathname !== "/" && browser !== "unsupported") element.target = "_blank"
+	}
+
+})
+
+/* =============================================================
+                           DARK THEME
+============================================================= */
+
 window.addEventListener('load', () => {
 
 	let darkTheme = false

@@ -5,9 +5,6 @@ description: Scratch Addons provides new features and themes for the scratch.mit
 ---
 
 <link rel="stylesheet" href="/assets/css/landing.css" />
-<script defer src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js"></script>
-<script defer src="/assets/js/install-btn.js"></script>
-
 
 <section id="intro">
 	<div class="row">
@@ -17,7 +14,10 @@ description: Scratch Addons provides new features and themes for the scratch.mit
 				<h1>Scratch Addons</h1>
 				<p>All-in-one browser extension for Scratch</p>
 				<br>
-				<a id="main-install-btn" class="btn btn-light" href="/#install">Install</a>
+				<a id="install-intro" class="btn btn-light btn-lg install-btn">
+					<p><span id="install-browser-icon"><span class="iconify" data-icon="fa-solid:hourglass-start"></span></span> <span id="install-browser">Loading...</span></p>
+					<p>free, open source</p>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -56,11 +56,11 @@ description: Scratch Addons provides new features and themes for the scratch.mit
 <section id="install" class="container">
 	<h2>Install</h2>
 	<p>
-		<a class="btn btn-secondary" href="https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco" target="_blank">
+		<a class="btn btn-success btn-lg" href="https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco" target="_blank">
 			<span class="iconify" data-icon="simple-icons:googlechrome"></span> Chrome
 		</a>
-		<a class="btn btn-secondary" href="https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/" target="_blank">
-			<span class="iconify" data-icon="simple-icons:firefox"></span> Firefox
+		<a class="btn btn-success btn-lg" href="https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/" target="_blank">
+			<span class="iconify" data-icon="simple-icons:firefoxbrowser"></span> Firefox
 		</a>
 	</p>
 	<p>Or <a href="https://github.com/ScratchAddons/ScratchAddons/wiki/Load-locally" target="_blank">load it locally</a>.</p>
