@@ -109,13 +109,13 @@ h2 {
 body.dark {
 
 	#intro {
-		background-color: lighten($dark-neutral, 7%);
+		background-color: $dark-dp-2;
 	}
 
 	#features {
 
 		.features-circle {
-			background-color: lighten($dark-neutral, 5%);
+			background-color: $dark-dp-1;
 		}
 
 	}
@@ -133,12 +133,12 @@ body.dark {
 			}
 
 			// color: white;
-			// background-color: lighten($dark-neutral, 15%);
-			// border-color: lighten($dark-neutral, 15%);
+			// background-color: $dark-dp-16;
+			// border-color: $dark-dp-16;
 
 			// &:hover {
-			// 	background-color: lighten($dark-neutral, 5%);
-			// 	border-color: lighten($dark-neutral, 5%);
+			// 	background-color: $dark-dp-1;
+			// 	border-color: $dark-dp-1;
 			// }
 
 		}

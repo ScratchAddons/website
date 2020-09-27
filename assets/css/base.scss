@@ -187,11 +187,11 @@ body.dark {
 	color: white;
 
 	h1 {
-		background-color: lighten($dark-neutral, 7%);
+		background-color: $dark-dp-2;
 	}
 
 	header {
-		background-color: lighten($dark-neutral, 7%);
+		background-color: $dark-dp-2;
 
 		img {
 			transform: scale(1.25);
@@ -199,7 +199,7 @@ body.dark {
 	}
 
 	footer {
-		background-color: lighten($dark-neutral, 7%);
+		background-color: $dark-dp-2;
 	}
 
 	.author-notes {

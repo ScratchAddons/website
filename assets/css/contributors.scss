@@ -137,7 +137,7 @@ body.dark {
 	#contributors {
 		.contributor {
 			&:hover {
-				background: lighten($dark-neutral, 5%);
+				background: $dark-dp-1;
 			}
 		}
 	}
