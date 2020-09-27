@@ -61,7 +61,9 @@ window.addEventListener('load', () => {
 	let toggle = document.querySelector("#dark-toggle")
 	
 	const update = () => {
+		document.body.classList.toggle("no-animation")
 		document.body.classList.toggle("dark")
+		setTimeout(() => document.body.classList.toggle("no-animation"), 200)
 		darkTheme = !darkTheme
 		localStorage.setItem("darkTheme", darkTheme)
 		if (darkTheme) {

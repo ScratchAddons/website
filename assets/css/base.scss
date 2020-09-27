@@ -196,7 +196,7 @@ body.dark {
 		border-color: $dark-dp-16;
 		color: white;
 
-		&:active {
+		&:focus, &:active {
 			background-color: $dark-dp-1;
 			border-color: $dark-dp-16;
 			color: white;
@@ -212,4 +212,14 @@ body.dark {
 		border-top-color: rgba(white, 0.1);
 	}
 
+}
+
+.no-animation {
+	* {
+		transition-duration: 0s !important
+	}
+}
+
+body:not(.pace-done) > :not(.pace) {
+	display: none
 }
