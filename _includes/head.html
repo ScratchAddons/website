@@ -1,6 +1,6 @@
 <!-- Title and Meta -->
 
-<title>{{ page.title }} - Scratch Addons</title>
+<title>{% if page.title != "Index" %}{{ page.title }} - {% endif %}Scratch Addons</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="description" content="{{ page.description }}" />
@@ -9,7 +9,7 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://scratchaddons.github.io{{ page.url }}">
-<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:title" content='{% if page.title != "Index" %}{{ page.title }} - {% else %}Scratch Addons{% endif %}' />
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:site_name" content="Scratch Addons" />
 <meta property="og:locale" content="en_US" />
@@ -18,7 +18,7 @@
 <!-- <meta name="twitter:site" content="@ScratchAddons" />
 <meta name="twitter:creator" content="@ScratchAddons" /> -->
 <meta name="twitter:url" content="https://scratchaddons.github.io{{ page.url }}" />
-<meta name="twitter:title" content="{{ page.title }} - Scratch Addons" />
+<meta name="twitter:title" content='{% if page.title != "Index" %}{{ page.title }} - {% endif %}Scratch Addons' />
 <meta name="twitter:description" content="{{ page.description }}" />
 
 <!-- Require Script and Loading Page -->
