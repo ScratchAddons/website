@@ -3,40 +3,49 @@
 
 @import "variables";
 
-#feedback-main {
+#feedback-form {
 	// display: flex;
 	// align-items: center;
 	// justify-content: center;
 	// flex-direction: column;
-}
 
-textarea {
-	display: block;
-}
-
-#feedback-content {
-	// width: 500px;
-	height: 200px;
-}
-
-#feedback-username {
-	// width:215px;
-	margin-bottom:10px;
+	#feedback-content {
+		// width: 500px;
+		height: 200px;
+	}
+	
+	#feedback-username {
+		// width:215px;
+		margin-bottom:10px;
+	}
+	
 }
 
 body.dark {
 
-	// textarea, input {
-	// 	background-color: lighten($dark-neutral, $amount: 5);
-	// 	color: lighten($dark-neutral, $amount: 7);
-	// }
+	#feedback-form {
 
-	// textarea:active, input:active {
-	// 	background-color: lighten($dark-neutral, $amount: 5);
-	// 	color: lighten($dark-neutral, $amount: 7);
-	// }
+		textarea, input {
+			background-color: $dark-dp-1;
+			border-color: $dark-dp-16;
+			color: white;
 
-	// Somehow the active style didn't work. Will do the rest later.
-	
+			&:active {
+				background-color: $dark-dp-1;
+				border-color: $dark-dp-16;
+				color: white;
+			}
+
+			&::placeholder {
+				color: $dark-low-emphasis
+			}
+
+		}
+		
+	}
+
+	hr {
+		border-top-color: rgba(white, 0.1)
+	}
 
 }
