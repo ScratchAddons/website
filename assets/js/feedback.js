@@ -9,7 +9,11 @@ const setStatus = (statusText, status) => {
     element.classList.add(`alert-${status}`)
 }
 
-document.querySelector("#feedback-submit").onclick = async function() {
+document.querySelector("#feedback-form").onsubmit = async event => {
+
+    event.preventDefault()
+    setStatus("Sending...", "primary")
+
     document.querySelector('#feedback-username').readonly = true
     document.querySelector("#feedback-content").readonly = true
     document.querySelector("#feedback-submit").disabled = true
@@ -24,12 +28,11 @@ document.querySelector("#feedback-submit").onclick = async function() {
         username: document.querySelector('#feedback-username').value 
     }
 
-    setStatus("Sending...", "primary")
     try {
         const res = await fetch("https://scratchaddons-feedback.glitch.me/send", {method:"POST", body: JSON.stringify(body)})
         if (!res.ok) throw "";
         setTimeout(() => document.querySelector("#feedback-submit").disabled = false, 10000)
-        setStatus("Sent! Thanks for the feedback", "success")
+        setStatus("Sent! Thanks for the feedback.", "success")
     } catch(err) {
         setStatus("Error sending feedback! Try again?", "danger")
         document.querySelector("#feedback-submit").disabled = false
