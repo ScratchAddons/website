@@ -2,22 +2,25 @@
 ---
 
 @import "variables";
+
 #feedback-form {
-	// display: flex;
-	// align-items: center;
-	// justify-content: center;
-	// flex-direction: column;
 
 	#feedback-content {
-		// width: 500px;
 		height: 200px;
 	}
 	
 	#feedback-username {
-		// width:215px;
 		margin-bottom:10px;
 	}
-	
+
 }
 
-// body.dark moved to base.scss!
+.col-xl-9 {
+	
+	@media (min-width: 768px) {
+		margin-bottom: 2.5rem
+	}
+
+}
+
+// body.dark contents moved to base.scss!
