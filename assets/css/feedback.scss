@@ -2,7 +2,6 @@
 ---
 
 @import "variables";
-
 #feedback-form {
 	// display: flex;
 	// align-items: center;
@@ -21,31 +20,4 @@
 	
 }
 
-body.dark {
-
-	#feedback-form {
-
-		textarea, input {
-			background-color: $dark-dp-1;
-			border-color: $dark-dp-16;
-			color: white;
-
-			&:active {
-				background-color: $dark-dp-1;
-				border-color: $dark-dp-16;
-				color: white;
-			}
-
-			&::placeholder {
-				color: $dark-low-emphasis
-			}
-
-		}
-		
-	}
-
-	hr {
-		border-top-color: rgba(white, 0.1)
-	}
-
-}
+// body.dark moved to base.scss!

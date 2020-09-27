@@ -15,13 +15,6 @@ body {
 	margin: 0;
 }
 
-* {
-	transition-property: color, background-color, border-color, transform, transform;
-	transition-duration: 0.15s;
-	transition-timing-function: ease-in-out;
-	transition-delay: 0s;
-}
-
 main {
 	padding: 1.5rem 0;
 	flex: 1 0 auto
@@ -159,10 +152,6 @@ footer {
 	
 }
 
-.author-notes {
-	color: gray
-}
-
 button#dark-toggle {
 	width: 4rem;
 	height: 4rem;
@@ -202,8 +191,25 @@ body.dark {
 		background-color: $dark-dp-2;
 	}
 
-	.author-notes {
-		color: darken(white, 50%)
+	textarea, input {
+		background-color: $dark-dp-1;
+		border-color: $dark-dp-16;
+		color: white;
+
+		&:active {
+			background-color: $dark-dp-1;
+			border-color: $dark-dp-16;
+			color: white;
+		}
+
+		&::placeholder {
+			color: $dark-low-emphasis
+		}
+
+	}
+
+	hr {
+		border-top-color: rgba(white, 0.1);
 	}
 
 }
