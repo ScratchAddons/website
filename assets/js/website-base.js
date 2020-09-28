@@ -99,13 +99,13 @@ window.addEventListener('load', () => {
 		toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
 	}
 
-	if (localStorage.getItem("extensionStyledTheme")) {
+	if (localStorage.getItem("extensionStyledTheme") === "true") {
 		updateExtensionStyledTheme()
 	} else {
 		localStorage.setItem("extensionStyledTheme", false)
 	}
 	
-	if (localStorage.getItem("darkTheme")) {
+	if (localStorage.getItem("darkTheme") === "true") {
 		updateDarkTheme()
 	} else {
 		localStorage.setItem("darkTheme", false)
