@@ -1,22 +1,26 @@
+/* =============================================================
+                        INITIAL FUNCTIONS                      
+============================================================= */
+
 // https://stackoverflow.com/a/61511955
-function waitForElm(selector) {
+const waitForElement = selector => {
     return new Promise(resolve => {
         if (document.querySelector(selector)) {
-            return resolve(document.querySelector(selector));
+            return resolve(document.querySelector(selector))
         }
 
         const observer = new MutationObserver(mutations => {
             if (document.querySelector(selector)) {
-                resolve(document.querySelector(selector));
-                observer.disconnect();
+                resolve(document.querySelector(selector))
+                observer.disconnect()
             }
-        });
+        })
 
         observer.observe(document.body, {
             childList: true,
             subtree: true
-        });
-    });
+        })
+    })
 }
 
 /* =============================================================
@@ -25,27 +29,27 @@ function waitForElm(selector) {
 
 window.addEventListener('load', () => {
 
-	let browser; // "chrome", "firefox", null
-	const bowserResult = bowser.getParser(navigator.userAgent).parsedResult;
-	switch (bowserResult.engine.name) {
-		case "Blink":
-			browser = "chrome"
-			break
-		case "Gecko":
-			browser = "firefox"
-			break
-		default:
-			browser = "unsupported"
-			break
-	}
+    let browser; // "chrome", "firefox", null
+    const bowserResult = bowser.getParser(navigator.userAgent).parsedResult;
+    switch (bowserResult.engine.name) {
+        case "Blink":
+            browser = "chrome"
+            break
+        case "Gecko":
+            browser = "firefox"
+            break
+        default:
+            browser = "unsupported"
+            break
+    }
 
-	const storeLinks = {
-		"chrome": "https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco",
-		"firefox": "https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/",
-		"unsupported": "/#install"
-	}
+    const storeLinks = {
+        "chrome": "https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco",
+        "firefox": "https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/",
+        "unsupported": "/#install"
+    }
 
-	const url = storeLinks[browser]
+    const url = storeLinks[browser]
 
 	if (document.querySelector("#install-intro")) {
 		switch (browser) {
@@ -121,7 +125,7 @@ if (localStorage.getItem("darkTheme") === "true") {
 
 document.body.dataset.themeLoaded = true
     
-waitForElm("#dark-toggle").then(() => {
+waitForElement("#dark-toggle").then(() => {
 
     toggle = document.querySelector("#dark-toggle")
     
