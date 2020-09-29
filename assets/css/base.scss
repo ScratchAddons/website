@@ -274,13 +274,8 @@ body.dark.extension-styled {
 	}
 }
 
-body:not(.pace-done) {
+body:not([data-theme-loaded=true]) {
 
-	&.dark > .pace > .pace-progress {
-		color: white;
-	}
+	display: none;
 
-	> :not(.pace) {
-		display: none;
-	}
 }

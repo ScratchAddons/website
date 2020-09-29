@@ -1,3 +1,24 @@
+// https://stackoverflow.com/a/61511955
+function waitForElm(selector) {
+    return new Promise(resolve => {
+        if (document.querySelector(selector)) {
+            return resolve(document.querySelector(selector));
+        }
+
+        const observer = new MutationObserver(mutations => {
+            if (document.querySelector(selector)) {
+                resolve(document.querySelector(selector));
+                observer.disconnect();
+            }
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+}
+
 /* =============================================================
                          INSTALL BUTTON
 ============================================================= */
@@ -55,68 +76,73 @@ window.addEventListener('load', () => {
                            DARK THEME
 ============================================================= */
 
-window.addEventListener('load', () => {
+let darkTheme = false
+let extensionStyledTheme = false
+let toggle
+let soraAdded = false
 
-	let darkTheme = false
-	let extensionStyledTheme = false
-	let toggle = document.querySelector("#dark-toggle")
-	let soraAdded = false
+const updateExtensionStyledTheme = () => {
+    document.body.classList.toggle("extension-styled")
+    extensionStyledTheme = !extensionStyledTheme
+    localStorage.setItem("extensionStyledTheme", extensionStyledTheme)
+    if (!soraAdded) {
+        soraAdded = true
+        var linkEl = document.createElement('link')
+        linkEl.href = "https://fonts.googleapis.com/css2?family=Sora&amp;display=swap"
+        linkEl.rel = "stylesheet"
+        document.head.appendChild(linkEl)
+    }
+}
 
-	const updateExtensionStyledTheme = () => {
-		document.body.classList.toggle("extension-styled")
-		extensionStyledTheme = !extensionStyledTheme
-		localStorage.setItem("extensionStyledTheme", extensionStyledTheme)
-		if (!soraAdded) {
-			soraAdded = true
-			var linkEl = document.createElement('link')
-			linkEl.href = "https://fonts.googleapis.com/css2?family=Sora&amp;display=swap"
-			linkEl.rel = "stylesheet"
-			document.head.appendChild(linkEl)
-		}
-	}
+const updateDarkTheme = (shiftPressed = false) => {
+    document.body.classList.toggle("no-animation")
 
-	const updateDarkTheme = (shiftPressed = false) => {
-		document.body.classList.toggle("no-animation")
+    if (shiftPressed || [...document.body.classList].indexOf(".extension-styled") + 1) {
+        updateExtensionStyledTheme()
+    } 
 
-		if (shiftPressed || [...document.body.classList].indexOf(".extension-styled") + 1) {
-			updateExtensionStyledTheme()
-		} 
+    document.body.classList.toggle("dark")
+    setTimeout(() => document.body.classList.toggle("no-animation"), 200)
+    darkTheme = !darkTheme
+    localStorage.setItem("darkTheme", darkTheme)
+}
+    
+if (localStorage.getItem("extensionStyledTheme") === "true") {
+    updateExtensionStyledTheme()
+} else {
+    localStorage.setItem("extensionStyledTheme", false)
+}
 
-		document.body.classList.toggle("dark")
-		setTimeout(() => document.body.classList.toggle("no-animation"), 200)
-		darkTheme = !darkTheme
-		localStorage.setItem("darkTheme", darkTheme)
-		if (darkTheme) {
-			toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>'
-		} else {
-			toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
-		}
-	}
-	
-	if (darkTheme) {
-		toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>'
-	} else {
-		toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
-	}
+if (localStorage.getItem("darkTheme") === "true") {
+    updateDarkTheme()
+} else {
+    localStorage.setItem("darkTheme", false)
+}
 
-	if (localStorage.getItem("extensionStyledTheme") === "true") {
-		updateExtensionStyledTheme()
-	} else {
-		localStorage.setItem("extensionStyledTheme", false)
-	}
-	
-	if (localStorage.getItem("darkTheme") === "true") {
-		updateDarkTheme()
-	} else {
-		localStorage.setItem("darkTheme", false)
-	}	
-	
-	toggle.addEventListener("click", event => {
-		if (event && event.shiftKey) updateExtensionStyledTheme()
-		updateDarkTheme()
-	})
+document.body.dataset.themeLoaded = true
+    
+waitForElm("#dark-toggle").then(() => {
 
+    toggle = document.querySelector("#dark-toggle")
+    
+    if (darkTheme) {
+        toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>'
+    } else {
+        toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
+    }
+
+    toggle.addEventListener("click", event => {
+        if (event && event.shiftKey) updateExtensionStyledTheme()
+        updateDarkTheme()
+            if (darkTheme) {
+                toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>'
+            } else {
+                toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
+            }
+    })
+        
 })
+
 
 /* =============================================================
                        CONSOLE EASTER EGG
