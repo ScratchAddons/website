@@ -36,47 +36,48 @@
 <script async src="/assets/js/website-base.js"></script>
 
 {% unless page.no-analytics %}
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-  function enableCookies(){
-    let s=document.createElement("script")
-s.async=true;
-s.src="https://www.googletagmanager.com/gtag/js?id=UA-144464383-2";
-document.head.appendChild(s)
-  }
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#eb6c44",
-      "text": "#ffffff"
-    },
-    "button": {
-      "background": "#f5d948"
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" async>
+    function enableCookies(){
+      let s=document.createElement("script")
+      s.async=true;
+      s.src="https://www.googletagmanager.com/gtag/js?id=UA-144464383-2";
+      document.head.appendChild(s)
     }
-  },
-  "theme": "classic",
-  "position": "bottom-left",
-  "type": "opt-in",
-  "content": {
-    "allow": "I agree",
-    "link": "Read our privacy policy",
-    "href": "https://scratchaddons.com/privacy.html"
-  },
-  onInitialise: function (status) {
-    var type = this.options.type;
-    var didConsent = this.hasConsented();
-    if (didConsent) {
-    enableCookies()
-    }
-    },
-    onStatusChange: function(status, chosenBefore) {
-    var type = this.options.type;
-    var didConsent = this.hasConsented();
-    if (didConsent) {
-    enableCookies()
-    }
-    }
-});
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#eb6c44",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#f5d948"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-left",
+      "type": "opt-in",
+      "content": {
+        "allow": "I agree",
+        "link": "Read our privacy policy",
+        "href": "https://scratchaddons.com/privacy.html"
+      },
+      onInitialise: function (status) {
+        var type = this.options.type;
+        var didConsent = this.hasConsented();
+        if (didConsent) {
+          enableCookies()
+        }
+      },
+      onStatusChange: function(status, chosenBefore) {
+        var type = this.options.type;
+        var didConsent = this.hasConsented();
+        if (didConsent) {
+          enableCookies()
+        }
+      }
+    });
 </script>
-<script>window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments)}; gtag("js", new Date); gtag("config", "UA-144464383-2")</script>
+<script>
+    window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments)}; gtag("js", new Date); gtag("config", "UA-144464383-2")
+</script>
 {% endunless %}
