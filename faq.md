@@ -5,7 +5,7 @@ description:
 ---
 
 <!-- 
-Use Markdown, not HTML!
+Use Markdown, not HTML.
 
 H1 is from front matter above, not this one in the bottom
 # Frequently Asked Questions 
