@@ -12,12 +12,13 @@ const run = async () => {
 
 		let contribCountEl = document.createElement("p")
 		contribCountEl.className = "contribution-count"
-		contribCountEl.textContent = `${contributor.contributions} contribution${contributor.contributions == 1 ? "" : "s"}`;
+		contribCountEl.textContent = `${contributor.contributions} commit${contributor.contributions == 1 ? "" : "s"}`;
 
 		let iconEl
 		iconEl = document.createElement("img")
 		iconEl.className = "user-icon"
-		iconEl.src = contributor.avatar_url
+        iconEl.src = contributor.avatar_url
+        iconEl.alt = `${contributor.login} contributes ${contributor.contributions} commit${contributor.contributions == 1 ? "" : "s"}`
 
 		let iconWrap = document.createElement("div")
 		iconWrap.className = "icon-wrap"
