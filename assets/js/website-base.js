@@ -65,13 +65,17 @@ window.addEventListener('load', () => {
 				document.querySelector("#install-browser-icon").innerHTML = ""
 				document.querySelector("#install-browser").innerHTML = "Install"
 				break;
-		}
+        }
+        document.querySelector("#install-intro").classList.toggle("disabled")
 	}
 
 	for (const element of document.querySelectorAll(".install-btn")) {
 		element.href = url
 		element.classList.add(`install-${browser}`)
-		if (location.pathname !== "/" && browser !== "unsupported") element.target = "_blank"
+		if (location.pathname !== "/" && browser !== "unsupported") {
+            element.target = "_blank"
+            element.rel = "noopener"
+        }
 	}
 
 })
