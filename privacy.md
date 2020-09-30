@@ -26,11 +26,11 @@ We will never sell, rent, or share your data, except as needed to operate the se
 
 ### How we protect information
 
-We are generally quite careful with your data, using security measures like HTTPS and avoiding the use of insecure code that could allow XSS. However, we ensure that hackers won&#39;t. When you use our service, you accept that small have access to your information if we get hacked.
+We are generally quite careful with your data, using security measures like HTTPS and avoiding the use of insecure code that could allow XSS. However, we ensure that hackers won't. When you use our service, you accept that small have access to your information if we get hacked.
 
 ## Links to other websites
 
-As part of the service, we may provide links to or compatibility with other websites or apps. We aren&#39;t responsible for the content on those sites or how they might use your data. This Privacy Policy is only about our service.
+As part of the service, we may provide links to or compatibility with other websites or apps. We aren't responsible for the content on those sites or how they might use your data. This Privacy Policy is only about our service.
 
 ## Changes to our privacy policy
 
