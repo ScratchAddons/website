@@ -170,6 +170,77 @@ button#dark-toggle {
 	}
 }
 
+#cookies-eu-banner {
+
+    background: $dark-dp-2;
+    color: #fff;
+    padding: 6px;
+    
+    > div {
+        justify-content: center;
+        align-content: center;
+
+        > * {
+            margin: auto 0.125rem;
+            font-size: 0.8rem
+        }
+    }
+
+    p {
+        display: block;
+        margin-left: 0.25rem
+    }
+
+    #cookies-eu-more, #cookies-eu-accept, #cookies-eu-reject {
+        // text-decoration: none;
+        // background: #222;
+        // color: #fff;
+        // border: 1px solid #000;
+        // cursor: pointer;
+        padding: 4px 7px;
+        // font-size: 13px;
+        // font-weight: bold;
+    }
+
+    #cookies-eu-more {
+        color: white;
+        background: inherit;
+        border-color: white
+    }
+
+    // #cookies-eu-more, #cookies-eu-accept {
+
+    //     &:hover, &:focus {
+    //         border-color: #fff;
+    //         background: #222;
+    //         color: #fff;
+    //     }
+
+    //     background: #fff;
+    //     color: #222;
+
+    // }
+
+    // #cookies-eu-reject {
+
+    //     background: none;
+    //     font-weight: normal;
+    //     color: #ccc;
+    //     cursor: pointer;
+    //     padding: 4px 7px;
+    //     border: 1px solid #666;
+
+    //     &:hover, &:focus {
+    //         border-color: #fff;
+    //         background: #222;
+    //         color: #fff;
+    //     }
+
+    // }
+
+}
+
+
 body.dark {
 
 	background-color: $dark-neutral;
@@ -241,7 +312,7 @@ body.dark.extension-styled {
 	}
 
 	header {
-		background-color: #ff7b26;
+		background-color: $scratch-orange;
 	}
 
 	footer {
@@ -265,6 +336,10 @@ body.dark.extension-styled {
 		}
 
 	}
+
+    #cookies-eu-banner {
+        background: #2a2a2a
+    }
 
 }
 

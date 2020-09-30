@@ -1,12 +1,14 @@
 ---
 layout: markdown
-title: Privacy policy
+title: Privacy Policy
 description: This Privacy Policy describes how we collect, use, and safeguard the information you give us.
 ---
 
-This Privacy Policy describes how we collect, use, and safeguard the information you give us. In this agreement, website refers to the Scratch Addons website (https://scratchaddons.com/). Extension refers to our browser extension, which you can download from https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco or https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/.
+*Effective date: 30 September 2020*
 
-When we talk about the service, we mean any service provided by us, such as the website or our services used in addons. The terms &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; refer to the leaders of the Scratch Addons open source project (https://github.com/ScratchAddons). When you use our services, you agree to this privacy policy.
+This Privacy Policy describes how we collect, use, and safeguard the information you give us. In this agreement, website refers to the Scratch Addons website (<https://scratchaddons.com/>). Extension refers to our browser extension, which you can download from <https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco> or <https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/.>
+
+When we talk about the service, we mean any service provided by us, such as the website or our services used in addons. The terms &quot;we,&quot; &quot;us,&quot; and &quot;our&quot; refer to the leaders of the Scratch Addons open source project (<https://github.com/ScratchAddons>). When you use our services, you agree to this privacy policy.
 
 ## Information we collect
 
@@ -16,7 +18,7 @@ We collect a few different kinds of information about you, like what part of the
 
 When you load our website, your browser automatically sends us some information about you. That information includes what page you were on before you came to our website, what kind of device you use, and your IP address. This information does not let us know who you are, but it can help us make decisions about how to make our website better. We may use cookies or other local storage to collect information about you, but not who you are, and remember your settings. For example, Scratch Addons may use cookies to remember if you want to use dark mode.
 
-Scratch Addons may use both persistent and session storage. Persistent storage stays on your computer after you close your browser until you delete it, and your browser deletes session storage when you close it. We use Google Analytics to collect data. For information about how Google may use your data, see https://support.google.com/analytics/answer/6004245 and https://policies.google.com/technologies/partner-sites.
+Scratch Addons may use both persistent and session storage. Persistent storage stays on your computer after you close your browser until you delete it, and your browser deletes session storage when you close it. We use Google Analytics to collect data. For information about how Google may use your data, see <https://support.google.com/analytics/answer/6004245> and <https://policies.google.com/technologies/partner-sites>.
 
 ### How we use your information
 
@@ -36,4 +38,4 @@ We might change this policy at any time, but if we do, we will tell you. If we m
 
 ## How to contact us
 
-If you have any questions, please contact us through our feedback page at https://scratchaddons.com/feedback. This page was last updated on 9/29/2020.
+If you have any questions, please contact us through our feedback page at <https://scratchaddons.com/feedback.> This page was last updated on 30 September 2020.
