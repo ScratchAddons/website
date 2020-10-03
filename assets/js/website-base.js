@@ -3,7 +3,7 @@
 ============================================================= */
 
 // https://stackoverflow.com/a/61511955
-const waitForElement = selector => {
+const waitForElement = (selector) => {
     return new Promise(resolve => {
         if (document.querySelector(selector)) {
             return resolve(document.querySelector(selector))
@@ -151,6 +151,41 @@ waitForElement("#dark-toggle").then(() => {
         
 })
 
+/* =============================================================
+                            TOOLTIPS
+============================================================= */
+
+window.addEventListener('load', () => {
+    $(document.querySelectorAll('[data-toggle="tooltip"]')).tooltip()
+})
+
+let lastTooltipsAmount = 0
+
+var tooltipsObserver = new MutationObserver(mutations => {
+    currentTooltipsAmount = document.querySelectorAll('[data-toggle="tooltip"]').length
+    if (lastTooltipsAmount !== currentTooltipsAmount) {
+        lastTooltipsAmount = currentTooltipsAmount
+        $(document.querySelectorAll('[data-toggle="tooltip"]')).tooltip()
+    }
+    // TODO: I suck at mutations. Wanted try to detect added tooltip-ed elements, but it didn't work because I need to traverse the element tree.
+    // console.log(mutations)
+    // mutations.forEach(mutation => {
+    //     console.log(mutation)
+    //     console.log(mutation.addedNodes)
+    //     if (mutation.type === "childList" && mutation.addedNodes.length) {
+    //         console.log(mutation.addedNodes)
+    //         mutation.addedNodes.forEach(node => {
+    //             console.log(node)
+    //             if (node.matches('[data-toggle="tooltip"]')) $(node).tooltip()
+    //         })
+    //     }
+    // })
+})
+
+tooltipsObserver.observe(document.body, {
+    childList: true,
+    subtree: true
+})
 
 /* =============================================================
                        CONSOLE EASTER EGG
