@@ -1,5 +1,34 @@
 $scratch-orange: #ff7b26;
+
 $bs-default-black: #212529;
+$bs-blue: #007bff;
+$bs-indigo: #6610f2;
+$bs-purple: #6f42c1;
+$bs-pink: #e83e8c;
+$bs-red: #dc3545;
+$bs-orange: #fd7e14;
+$bs-yellow: #ffc107;
+$bs-green: #28a745;
+$bs-teal: #20c997;
+$bs-cyan: #17a2b8;
+$bs-white: #fff;
+$bs-gray: #6c757d;
+$bs-gray-dark: #343a40;
+$bs-primary: #007bff;
+$bs-secondary: #6c757d;
+$bs-success: #28a745;
+$bs-info: #17a2b8;
+$bs-warning: #ffc107;
+$bs-danger: #dc3545;
+$bs-light: #f8f9fa;
+$bs-dark: #343a40;
+$bs-breakpoint-xs: 0;
+$bs-breakpoint-sm: 576px;
+$bs-breakpoint-md: 768px;
+$bs-breakpoint-lg: 992px;
+$bs-breakpoint-xl: 1200px;
+$bs-font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$bs-font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 
 // Based on Material Design
 
@@ -18,3 +47,9 @@ $dark-dp-24: lighten($dark-neutral, 16);
 $dark-disabled: rgba(255, 255, 255, 0.38);
 $dark-low-emphasis: rgba(255, 255, 255, 0.6);
 $dark-high-emphasis: rgba(255, 255, 255, 0.87);
+
+// Extension-styled
+
+$dark-ext-level-1: #222;
+$dark-ext-level-2: #2a2a2a;
+$dark-ext-level-3: #333

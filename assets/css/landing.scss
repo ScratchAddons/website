@@ -81,7 +81,6 @@
 	
 	.btn {
 		font-size: 1.25rem;
-		color: white
 	}
 
 }
@@ -127,31 +126,6 @@ body.dark {
 			background-color: $dark-dp-1;
 		}
 
-	}
-
-	#install {
-		
-		.btn {
-			color: $bs-default-black !important;
-			background-color: white;
-			border-color: white;
-
-			&:hover {
-				background-color: #e2e6ea;
-				border-color: #dae0e5;	
-			}
-
-			// color: white;
-			// background-color: $dark-dp-16;
-			// border-color: $dark-dp-16;
-
-			// &:hover {
-			// 	background-color: $dark-dp-1;
-			// 	border-color: $dark-dp-1;
-			// }
-
-		}
-		
 	}
 
 }

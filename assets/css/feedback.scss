@@ -17,7 +17,7 @@
 
 .col-xl-9 {
 	
-	@media (min-width: 768px) {
+	@media (min-width: $bs-breakpoint-md) {
 		margin-bottom: 2.5rem
 	}
 

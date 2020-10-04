@@ -70,37 +70,13 @@ body.dark {
 	#intro {
 		background-color: $dark-dp-2;
 	}
-
-	#features {
-
-		.features-circle {
-			background-color: $dark-dp-1;
-		}
-
-	}
-
-	#install {
-		
-		.btn {
-			color: $bs-default-black;
-			background-color: darken(#f8f9fa, 25%);
-			border-color: darken(#f8f9fa, 25%);
-
-			&:hover {
-				background-color: darken(#e2e6ea, 25%);
-				border-color: darken(#dae0e5, 25%);
-			}
-
-		}
-		
-	}
-
+	
 }
 
 body.dark.extension-styled {
 
 	#intro {
-		background-color: #2a2a2a;
+		background-color: $dark-ext-level-2;
 	}
 
 }

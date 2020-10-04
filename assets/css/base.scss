@@ -49,7 +49,7 @@ header {
 
 		.nav-link {
 			color: white !important;
-			@media (min-width: 768px) {
+			@media (min-width: $bs-breakpoint-md) {
 				border-radius: .25rem;
 				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 				margin-left: 0.125rem
@@ -59,7 +59,7 @@ header {
 		#install-nav .nav-link {
 			margin-left: 0.5rem;
 	
-			@media (min-width: 768px) {
+			@media (min-width: $bs-breakpoint-md) {
 				color: $bs-default-black !important;
 				background-color: white;
 				border-color: white;
@@ -86,7 +86,7 @@ header {
 		}
 
 		.nav-link:hover {
-			@media (min-width: 768px) {
+			@media (min-width: $bs-breakpoint-md) {
 				color: $bs-default-black !important;
 				background-color: white;
 				border-color: white;
@@ -142,7 +142,7 @@ footer {
 			flex: 0 0 100%;
 			max-width: 100%;
 
-			@media (min-width: 768px) {
+			@media (min-width: $bs-breakpoint-md) {
 				flex: 1 0 0;
 				max-width: 100%
 			}
@@ -169,6 +169,35 @@ footer {
 		height: 100%;
 	}
 }
+
+.btn-white {
+	color: $bs-default-black;
+	background-color: white;
+	border-color: white;
+
+	&:hover {
+		color: $bs-default-black;
+		background-color: #e2e6ea;
+		border-color: #dae0e5;
+	}
+	
+	&:not(:disabled):not(.disabled).active {
+		color: $bs-default-black;
+		background-color: #dae0e5;
+		border-color: #d3d9df;
+	}
+	
+	&.focus, &:focus {
+		color: $bs-default-black;
+		background-color: #e2e6ea;
+		border-color: #dae0e5;
+		box-shadow: 0 0 0 .2rem rgba(216,217,219,.5);
+	}
+}
+
+// =============================================================
+//                          DARK THEME                         
+// =============================================================
 
 body.dark {
 
@@ -212,10 +241,39 @@ body.dark {
 		border-top-color: rgba(white, 0.1);
 	}
 
+	.dark-btn-white {
+		color: $bs-default-black;
+		background-color: white;
+		border-color: white;
+	
+		&:hover {
+			color: $bs-default-black;
+			background-color: #e2e6ea;
+			border-color: #dae0e5;
+		}
+		
+		&:not(:disabled):not(.disabled).active {
+			color: $bs-default-black;
+			background-color: #dae0e5;
+			border-color: #d3d9df;
+		}
+		
+		&.focus, &:focus {
+			color: $bs-default-black;
+			background-color: #e2e6ea;
+			border-color: #dae0e5;
+			box-shadow: 0 0 0 .2rem rgba(216,217,219,.5);
+		}
+	}
+
 }
 
+// =============================================================
+//                    EXTENSION-STYLED THEME
+// =============================================================
+
 body.extension-styled {
-	font-family: "Sora",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-family: "Sora",$bs-font-family-sans-serif;
 	font-size-adjust: 0.47;
 
 	header {
@@ -232,31 +290,39 @@ body.extension-styled {
 	}
 }
 
+// =============================================================
+//                  DARK EXTENSION-STYLED THEME
+// =============================================================
+
 body.dark.extension-styled {
 
-	background-color: #222;
+	background-color: $dark-ext-level-1;
 
 	h1 {
-		background-color: #2a2a2a;
+		background-color: $dark-ext-level-2;
 	}
 
 	header {
-		background-color: #ff7b26;
+		background-color: $scratch-orange;
+
+		img {
+			transform: scale(1.75);
+		}	
 	}
 
 	footer {
-		background-color: #333;
+		background-color: $dark-ext-level-3;
 	}
 
 	textarea, input {
 		background-color: white;
 		border-color: #ced4da;
-		color: white;
+		color: #495057;
 
 		&:focus, &:active {
 			background-color: white;
 			border-color: #ced4da;
-			color: white;
+			color: #495057;
 		}
 
 		&::placeholder {
@@ -267,6 +333,10 @@ body.dark.extension-styled {
 	}
 
 }
+
+// =============================================================
+//                 STUFF FOR CONTROLLING THEMES
+// =============================================================
 
 .no-animation {
 	* {
