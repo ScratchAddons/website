@@ -6,57 +6,55 @@ description: Scratch Addons provides new features and themes for the scratch.mit
 
 <link rel="stylesheet" href="/assets/css/landing.css" />
 
-<section id="intro">
-	<div class="row">
-		<div class="col-12 col-md-6" id="intro-info">
-			<h1 class="display-4">All in one browser extension for Scratch</h1>
-			<p class="lead">Scratch Addons is an browser extension that provides new features and themes for the <a href="https://scratch.mit.edu">Scratch</a>. It has a mission to collect, archive, and put into use userstyles and userscripts, developed by several members of the Scratch community.</p>
-			<div id="intro-buttons">
-				<a id="install-intro" class="btn btn-white btn-lg install-btn disabled">
-					<p><span id="install-browser-icon"><span class="iconify" data-icon="fa-solid:hourglass-start"></span></span> <span id="install-browser">Loading...</span></p>
-					<p>free, open source</p>
-				</a>
-				<a href="#features" class="btn">or read more</a>
-			</div>
+<section id="intro" class="row p-4">
+	<div class="col-12 col-md-6 py-4 px-3 px-md-4 d-flex flex-column justify-content-center" id="intro-info">
+		<h1 class="display-4 m-0 mb-3 p-0 text-left">All in one browser extension for Scratch</h1>
+		<p class="lead mb-4">Scratch Addons is an browser extension that provides <span title='The "Addons" part of Scratch Addons.' data-toggle="tooltip" data-placement="right">new features and themes</span> for <span title='The "Scratch" part in Scratch Addons.' data-toggle="tooltip" data-placement="right">the <a href="https://scratch.mit.edu">Scratch website and project editor</a></span>. It has a mission to collect, archive, and put into use userstyles and userscripts, developed by several members of the Scratch community.</p>
+		<div id="intro-buttons" class="d-flex align-items-center mb-4">
+			<a id="install-intro" class="btn btn-white btn-lg install-btn disabled">
+				<p><span id="install-browser-icon"><span class="iconify" data-icon="fa-solid:hourglass-start"></span></span> <span id="install-browser">Loading...</span></p>
+				<p>free, open source</p>
+			</a>
+			<a href="#features" class="btn">or read more</a>
 		</div>
-		<div class="col-12 col-md-6" id="intro-img">
-			<div id="carousel-intro" class="carousel slide" data-interval="false">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-intro" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-intro" data-slide-to="1"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="carousel-item-wrapper">
-							<img src="/assets/images/showcase/popup.png" alt="Extension pop-up">
-						</div>
-						<div class="carousel-caption d-none d-md-block">
-							<h5>The extension pop-up.</h5>
-						</div>
+	</div>
+	<div class="col-12 col-md-6" id="intro-img">
+		<div id="carousel-intro" class="carousel slide h-100" data-interval="false">
+			<ol class="carousel-indicators mb-0">
+				<li data-target="#carousel-intro" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-intro" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner h-100">
+				<div class="carousel-item active h-100">
+					<div class="carousel-item-wrapper h-100 d-flex justify-content-center align-items-center p-3">
+						<img src="/assets/images/showcase/popup.png" alt="Extension pop-up">
 					</div>
-					<div class="carousel-item">
-						<div class="carousel-item-wrapper">
-							<img src="/assets/images/showcase/settings.png" alt="Settings page">
-						</div>
-						<div class="carousel-caption d-none d-md-block">
-							<h5>The settings page.</h5>
-						</div>
+					<div class="carousel-caption d-none d-md-block m-auto p-2">
+						<h5 class="mb-0">The extension pop-up.</h5>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carousel-intro" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carousel-intro" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			  </div>
+				<div class="carousel-item h-100">
+					<div class="carousel-item-wrapper h-100 d-flex justify-content-center align-items-center p-3">
+						<img src="/assets/images/showcase/settings.png" alt="Settings page">
+					</div>
+					<div class="carousel-caption d-none d-md-block m-auto p-2">
+						<h5 class="mb-0">The settings page.</h5>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-intro" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-intro" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
 	</div>
 </section>
 
-<section id="features" class="container">
+<section id="features" class="container text-center mb-4">
 	<h2>Features</h2>
 	<div class="row">
 		<div class="col-12 col-md-4">
@@ -86,7 +84,7 @@ description: Scratch Addons provides new features and themes for the scratch.mit
 	</div>
 </section>
 
-<section id="install" class="container">
+<section id="install" class="container text-center mb-4">
 	<h2>Install</h2>
 	<p>
 		<a class="btn btn-success dark-btn-white btn-lg" href="https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco" target="_blank" rel="noopener">
