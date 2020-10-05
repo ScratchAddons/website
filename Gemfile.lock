@@ -38,8 +38,6 @@ GEM
       terminal-table (~> 1.8)
     jekyll-autoprefixer (1.0.2)
       autoprefixer-rails (~> 9.3)
-    jekyll-feed (0.15.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -94,7 +92,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-autoprefixer
-  jekyll-feed (~> 0.12)
   jekyll-minifier
   tzinfo (~> 1.2)
   tzinfo-data
