@@ -36,9 +36,9 @@ document.querySelector("#feedback-form").onsubmit = async event => {
     } catch(err) {
         setStatus("Error sending feedback! Try again?", "danger")
         document.querySelector("#feedback-submit").disabled = false
+        document.querySelector('#feedback-username').readonly = false
+        document.querySelector("#feedback-content").readonly = false
     }
-    document.querySelector('#feedback-username').readonly = false
-    document.querySelector("#feedback-content").readonly = false
 };
 
 window.addEventListener("load", () => document.querySelector("textarea").focus());
