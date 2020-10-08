@@ -26,6 +26,5 @@ autoprefixer:
   - not Explorer <= 11
 
 jekyll-minifier:
-  remove_intertag_spaces: true 
   uglifier_args:
     harmony: true
