@@ -14,8 +14,8 @@ document.querySelector("#feedback-form").onsubmit = async event => {
     event.preventDefault()
     setStatus("Sending...", "primary")
 
-    document.querySelector('#feedback-username').readonly = true
-    document.querySelector("#feedback-content").readonly = true
+    document.querySelector('#feedback-username').readOnly = true
+    document.querySelector("#feedback-content").readOnly = true
     document.querySelector("#feedback-submit").disabled = true
 
     // document.querySelector("#sending").style.display = "block";
@@ -36,9 +36,10 @@ document.querySelector("#feedback-form").onsubmit = async event => {
     } catch(err) {
         setStatus("Error sending feedback! Try again?", "danger")
         document.querySelector("#feedback-submit").disabled = false
-        document.querySelector('#feedback-username').readonly = false
-        document.querySelector("#feedback-content").readonly = false
     }
+
+    document.querySelector('#feedback-username').readOnly = false
+    document.querySelector("#feedback-content").readOnly = false
 };
 
 window.addEventListener("load", () => document.querySelector("textarea").focus());
