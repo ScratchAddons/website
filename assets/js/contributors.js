@@ -131,7 +131,7 @@ const run = async () => {
 
 	await Promise.all([
 		(() => new Promise(async callback => {
-			let response = await (await fetch("https://raw.githubusercontent.com/Hans5958/ScratchAddons-Contributions/master/.all-contributorsrc")).json()
+			let response = await (await fetch("https://raw.githubusercontent.com/ScratchAddons/contributors/master/.all-contributorsrc")).json()
 			console.log(contributors)
 			console.log(response)
 			response.contributors.forEach(responseItem => {
