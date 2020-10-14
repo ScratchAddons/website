@@ -4,28 +4,52 @@
 @import "variables";
 
 #intro {
-	padding: 20px;
+	// background: linear-gradient(to right bottom,#f7f5fb 50%,#fff 50%);
+
 	background-color: $scratch-orange;
 	color: white;
-	text-align: center;
-	
-	h1 {
-		margin: 0 0 0.5rem 0;
-		padding: 0
+
+	a:not(.btn-white) {
+		color: white;
+		text-decoration: dotted;
 	}
 
 	img {
-		width: 150px;
-		height: 150px
+		max-height: 100%;
+		max-width: 100%;
+		box-shadow: 0px 0px 1rem 0px rgba(0,0,0,0.5);
+	}
+
+	.carousel {
+
+		.carousel-caption {
+			background-color: black;
+			box-shadow: 0px 0px 5px black;
+			border-radius: 0.25rem;
+			opacity: 0;
+			transition: opacity .15s linear
+		}
+
+		&:hover .carousel-caption {
+			opacity: 0.9;
+		}
+
+	}
+	
+
+	#intro-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	#intro-img {
+		height: 75vh
 	}
 
 	#install-intro {
-
-		margin-top: 1.5rem;
-		box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
-		background-color: white;
-		border-color: white;
-		color: $bs-default-black;
+		box-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.75);
 		
 		p {
 			margin-bottom: 0;
@@ -40,8 +64,13 @@
 		}
 
 	}
-	
-	
+
+	[data-toggle="tooltip"] {
+		background-image: linear-gradient(to right, white 75%, transparent 75%);
+		background-position: 0 1.55rem;
+		background-repeat: repeat-x;
+		background-size: 10px 1.5px;
+	}
 	
 }
 
@@ -89,11 +118,9 @@ main {
 	padding: 0;
 
 	section {
-		text-align: center;
 		margin-bottom: 2.5rem
 	}
 }
-
 
 h2 {
 	margin-bottom: 1rem
@@ -113,10 +140,6 @@ body.dark {
 
 		img {
 			margin-bottom: 0.75rem;
-		}
-
-		#install-intro {
-			margin-top: 0.75rem;
 		}
 	}
 
