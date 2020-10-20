@@ -1,24 +1,74 @@
 ---
 layout: markdown
 title: Frequently Asked Questions
-description: 
+description: This page lists frequently asked questions related to the Scratch Addons extension and project.
 ---
 
-<!-- 
-Use Markdown, not HTML!
+This page lists frequently asked questions related to the Scratch Addons extension and project.
 
-H1 is from front matter above, not this one in the bottom
-# Frequently Asked Questions 
--->
+- [What is Scratch Addons?](#what-is-scratch-addons)
+- [What is an "addon", exactly?](#what-is-an-addon-exactly)
+- [If everything is an addon, then what does Scratch Addons do?](#if-everything-is-an-addon-then-what-does-scratch-addons-do)
+- [Is Scratch Addons safe?](#is-scratch-addons-safe)
+- [How can I contribute to Scratch Addons?](#how-can-i-contribute-to-scratch-addons)
+- [What should I do if I find a problem?](#what-should-i-do-if-i-find-a-problem)
+- [Can I tell people on Scratch about this?](#can-i-tell-people-on-scratch-about-this)
+- [Where can I discuss about Scratch Addons.](#where-can-i-discuss-about-scratch-addons)
+- [I think Scratch Addons slows down Scratch. What can I do?](#i-think-scratch-addons-slows-down-scratch-what-can-i-do)
+- [Are there any consequences for enabling everything?](#are-there-any-consequences-for-enabling-everything)
 
-### Question 1
+### What is Scratch Addons?
 
-Answer 1
+Scratch Addons is an "all-in-one" browser extension for the Scratch website and project editor. It provides features and themes (called addons internally), both for the Scratch website and the project editor. Scratch Addons' mission is to combine all existing Scratch extensions, userscripts and userstyles, developed by several members of the Scratch community, into a single easy-to-access place, while still letting users choose which ones to enable.
 
-### Question 2
+### What is an "addon", exactly?
 
-Answer 2
+An addon is similar to an extension or a userscript, but they use special APIs provided by the Scratch Addons extension. These APIs allow addons to run scripts on a Scratch page (userscripts), run scripts on the background (persistent scripts), or apply styles to the Scratch website (userstyles).
 
-### Question 3
+Userscripts and persistent scripts can use the `addon.*` JavaScript APIs, which allow them to obtain Scratch-related information (for example, get the current logged in user) and also use extension APIs (like sending notifications).
 
-Answer 3
+### If everything is an addon, then what does Scratch Addons do?
+
+By itself, Scratch Addons is just an addon loader. Its main tasks are:
+
+- Allow users to enable, disable and configure addons.
+- Run addons and provide APIs to them.
+- Provide global state to addons (for example, the addon.auth API).
+- Pollute prototypes for use by addon userscripts.
+- Provide ways to access and modify Redux state.
+- Avoid addons from interfering with each other.
+- Avoid duplicate work from different addons.
+
+### Is Scratch Addons safe?
+
+The Scratch Addons extension and it's addons are safe.
+
+### How can I contribute to Scratch Addons?
+
+Contributing to Scratch Addons is easy.
+
+If you have an expertise in JavaScript, simply contribute some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, then it will be an official addon on our extension.
+
+If you can't code or would just like to help with discussions and suggestions for the addon, feel free to say something on [our issues tab](https://github.com/ScratchAddons/ScratchAddons/issues) or [our discussions tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can suggest new addons to be added, help with a little bit with the development, and much more!
+
+You can send a feedback on [our feedback page](https://scratchaddons.com/feedback). Your small feedback give us a different point-of-view in the extension development, and, in most times, help us point things that needed attention and fix problems that we didn't think of.
+
+### What should I do if I find a problem?
+
+You can tell us using these three methods.
+
+- Send a feedback end a feedback on [our feedback page](https://scratchaddons.com/feedback).
+- Create a new issue on [the extension repository](https://github.com/ScratchAddons/ScratchAddons/issues) (or [the website repository](https://github.com/ScratchAddons/website/issues).
+- Create a post on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions).
+
+### Can I tell people on Scratch about this?
+
+
+### Where can I discuss about Scratch Addons.
+
+You can do that by doing it on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can discuss about it and ask questions if you have difficulties.
+
+### I think Scratch Addons slows down Scratch. What can I do?
+
+
+### Are there any consequences for enabling everything?
