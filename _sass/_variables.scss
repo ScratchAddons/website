@@ -1,34 +1,34 @@
 $scratch-orange: #ff7b26;
 
 $bs-default-black: #212529;
-$bs-blue: #007bff;
-$bs-indigo: #6610f2;
-$bs-purple: #6f42c1;
-$bs-pink: #e83e8c;
-$bs-red: #dc3545;
-$bs-orange: #fd7e14;
-$bs-yellow: #ffc107;
-$bs-green: #28a745;
-$bs-teal: #20c997;
-$bs-cyan: #17a2b8;
-$bs-white: #fff;
-$bs-gray: #6c757d;
-$bs-gray-dark: #343a40;
-$bs-primary: #007bff;
-$bs-secondary: #6c757d;
-$bs-success: #28a745;
-$bs-info: #17a2b8;
-$bs-warning: #ffc107;
-$bs-danger: #dc3545;
-$bs-light: #f8f9fa;
-$bs-dark: #343a40;
+$bs-blue: var(--blue);
+$bs-indigo: var(--indigo);
+$bs-purple: var(--purple);
+$bs-pink: var(--pink);
+$bs-red: var(--red);
+$bs-orange: var(--orange);
+$bs-yellow: var(--yellow);
+$bs-green: var(--green);
+$bs-teal: var(--teal);
+$bs-cyan: var(--cyan);
+$bs-white: var(--white);
+$bs-gray: var(--gray);
+$bs-gray-dark: var(--gray-dark);
+$bs-primary: var(--primary);
+$bs-secondary: var(--secondary);
+$bs-success: var(--success);
+$bs-info: var(--info);
+$bs-warning: var(--warning);
+$bs-danger: var(--danger);
+$bs-light: var(--light);
+$bs-dark: var(--dark);
 $bs-breakpoint-xs: 0;
 $bs-breakpoint-sm: 576px;
 $bs-breakpoint-md: 768px;
 $bs-breakpoint-lg: 992px;
 $bs-breakpoint-xl: 1200px;
-$bs-font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-$bs-font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+$bs-font-family-sans-serif: var(--font-family-sans-serif);
+$bs-font-family-monospace: var(--font-family-monospace);
 
 // Based on Material Design
 

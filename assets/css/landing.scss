@@ -6,8 +6,8 @@
 #intro {
 	// background: linear-gradient(to right bottom,#f7f5fb 50%,#fff 50%);
 
-	background-color: $scratch-orange;
-	color: white;
+	// background-color: $scratch-orange;
+	// color: white;
 
 	a:not(.btn-white) {
 		color: white;
@@ -115,7 +115,7 @@
 }
 
 main {
-	padding: 0;
+	// padding-top: 0;
 
 	section {
 		margin-bottom: 2.5rem
@@ -135,14 +135,6 @@ h2 {
 
 body.dark {
 
-	#intro {
-		background-color: $dark-dp-2;
-
-		img {
-			margin-bottom: 0.75rem;
-		}
-	}
-
 	#features {
 
 		.features-circle {
@@ -155,14 +147,10 @@ body.dark {
 
 body.dark.extension-styled {
 
-	#intro {
-		background-color: #2a2a2a;
-	}
-
 	#features {
 
 		.features-circle {
-			background-color: #2a2a2a;
+			background-color: $dark-ext-level-2;
 		}
 
 	}
