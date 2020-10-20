@@ -2,11 +2,10 @@ title: ""
 email: ""
 description: ""
 baseurl: ""
-url: ""
+url: "https://scratchaddons.com"
 
+source: site
 markdown: kramdown
-
-exclude: ["README.md", "CODE_OF_CONDUCT.md", "LICENSE"]
 
 plugins:
 - jekyll-autoprefixer
