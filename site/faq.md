@@ -41,7 +41,7 @@ By itself, Scratch Addons is just an addon loader. Its main tasks are:
 
 ### Is Scratch Addons safe?
 
-The Scratch Addons extension and it's addons are safe.
+The Scratch Addons extension and it's addons are safe. They have been verified by reviewers on contributors of Scratch Addons and by the extension stores. If you happen to find a security vulnerability please [make a new issue about it](https://github.com/ScratchAddons/ScratchAddons/issues/new/choose) in the [Scratch Addons GitHub repository](github.com/scratchaddons/scratchaddons).
 
 ### How can I contribute to Scratch Addons?
 
@@ -62,13 +62,16 @@ You can tell us using these three methods.
 - Create a post on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions).
 
 ### Can I tell people on Scratch about this?
-
+Sadly, no. The Scratch team has banned [all functional code snippets](https://scratch.mit.edu/discuss/topic/374593/?page=1), meaning that if you talk about it on scratch, it is likely you'll get an alert and possibly even banned. 
 
 ### Where can I discuss about Scratch Addons.
 
-You can do that by doing it on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can discuss about it and ask questions if you have difficulties.
+You can do that by doing it on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions), or on the discord server for SCratch Addons. There, you can discuss about it and ask questions if you have difficulties.
 
 ### I think Scratch Addons slows down Scratch. What can I do?
+Go into the settings of the addon and look for warnings about the performance on certain addons and turn those addons off and try again. The warnings look like this:
+![warning](https://user-images.githubusercontent.com/61319150/96947862-e5a8b700-14a9-11eb-8e0d-1ee34fee76c2.png)
 
 
 ### Are there any consequences for enabling everything?
+Sort of, enabling everything will definitely change a lot about scratch, this may make some projects lag, so make sure to look for those warnings (Shown in the previous question), but otherwise, it will just be a major change. Feel free to go through again and turn off addons that you don't need/want on.
