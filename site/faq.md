@@ -41,7 +41,9 @@ By itself, Scratch Addons is just an addon loader. Its main tasks are:
 
 ### Is Scratch Addons safe?
 
-The Scratch Addons extension and it's addons are safe. They have been verified by reviewers on contributors of Scratch Addons and by the extension stores. If you happen to find a security vulnerability please [make a new issue about it](https://github.com/ScratchAddons/ScratchAddons/issues/new/choose) in the [Scratch Addons GitHub repository](github.com/scratchaddons/scratchaddons).
+Scratch Addons should not have any security issues in its most recent version, found in the Chrome Web Store and Firefox's Addon Library. They have been verified by reviewers on contributors of Scratch Addons and by the extension stores. If you happen to find a security vulnerability please contact World_Languages privately by emailing `worldxlanguages (at) gmail.com`. If you don't get a response within 48 hours, please create an issue [here](https://github.com/ScratchAddons/ScratchAddons/issues/).
+
+Read our security policy [here](https://github.com/ScratchAddons/ScratchAddons/security/policy).
 
 ### How can I contribute to Scratch Addons?
 
@@ -49,7 +51,7 @@ Contributing to Scratch Addons is easy.
 
 If you have an expertise in JavaScript, simply contribute some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, then it will be an official addon on our extension.
 
-If you can't code or would just like to help with discussions and suggestions for the addon, feel free to say something on [our issues tab](https://github.com/ScratchAddons/ScratchAddons/issues) or [our discussions tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can suggest new addons to be added, help with a little bit with the development, and much more!
+If you can't code or would just like to help with discussions and suggestions for the addon, feel free to say something on [our issues tab](https://github.com/ScratchAddons/ScratchAddons/issues) or [our Discussions tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can suggest new addons to be added, help with a little bit with the development, and much more!
 
 You can send a feedback on [our feedback page](https://scratchaddons.com/feedback). Your small feedback give us a different point-of-view in the extension development, and, in most times, help us point things that needed attention and fix problems that we didn't think of.
 
@@ -57,21 +59,24 @@ You can send a feedback on [our feedback page](https://scratchaddons.com/feedbac
 
 You can tell us using these three methods.
 
-- Send a feedback end a feedback on [our feedback page](https://scratchaddons.com/feedback).
-- Create a new issue on [the extension repository](https://github.com/ScratchAddons/ScratchAddons/issues) (or [the website repository](https://github.com/ScratchAddons/website/issues).
-- Create a post on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions).
+- Send a feedback on [our feedback page](https://scratchaddons.com/feedback).
+- Create an issue on [the extension repository](https://github.com/ScratchAddons/ScratchAddons/issues) (or [the website repository](https://github.com/ScratchAddons/website/issues)).
+- Create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions).
 
 ### Can I tell people on Scratch about this?
-Sadly, no. The Scratch team has banned [all functional code snippets](https://scratch.mit.edu/discuss/topic/374593/?page=1), meaning that if you talk about it on scratch, it is likely you'll get an alert and possibly even banned. 
+
+You can't. There is a policy that forbids advertising browser extensions/userscripts [here](https://scratch.mit.edu/discuss/post/2907564/).
 
 ### Where can I discuss about Scratch Addons.
 
-You can do that by doing it on [our discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions), or on the discord server for SCratch Addons. There, you can discuss about it and ask questions if you have difficulties.
+You can do that by doing it on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can discuss about it and ask questions if you have difficulties.
 
 ### I think Scratch Addons slows down Scratch. What can I do?
-Go into the settings of the addon and look for warnings about the performance on certain addons and turn those addons off and try again. The warnings look like this:
-![warning](https://user-images.githubusercontent.com/61319150/96947862-e5a8b700-14a9-11eb-8e0d-1ee34fee76c2.png)
 
+Most times you turned on addons that utilise the so-called "traps" on the process. These addons often include a warning, so turn those off and try again. The warnings look like this.
+
+![warning](/assets/images/faq/warning.png)
 
 ### Are there any consequences for enabling everything?
-Sort of, enabling everything will definitely change a lot about scratch, this may make some projects lag, so make sure to look for those warnings (Shown in the previous question), but otherwise, it will just be a major change. Feel free to go through again and turn off addons that you don't need/want on.
+
+If you have a mid-end computer, chances are the performance won't be dropped significantly, unless if you turned on addons that utilise "traps". Otherwise, it will just be a major change. Feel free to go through again and turn off addons that you don't need.
