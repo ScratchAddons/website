@@ -74,6 +74,37 @@
 	
 }
 
+#highlights {
+	
+	.highlights-addon {
+		display: flex;
+	}
+
+	.highlights-img {
+		height: 200px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.highlights-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1 0 0;
+
+		h3 {
+			margin-bottom: 0.5rem
+		}
+
+		p {
+			margin-bottom: 0
+		}
+	}
+
+}
+
 #features {
 	
 	.features-icon {
