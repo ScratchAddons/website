@@ -5,7 +5,12 @@ description: Scratch Addons Changelog
 ---
 
 # v1.2.0
-Changelog TODO
+## Summary
+
+- 
+
+### Addon development changes:
+- 
 # v1.1.1
 ## Summary
 
