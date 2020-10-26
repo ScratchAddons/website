@@ -5,12 +5,30 @@ description: Scratch Addons Changelog
 ---
 
 # v1.2.0
-## Summary
+##  Summary
 
-- 
+- New popup styling, matching the Scratch Addons settings page
+- Light theme option for the Scratch Addons popup and settings page
+- New addon: customizable block colors
+- New addon: studio manager tools
+- New addon: infinite scrolling
+- New addon: clone counter
+- New addon: mouse position
+- New addon: remix tree button on project pages
+- New addon: show exact count
+- Removed addon: data category tweaks, because it caused irreversible bugs to projects (#396)
+- Removed addon: load more scrolling fix, because the issue was fixed by the Scratch Team (#506)
+- Ability to reset all addon settings
+- `Mute for...` option when right clicking the extension icon
+- Fix bug: links to cloud games not working (#500) 
+
 
 ### Addon development changes:
-- 
+- Ability to use `addon.tab.waitForElement(selector, { markAsSeen: true })` to avoid having to manually add class names to elements to mark them as seen (#470)
+- New `urlChange` event on `addon.tab`
+- `notice` property in the manifest
+- Setting presets (#563)
+
 # v1.1.1
 ## Summary
 
