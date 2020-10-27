@@ -30,7 +30,7 @@ description: Scratch Addons Changelog
 - `notice` property in the manifest
 - Setting presets (#563)
 
-# 1.2.0 [NOT RELEASED]
+# v1.2.0 [NOT RELEASED]
 ---
 Same changes as version 1.2.1, but never released because of an issue with perfomance warnings not showing.
 
@@ -61,7 +61,7 @@ Same changes as version 1.2.1, but never released because of an issue with perfo
 - Links to "credits" and "review" pages on settings page.
 
 
-# 1.1.0 [NOT RELEASED]
+# v1.1.0 [NOT RELEASED]
 ---
 Same changes as version 1.1.1, but never released because of a permissions issue.
 
