@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<link rel="canonical" href="{{ page.redirect }}" />
+	<meta http-equiv="refresh" content="0;URL={{ page.redirect }}">
+	<!--[if lt IE 9]>
+		<script type="text/javascript">var window.IE=true</script>
+	<![endif]-->
+	<script type="text/javascript">
+		function redirect() {
+			var url = "{{ page.redirect }}"
+			if (typeof window.IE !== "undefined") {
+				document.getElementsByTagName(a)[0].click()
+			} else { 
+				window.location.replace(url)
+			}
+		}
+	</script>
+	<style>
+	* {
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+	}
+	</style>
+
+</head>
+
+<body onload="redirect()">
+
+	<p>You will be redirected to <a href="{{ page.redirect }}">{{ page.redirect }}<a> shortly.</p>
+
+</body>
+
+</html>
