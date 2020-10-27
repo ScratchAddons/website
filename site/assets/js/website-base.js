@@ -87,19 +87,11 @@ window.addEventListener('load', () => {
 let darkTheme = false
 let extensionStyledTheme = false
 let toggle
-let soraAdded = false
 
 const updateExtensionStyledTheme = () => {
     document.body.classList.toggle("extension-styled")
     extensionStyledTheme = !extensionStyledTheme
     localStorage.setItem("extensionStyledTheme", extensionStyledTheme)
-    if (!soraAdded) {
-        soraAdded = true
-        var linkEl = document.createElement('link')
-        linkEl.href = "https://fonts.googleapis.com/css2?family=Sora&amp;display=swap"
-        linkEl.rel = "stylesheet"
-        document.head.appendChild(linkEl)
-    }
 }
 
 const updateDarkTheme = (shiftPressed = false) => {
