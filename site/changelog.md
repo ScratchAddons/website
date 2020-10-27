@@ -4,7 +4,8 @@ title: Changelog
 description: Scratch Addons Changelog
 ---
 
-# v1.2.0
+# v1.2.1
+---
 ##  Summary
 
 - New popup styling, matching the Scratch Addons settings page
@@ -29,7 +30,12 @@ description: Scratch Addons Changelog
 - `notice` property in the manifest
 - Setting presets (#563)
 
+# 1.2.0 [NOT RELEASED]
+---
+Same changes as version 1.2.1, but never released because of an issue with perfomance warnings not showing.
+
 # v1.1.1
+---
 ## Summary
 
 - Bug fixes
@@ -53,3 +59,7 @@ description: Scratch Addons Changelog
 
 ### Open source project related changes:
 - Links to "credits" and "review" pages on settings page.
+
+# 1.1.0 [NOT RELEASED]
+---
+Same changes as version 1.1.1, but never released because of a permissions issue.
