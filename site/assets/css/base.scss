@@ -280,7 +280,9 @@ body.extension-styled {
 		padding-top: 1.4px;
 		padding-bottom: 1.4px;
 	}
-
+  #cookies-eu-banner {
+        background: #2a2a2a
+  }
 	textarea, input {
 
 		&::placeholder {
@@ -366,10 +368,4 @@ body.dark.extension-styled {
 body:not([data-theme-loaded=true]) {
 	display: none;
 }
-body.extension-styled {
 
-    #cookies-eu-banner {
-        background: #2a2a2a
-    }
-
-}
