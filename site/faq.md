@@ -4,6 +4,7 @@ title: Frequently Asked Questions
 description: This page lists frequently asked questions related to the Scratch Addons extension and project.
 ---
 
+
 This page lists frequently asked questions related to the Scratch Addons extension and project.
 
 - [What is Scratch Addons?](#what-is-scratch-addons)
@@ -99,3 +100,46 @@ If you have a mid-end computer, chances are the performance won't be dropped sig
 ### I got more questions!
 
 If you have more questions that needed answers, you can create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). Someone will try to answer it for you.
+
+<script type="application/ld+json">
+     {
+    	"@context": "https://schema.org",
+    	"@type": "FAQPage",
+    	"mainEntity": [{
+    		"@type": "Question",
+    		"name": "What is Scratch Addons?",
+    		"acceptedAnswer": {
+    			"@type": "Answer",
+    			"text": "Scratch Addons is an 'all-in-one' browser extension for the Scratch website and project editor. It provides features and themes (called addons internally), both for the Scratch website and the project editor. Scratch Addons' mission is to combine all existing Scratch extensions, userscripts and userstyles, developed by several members of the Scratch community, into a single easy-to-access place, while still letting users choose which ones to enable."
+    		}
+    	}, {
+    		"@type": "Question",
+    		"name": "What is an 'addon', exactly?",
+    		"acceptedAnswer": {
+    			"@type": "Answer",
+    			"text": "An addon is similar to an extension or a userscript, but they use special APIs provided by the Scratch Addons extension. These APIs allow addons to run scripts on a Scratch page (userscripts), run scripts on the background (persistent scripts), or apply styles to the Scratch website (userstyles). Userscripts and persistent scripts can use the < code > addon.* < /code> JavaScript APIs, which allow them to obtain Scratch-related information (for example, get the current logged in user) and also use extension APIs (like sending notifications)."
+    		}
+    	}, {
+    		"@type": "Question",
+    		"name": "If everything is an addon, then what does Scratch Addons do?",
+    		"acceptedAnswer": {
+    			"@type": "Answer",
+    			"text": "By itself, Scratch Addons is just an addon loader. Its main tasks are to: <br> - Allow users to enable,disable and configure addons. <br> - Run addons and provide APIs to them. <br> - Provide global state to addons(for example, the addon.auth API). <br> - Pollute prototypes for use by addon userscripts. <br> - Provide ways to access and modify Redux state. <br> - Avoid addons from interfering with each other. <br> - Avoid duplicate work from different addons."
+    		}
+    	}, {
+    		"@type": "Question",
+    		"name": "Is Scratch Addons safe? How can I report a security vulnerability?",
+    		"acceptedAnswer": {
+    			"@type": "Answer",
+    			"text": "Scratch Addons should not have any security issues/vulnerability in its most recent version, found in the Chrome Web Store and addons.mozilla.org. They have been verified by reviewers on contributors of Scratch Addons and by the extension stores. <br> If you happen to find a security vulnerability please contact World_Languages privately by emailing `worldxlanguages (at) gmail.com`.If you don 't get a response within 48 hours, please create an issue <a href=\"https://github.com/ScratchAddons/ScratchAddons/issues/\">here</a>. <br> Read our security policy <a href=\"https://github.com/ScratchAddons/ScratchAddons/security/policy\">here</a>."
+    		}
+    	}, {
+    		"@type": "Question",
+    		"name": "Will my account be safe when using Scratch Addons?",
+    		"acceptedAnswer": {
+    			"@type": "Answer",
+    			"text": "Scratch Addons doesn't use your account credentials to essentially work. In fact, you can be logged out from Scratch, and Scratch Addons will still work. Scratch Addons will only send requests based on the cookies that you have, which is supplied by the browser for each request, so some addons like Scratch Messaging won't work when you are logging in, but it won't affect other parts of the extension. Addons on Scratch Addons also have been audited by multiple contributors on the repository,so no - one can just slip some malicious code under our eyes."
+    		}
+    	}]
+    }
+    </script>
