@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.1.1"
 group :jekyll_plugins do
   gem 'jekyll-autoprefixer'
   gem 'jekyll-minifier'
+  gem 'jekyll-sitemap'
 end
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", "~> 1.2"
