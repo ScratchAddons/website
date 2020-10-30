@@ -5,11 +5,12 @@ on:
       - master
     paths:
       - .github/workflows/update-changelog.yml
+
 name: Update Changelog
 
 jobs:
-  deploy:
-    name: Deployment
+  update:
+    name: Update
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code

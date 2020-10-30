@@ -13,8 +13,8 @@ on:
 name: Site Build Testing
 
 jobs:
-  deploy:
-    name: Deployment
+  test:
+    name: Testing
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
