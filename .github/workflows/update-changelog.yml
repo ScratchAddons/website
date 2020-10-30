@@ -69,6 +69,7 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
           commit-message: Update changelog
           branch: create-pull-request/changelog
+          committer: scratchaddons-bot[bot] <73682299+scratchaddons-bot[bot]@users.noreply.github.com>
           delete-branch: true
           title: Update changelog
           body: |
