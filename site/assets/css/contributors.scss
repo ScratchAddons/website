@@ -50,10 +50,18 @@
 					line-height: 1;
 				}
 			
-				.contribution-count {
+				.contribution-details {
 					font-size: 0.75rem;
 					line-height: 1;
 					margin-bottom: 0
+				}
+
+				.contribution-commits {
+					background: $bs-primary;
+					padding: 0 5px;
+					margin-left: 0.125rem;
+					border-radius: 1rem;
+					color: white;
 				}
 			}	
 

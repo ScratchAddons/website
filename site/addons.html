@@ -1,0 +1,19 @@
+---
+layout: default
+title: Addons
+description:
+---
+
+<h1>Addons</h1>
+
+<div class="card-columns container">
+	{% for addon in site.data.addons %}
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">{{ addon.name }}</h5>
+				<h6 class="card-subtitle mb-2 text-muted">{{ addon.id }}</h6>
+				<p class="card-text">{{ addon.description }}</p>
+			</div>
+		</div>
+	{% endfor %}
+</div>

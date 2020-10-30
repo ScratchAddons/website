@@ -2,19 +2,28 @@ title: ""
 email: ""
 description: ""
 baseurl: ""
-url: ""
+url: "https://scratchaddons.com"
 
+source: site
 markdown: kramdown
-
-exclude: ["README.md", "CODE_OF_CONDUCT.md", "LICENSE"]
 
 plugins:
 - jekyll-autoprefixer
 - jekyll-minifier
+- jekyll-sitemap
 
 autoprefixer:
   browsers:
-  - last 10 versions
+  - ">= 1%"
+  - last 1 major version
+  - not dead
+  - Chrome >= 60
+  - Firefox >= 60
+  - Edge >= 16
+  - iOS >= 10
+  - Safari >= 10
+  - Android >= 6
+  - not Explorer <= 11
 
 jekyll-minifier:
   uglifier_args:

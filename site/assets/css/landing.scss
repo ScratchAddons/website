@@ -4,28 +4,52 @@
 @import "variables";
 
 #intro {
-	padding: 20px;
-	background-color: $scratch-orange;
-	color: white;
-	text-align: center;
-	
-	h1 {
-		margin: 0 0 0.5rem 0;
-		padding: 0
+	// background: linear-gradient(to right bottom,#f7f5fb 50%,#fff 50%);
+
+	// background-color: $scratch-orange;
+	// color: white;
+
+	a:not(.btn-white) {
+		color: white;
+		text-decoration: dotted;
 	}
 
 	img {
-		width: 150px;
-		height: 150px
+		max-height: 100%;
+		max-width: 100%;
+		box-shadow: 0px 0px 1rem 0px rgba(0,0,0,0.5);
+	}
+
+	.carousel {
+
+		.carousel-caption {
+			background-color: black;
+			box-shadow: 0px 0px 5px black;
+			border-radius: 0.25rem;
+			opacity: 0;
+			transition: opacity .15s linear
+		}
+
+		&:hover .carousel-caption {
+			opacity: 0.9;
+		}
+
+	}
+	
+
+	#intro-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	#intro-img {
+		height: 75vh
 	}
 
 	#install-intro {
-
-		margin-top: 1.5rem;
-		box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
-		background-color: white;
-		border-color: white;
-		color: $bs-default-black;
+		box-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.75);
 		
 		p {
 			margin-bottom: 0;
@@ -40,8 +64,13 @@
 		}
 
 	}
-	
-	
+
+	[data-toggle="tooltip"] {
+		background-image: linear-gradient(to right, white 75%, transparent 75%);
+		background-position: 0 1.55rem;
+		background-repeat: repeat-x;
+		background-size: 10px 1.5px;
+	}
 	
 }
 
@@ -81,20 +110,17 @@
 	
 	.btn {
 		font-size: 1.25rem;
-		color: white
 	}
 
 }
 
 main {
-	padding: 0;
+	// padding-top: 0;
 
 	section {
-		text-align: center;
 		margin-bottom: 2.5rem
 	}
 }
-
 
 h2 {
 	margin-bottom: 1rem
@@ -109,18 +135,6 @@ h2 {
 
 body.dark {
 
-	#intro {
-		background-color: $dark-dp-2;
-
-		img {
-			margin-bottom: 0.75rem;
-		}
-
-		#install-intro {
-			margin-top: 0.75rem;
-		}
-	}
-
 	#features {
 
 		.features-circle {
@@ -129,43 +143,14 @@ body.dark {
 
 	}
 
-	#install {
-		
-		.btn {
-			color: $bs-default-black !important;
-			background-color: white;
-			border-color: white;
-
-			&:hover {
-				background-color: #e2e6ea;
-				border-color: #dae0e5;	
-			}
-
-			// color: white;
-			// background-color: $dark-dp-16;
-			// border-color: $dark-dp-16;
-
-			// &:hover {
-			// 	background-color: $dark-dp-1;
-			// 	border-color: $dark-dp-1;
-			// }
-
-		}
-		
-	}
-
 }
 
 body.dark.extension-styled {
 
-	#intro {
-		background-color: #2a2a2a;
-	}
-
 	#features {
 
 		.features-circle {
-			background-color: #2a2a2a;
+			background-color: $dark-ext-level-2;
 		}
 
 	}
