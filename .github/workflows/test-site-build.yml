@@ -1,16 +1,16 @@
 on: 
-  push:
+  pull_request:
     branches:
       - master
     paths:
-      - site/.github/workflows/*
+      - .github/workflows/*
       - site/**
       - _config.yml
       - CNAME
       - Gemfile
       - Gemfile.lock
 
-name: Site Deployment
+name: Site Build Testing
 
 jobs:
   deploy:
@@ -31,10 +31,3 @@ jobs:
           custom_opts: --config _config.yml --trace
         env:
           JEKYLL_ENV: production
-      - name: Deploy site
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          force_orphan: true
-          cname: scratchaddons.com
