@@ -64,4 +64,3 @@ Same changes as version 1.2.1, but never released because of an issue with perfo
 # v1.1.0 [NOT RELEASED]
 ---
 Same changes as version 1.1.1, but never released because of a permissions issue.
-
