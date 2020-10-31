@@ -359,11 +359,10 @@ body.dark.extension-styled {
 
 .no-animation {
 	* {
-		transition-duration: 0s !important
+		transition: none !important
 	}
 }
 
 body:not([data-theme-loaded=true]) {
 	display: none;
 }
-
