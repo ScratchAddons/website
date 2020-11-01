@@ -125,31 +125,46 @@ const types = {
 	},
 }
 
+const joinAnd = ((data, separator = "and") => {
+	// Based on https://github.com/rasshofer/and/blob/master/and.js
+	const input = [...data], items = input.length, lastItem = input.pop();
+	if (input.length) return `${input.join(', ')}${items > 2 ? ',': ''} ${separator} ${lastItem}`.trim()
+	else return lastItem
+})
+
+
 const run = async () => {
 	
 	let contributors = []
 
 	await Promise.all([
+
+		// Fetch contributors data from ScratchAddons/contributors, with all-contributors spec
 		(() => new Promise(async callback => {
-			let response = await (await fetch("https://raw.githubusercontent.com/ScratchAddons/contributors/master/.all-contributorsrc")).json()
-			console.log(contributors)
-			console.log(response)
-			response.contributors.forEach(responseItem => {
-				let index = contributors.findIndex(contributorsItem => contributorsItem.login === responseItem.login)
-				if (index === -1) {
-					contributors.push({})
-					index = contributors.length - 1
-				}
-				Object.assign(contributors[index], responseItem)
-			})
-			console.log(contributors)
-			console.log(response)
-			callback()
+			setTimeout(async () => {
+				let response = await (await fetch("https://raw.githubusercontent.com/ScratchAddons/contributors/master/.all-contributorsrc")).json()
+				// console.log(contributors)
+				// console.log(response)
+				response.contributors.forEach(responseItem => {
+					let index = contributors.findIndex(contributorsItem => contributorsItem.login === responseItem.login)
+					if (index === -1) {
+						contributors.push({})
+						index = contributors.length - 1
+					}
+					Object.assign(contributors[index], responseItem)
+				})
+				// console.log(contributors)
+				// console.log(response)
+				callback()
+			}, 3000);
 		}))(),
+
+		// Fetch commit count data from all repositories
 		(() => new Promise(async callback => {
 			let response = await (await fetch("https://sa-contributors.hans5958.workers.dev")).json()
-			console.log(contributors)
-			console.log(response)
+			// console.log(contributors)
+			// console.log(response)
+			while (contributors.length === 0) await new Promise(resolve => setTimeout(resolve, 250))
 			response.forEach(responseItem => {
 				let index = contributors.findIndex(contributorsItem => contributorsItem.login === responseItem.login)
 				if (index === -1) {
@@ -160,66 +175,73 @@ const run = async () => {
 				delete responseItem.contributions 
 				Object.assign(contributors[index], responseItem)
 			})
-			console.log(contributors)
-			console.log(response)
+			// console.log(contributors)
+			// console.log(response)
 			callback()
 		}))()
 	])
 
 	document.querySelector(".lds-ellipsis").hidden = true
 
-	contributors.forEach((contributor, index) => {
+	// Create elements based on the object
+	contributors.forEach(contributor => {
 		
+		// Contributor name text (top part)
 		let nameEl = document.createElement("p")
-		nameEl.className = "user-name"
+		nameEl.className = "contributor-name"
 		nameEl.textContent = contributor.login
 
-		let contribDetailsEl = document.createElement("p")
-		contribDetailsEl.className = "contribution-details"
-		contributor.contributions.forEach(i => {
+		// Contributor details (bottom part)
+		let detailsEl = document.createElement("p")
+		detailsEl.className = "contribution-details"
+		if (contributor.contributions) contributor.contributions.forEach(i => {
 			let contributionEl = document.createElement("span")
 			contributionEl.title = types[i].description
 			contributionEl.dataset.toggle = "tooltip"
 			contributionEl.dataset.placement = "bottom"
 			contributionEl.innerHTML = types[i].symbol
-			contribDetailsEl.appendChild(contributionEl)
+			detailsEl.appendChild(contributionEl)
 		})
 		if (contributor.commits) {
 			let contributionEl = document.createElement("span")
 			contributionEl.classList.add("contribution-commits")
-			contributionEl.insertAdjacentHTML("beforeend", '<span class="iconify" data-icon="octicon:git-commit-16"></span>')
-			contributionEl.insertAdjacentHTML("beforeend", contributor.commits)
-			contribDetailsEl.appendChild(contributionEl)
+			contributionEl.insertAdjacentHTML("beforeend", `<span class="iconify" data-icon="octicon:git-commit-16"></span> ${contributor.commits}`)
+			wrapEl.setAttribute("aria-label", `${contributor.commits} commits`)
+			detailsEl.appendChild(contributionEl)
 		}
 
-		let iconEl
+		// Contributor icon
+		let iconEl		
 		iconEl = document.createElement("img")
-		iconEl.className = "user-icon"
+		iconEl.className = "contributor-icon"
 		iconEl.src = contributor.avatar_url
-		iconEl.alt = `${contributor.login} contributes ${contributor.contributions} commit${contributor.contributions == 1 ? "" : "s"}`
+		iconEl.alt = `${contributor.login} profile picture`
 
-		let iconWrap = document.createElement("div")
-		iconWrap.className = "icon-wrap"
-		iconWrap.appendChild(iconEl)
-
+		// Contributor info wrapper
 		let infoWrap = document.createElement("div")
-		infoWrap.className = "info-wrap"
+		infoWrap.className = "contributor-info"
 		infoWrap.appendChild(nameEl)
-		infoWrap.appendChild(contribDetailsEl)
+		infoWrap.insertAdjacentHTML("beforeend", " ")
+		infoWrap.appendChild(detailsEl)
 
+		// Link wrapper
 		let linkEl = document.createElement("a")
 		linkEl.target = "_blank"
 		linkEl.href = `https://github.com/${contributor.login}`
-		linkEl.appendChild(iconWrap)
+		linkEl.appendChild(iconEl)
 		linkEl.appendChild(infoWrap)
 
-		let wrapEl = document.createElement("div")
-		wrapEl.className = "contributor"
-		wrapEl.appendChild(linkEl)
+		// Label that explains the contributor (accessibility)
+		let contributorLabel = `${contributor.login} `
+		if (contributor.contributions) contributorLabel += `contributes on ${joinAnd(contributor.contributions)}`
+		if (contributor.contributions && contributor.commits) contributorLabel += " and "
+		if (contributor.commits) contributorLabel += `created ${contributor.commits} commit${contributor.commits === 1 ? "" : "s"}`
 		
-		let colEl = document.createElement("div")
-		colEl.className = "col-12 col-sm-6 col-md-4 col-xl-3"
-		colEl.appendChild(wrapEl)
+		// Contributor wrapper (wraps link wrapper)
+		let wrapEl = document.createElement("div")
+		wrapEl.className = "contributor col-12 col-sm-6 col-md-4 col-xl-3"
+		wrapEl.setAttribute("aria-label", contributorLabel)
+		wrapEl.appendChild(linkEl)
 
 		// if (value % 4 === 0) {
 		// 	let rowEl = document.createElement("div")
@@ -227,7 +249,8 @@ const run = async () => {
 		// 	document.querySelector("#account").appendChild(rowEl)
 		// }
 
-		document.querySelector("#contributors .row").appendChild(colEl)
+		// Appends the contributor wrapper to the row element
+		document.querySelector("#contributors .row").appendChild(wrapEl)
 
 	});
 }
