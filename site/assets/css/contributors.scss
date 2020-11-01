@@ -11,63 +11,69 @@
 		padding: 0
 	}
 
-	.contributor {
-		color: inherit;
+}
+
+.contributor {
+	color: inherit;
+	border-radius: .25rem;
+	transition: background-color .15s ease-in-out;
+
+	&:hover {
+		background: darken(white, 5%);
+	}
+	
+	a {
 		padding: 0.375rem 15px;
-		border-radius: .25rem;
-		transition: background-color .15s ease-in-out;
+		color: inherit;
+		display: flex;
 
 		&:hover {
-			background: darken(white, 5%);
+			text-decoration: none
 		}
-		
-		a {
-			color: inherit;
-			display: flex;
 
-			&:hover {
-				text-decoration: none
-			}
-
-			.user-icon {
-				margin-right: 0.75rem;
-				margin-top: auto;
-				height: 64px;
-				width: 64px;	
-				object-fit: initial;
-			}	
-		
-			.info-wrap {
-				display: flex;
-				flex: 1 0 0;
-				max-width: 100%;
-				flex-direction: column;
-				justify-content: center;
-
-				.user-name {
-					font-size: 1.25rem;
-					line-height: 1;
-				}
-			
-				.contribution-details {
-					font-size: 0.75rem;
-					line-height: 1;
-					margin-bottom: 0
-				}
-
-				.contribution-commits {
-					background: $bs-primary;
-					padding: 0 5px;
-					margin-left: 0.125rem;
-					border-radius: 1rem;
-					color: white;
-				}
-			}	
-
-		}
-	
 	}
 
+}
+
+.contributor-icon {
+	margin-right: 0.75rem;
+	margin-top: auto;
+	height: 64px;
+	width: 64px;	
+	object-fit: initial;
+}	
+
+.contributor-info {
+	display: flex;
+	flex: 1 0 0;
+	max-width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	
+}	
+
+.contributor-name {
+	font-size: 1.25rem;
+	line-height: 1;
+	word-break: break-all;
+}
+
+.contribution-details {
+	font-size: 0.75rem;
+	line-height: 1;
+	margin-bottom: 0
+}
+
+.contribution-commits {
+	background: $bs-primary;
+	padding: 0 5px;
+	margin-left: 0.125rem;
+	border-radius: 1rem;
+	color: white;
+
+	&:only-child {
+		margin-left: 0
+	}
 }
 
 .lds-ellipsis {
