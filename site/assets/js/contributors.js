@@ -206,7 +206,7 @@ const run = async () => {
 			let contributionEl = document.createElement("span")
 			contributionEl.classList.add("contribution-commits")
 			contributionEl.insertAdjacentHTML("beforeend", `<span class="iconify" data-icon="octicon:git-commit-16"></span> ${contributor.commits}`)
-			wrapEl.setAttribute("aria-label", `${contributor.commits} commits`)
+			contributionEl.setAttribute("aria-label", `${contributor.commits} commits`)
 			detailsEl.appendChild(contributionEl)
 		}
 
