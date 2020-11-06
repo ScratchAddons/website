@@ -101,3 +101,4 @@ If you have a mid-end computer, chances are the performance won't be dropped sig
 ### I got more questions!
 
 If you have more questions that needed answers, you can create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). Someone will try to answer it for you.
+

@@ -49,8 +49,6 @@ header {
 		}
 
 		#install-nav .nav-link {
-			margin-left: 0.5rem;
-	
 			@media (min-width: $bs-breakpoint-md) {
 				color: $bs-default-black !important;
 				background-color: white;
@@ -273,6 +271,8 @@ body.dark {
 // =============================================================
 
 body.extension-styled {
+	@import url("https://fonts.googleapis.com/css2?family=Sora&amp;display=swap");
+
 	font-family: "Sora",$bs-font-family-sans-serif;
 	font-size-adjust: 0.47;
 
@@ -295,6 +295,12 @@ body.extension-styled {
 // =============================================================
 
 body.dark.extension-styled {
+
+	header {
+		img {
+			transform: scale(1.75);
+		}
+	}
 
 	textarea, input {
 		background-color: $dark-dp-1;
@@ -353,7 +359,7 @@ body.dark.extension-styled {
 
 .no-animation {
 	* {
-		transition-duration: 0s !important
+		transition: none !important
 	}
 }
 
