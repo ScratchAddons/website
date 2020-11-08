@@ -6,7 +6,7 @@ on:
     paths:
       - .github/workflows/update-changelog.yml
 
-name: Update Changelog
+name: Changelog Update
 
 jobs:
   update:
