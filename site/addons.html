@@ -1,27 +1,33 @@
 ---
 layout: default
 title: Addons
-description:
+description: This page lists all of the addons that are implemented on Scratch Addons.
 ---
 
 <h1>Addons</h1>
 
-<p>This page lists all of the addons that are implemented on Scratch Addons.</p>
+<div class="container">
 
-<p>P/S: This page is incomplete, and we need your help to complete the images. Read more <a href="https://github.com/ScratchAddons/website/issues/61">here</a>.</p>
+	<p>This page lists all of the addons that are implemented on Scratch Addons.</p>
 
-<div class="card-columns container">
-	{% for addon in site.data.addons %}
-		<div class="card">
-			{% capture image %}{% file_exists {{ addon.image }} %}{% endcapture %}
-			{% if image == "true" %}
-				<img src="{{ addon.image }}" class="card-img-top" alt="{{ addon.name }}">
-			{% endif %}
-			<div class="card-body">
-				<h5 class="card-title">{{ addon.name }}</h5>
-				<h6 class="card-subtitle mb-2 text-muted">{{ addon.id }}</h6>
-				<p class="card-text">{{ addon.description }}</p>
+	<p class="font-italic">This page is incomplete, and we need your help to complete the images. Read more <a href="https://github.com/ScratchAddons/website/issues/61">here</a>.</p>
+
+	<hr />
+
+	<div class="card-columns">
+		{% for addon in site.data.addons %}
+			<div class="card">
+				{% capture image %}{% file_exists {{ addon.image }} %}{% endcapture %}
+				{% if image == "true" %}
+					<img src="{{ addon.image }}" class="card-img-top" alt="{{ addon.name }}">
+				{% endif %}
+				<div class="card-body">
+					<h5 class="card-title">{{ addon.name }}</h5>
+					<h6 class="card-subtitle mb-2 text-muted">{{ addon.id }}</h6>
+					<p class="card-text">{{ addon.description }}</p>
+				</div>
 			</div>
-		</div>
-	{% endfor %}
+		{% endfor %}
+	</div>
+
 </div>
