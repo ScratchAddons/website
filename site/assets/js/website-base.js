@@ -16,7 +16,7 @@ const waitForElement = (selector) => {
             }
         })
 
-        observer.observe(document.documentElement, {
+        observer.observe(document.body, {
             childList: true,
             subtree: true
         })
@@ -153,7 +153,7 @@ if (localStorage.getItem("darkTheme") === "true") {
     localStorage.setItem("darkTheme", false)
 }
 
-waitForElement("body").then(() => document.body.dataset.themeLoaded = true)
+document.body.dataset.themeLoaded = true
     
 waitForElement("#dark-toggle").then(() => {
 
