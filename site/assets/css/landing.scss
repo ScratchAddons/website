@@ -36,7 +36,6 @@
 
 	}
 	
-
 	#intro-info {
 		display: flex;
 		flex-direction: column;
@@ -49,7 +48,10 @@
 	}
 
 	#install-intro {
-		box-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.75);
+		
+		&:not(:focus) {
+			box-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.75);
+		}
 		
 		p {
 			margin-bottom: 0;
