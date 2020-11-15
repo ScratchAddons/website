@@ -66,7 +66,7 @@ You can't, and please don't. There is a policy that forbids advertising browser 
 
 Contributing to Scratch Addons is not that hard.
 
-If you can code on JavaScript, simply contribute some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, then it will be an official addon on our extension.
+If you can code on JavaScript, simply contribute some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, we will accept your PR, and if it's an addon, it will be an addon on our extension. Read more about how to create an addon [here](https://github.com/ScratchAddons/ScratchAddons/wiki/Creating-an-addon).
 
 If you can't code or would just like to help with discussions and suggestions for the addon, feel free to say something on [our issues tab](https://github.com/ScratchAddons/ScratchAddons/issues) or [our Discussions tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can suggest new addons to be added, help with a little bit with the development, and much more!
 
