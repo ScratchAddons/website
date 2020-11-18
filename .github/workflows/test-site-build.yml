@@ -31,3 +31,10 @@ jobs:
           custom_opts: --config _config.yml --trace
         env:
           JEKYLL_ENV: production
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.1
+        with:
+          name: Built Site
+          path: ./_site
+
+        
