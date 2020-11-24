@@ -226,6 +226,19 @@ body.dark {
 
 }
 
+body.extension-styled {
+
+	background-color: $light-ext-level-1;
+	color: $bs-default-black;
+	--header-bg: #{$scratch-orange};
+	--header-cnt: white;
+	--intro-heading-bg: #{$scratch-orange};
+	--intro-heading-cnt: white;
+	--footer-bg: #{$light-ext-level-3};
+	--footer-cnt: #{$bs-default-black};
+
+}
+
 body.dark.extension-styled {
 
 	background-color: $dark-ext-level-1;
@@ -296,9 +309,9 @@ body.dark {
 // =============================================================
 
 body.extension-styled {
-	@import url("https://fonts.googleapis.com/css2?family=Sora&amp;display=swap");
+	@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
 
-	font-family: "Sora",$bs-font-family-sans-serif;
+	font-family: "Sora", $bs-font-family-sans-serif;
 	font-size-adjust: 0.47;
 
 	header {
@@ -312,6 +325,18 @@ body.extension-styled {
 			font-size-adjust: 0.47;
 		}
 
+	}
+
+	.card {
+		border-color: $light-ext-level-3;
+	}
+
+	.card-body {
+		background-color: $light-ext-level-2;
+	}
+
+	.card-header, .card-footer {
+		background-color: $light-ext-level-2
 	}
 }
 
