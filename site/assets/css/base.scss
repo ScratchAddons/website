@@ -83,7 +83,7 @@ footer {
 	background-color: var(--footer-bg);
 	color: var(--footer-cnt);
 	
-	div {
+	> div {
 		padding: 1rem 0;
 		display: flex;
 		justify-content: space-between;
@@ -110,18 +110,38 @@ footer {
 			display: block;
 		}
 
-		&:nth-of-type(1) {
-			flex: 0 0 100%;
-			max-width: 100%;
+		// &:nth-of-type(1) {
+		// 	flex: 0 0 100%;
+		// 	max-width: 100%;
 
-			@media (min-width: $bs-breakpoint-md) {
-				flex: 1 0 0;
-				max-width: 100%
+		// 	@media (min-width: $bs-breakpoint-md) {
+		// 		flex: 1 0 0;
+		// 		max-width: 100%
+		// 	}
+		// }
+		
+	}
+
+	.footer-intro {
+
+		> * {
+			display: block;
+			margin-bottom: 0.25rem;
+			color: var(--footer-cnt);
+
+			&:last-of-type {
+				margin-bottom: 0
 			}
 		}
 		
+		img {
+			height: 37.5px; 
+			width: 37.5px; 
+			transform: scale(1.25)
+		}
+
 	}
-	
+	 
 }
 
 main > h1:nth-of-type(1),
