@@ -15,6 +15,8 @@ This page lists frequently asked questions related to the Scratch Addons extensi
 - [Will my account be safe when using Scratch Addons?](#will-my-account-be-safe-when-using-scratch-addons)
 - [Can I tell people about Scratch Addons on Scratch?](#can-i-tell-people-about-scratch-addons-on-scratch)
 - [How can I contribute to Scratch Addons?](#how-can-i-contribute-to-scratch-addons)
+- [How can I put my name on the contributors page?](#how-can-i-put-my-name-on-the-contributors-page)
+- [How can I remove my name on the contributors page?](#how-can-i-remove-my-name-on-the-contributors-page)
 - [What can I do if I find a problem?](#what-can-i-do-if-i-find-a-problem)
 - [I think you missed a feature. What can I do?](#i-think-you-missed-a-feature-what-can-i-do)
 - [Where can I discuss about Scratch Addons?](#where-can-i-discuss-about-scratch-addons)
@@ -50,7 +52,7 @@ Scratch Addons should not have any security issues/vulnerability in its most rec
 
 If you happen to find a security vulnerability please contact World_Languages privately by emailing `worldxlanguages (at) gmail.com`. If you don't get a response within 48 hours, please create an issue [here](https://github.com/ScratchAddons/ScratchAddons/issues/).
 
-Read our security policy [here](https://github.com/ScratchAddons/ScratchAddons/security/policy).
+You can either [read our security policy](https://github.com/ScratchAddons/ScratchAddons/security/policy), or [check our advisories that we have published](https://github.com/ScratchAddons/ScratchAddons/security/advisories?state=published).
 
 ### Will my account be safe when using Scratch Addons?
 
@@ -64,13 +66,27 @@ You can't, and please don't. There is a policy that forbids advertising browser 
 
 ### How can I contribute to Scratch Addons?
 
+Firstly, thank you for your interest of contributing to Scratch Addons. We appreciate your interest and your later contibutions. 
+
 Contributing to Scratch Addons is not that hard.
 
-If you can code on JavaScript, simply contribute some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, we will accept your PR, and if it's an addon, it will be an addon on our extension. Read more about how to create an addon [here](https://github.com/ScratchAddons/ScratchAddons/wiki/Creating-an-addon).
+If you can code on JavaScript, simply do some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, we will accept your PR, and if it's an addon, it will be an addon on our extension. Read more about how to create an addon [here](https://github.com/ScratchAddons/ScratchAddons/wiki/Creating-an-addon).
 
 If you can't code or would just like to help with discussions and suggestions for the addon, feel free to say something on [our issues tab](https://github.com/ScratchAddons/ScratchAddons/issues) or [our Discussions tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can suggest new addons to be added, help with a little bit with the development, and much more!
 
-You can send a feedback on [our feedback page](https://scratchaddons.com/feedback). Your small feedback give us a different point-of-view in the extension development, and, in most times, help us point things that needed attention and fix problems that we didn't think of.
+If you can speak a language other than English, you can help translate Scratch Addons to your language. Read more about how you can do it [here](#). <!-- TODO -->
+
+Lastly, you can send a feedback on [our feedback page](https://scratchaddons.com/feedback). Your small feedback give us a different point-of-view in the extension development, and, in most times, help us point things that needed attention and fix problems that we didn't think of.
+
+We're also open for contributons of other aspects than the extension. You can view our repositories on [our GitHub organization page](https://github.com/ScratchAddons) and help us build them.
+
+### How can I put my name on the [contributors page](contributors.html)?
+
+Please read and follow the instruction of [this issue](https://github.com/ScratchAddons/contributors/issues/12) in order to have your name on said page.
+
+### How can I remove my name on the [contributors page](contributors.html)?
+
+If you don't want your name to be removed on the page, please tell us by creating an issue on [our contributors repository](https://github.com/ScratchAddons/contributors/issues/), or by other means of contact. We're sorry for the inconvenience.
 
 ### What can I do if I find a problem?
 
