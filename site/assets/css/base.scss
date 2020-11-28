@@ -297,6 +297,10 @@ body.dark {
 		background-color: $dark-dp-4;
 	}
 
+	.text-muted {
+		color: $dark-low-emphasis !important
+	}
+
 	#dark-toggle {
 		color: white;
 		background-color: $scratch-orange;
@@ -338,6 +342,7 @@ body.extension-styled {
 	.card-header, .card-footer {
 		background-color: $light-ext-level-2
 	}
+	
 }
 
 // =============================================================
