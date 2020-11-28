@@ -36,57 +36,6 @@ header {
 	background-color: var(--header-bg);
 	color: var(--header-cnt);
 	
-	.navbar-nav {
-		margin-left: auto;
-
-		.nav-link {
-			color: var(--header-cnt) !important;
-			@media (min-width: $bs-breakpoint-md) {
-				border-radius: .25rem;
-				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-				margin-left: 0.125rem
-			}
-		}
-
-		#install-nav .nav-link {
-			margin-left: 0.5rem;
-	
-			@media (min-width: $bs-breakpoint-md) {
-				color: $bs-default-black !important;
-				background-color: white;
-				border-color: white;
-	
-				&:hover {
-					color: $bs-default-black !important;
-					background-color: #e2e6ea;
-					border-color: #dae0e5;	
-				}
-			}
-	
-			// &.install-firefox:hover {	
-			// 	&:after {
-			// 		content: " for Firefox"
-			// 	}
-			// }
-	
-			// &.install-chrome:hover {	
-			// 	&:after {
-			// 		content: " for Chrome"
-			// 	}
-			// }
-	
-		}
-
-		.nav-link:hover {
-			@media (min-width: $bs-breakpoint-md) {
-				color: $bs-default-black !important;
-				background-color: white;
-				border-color: white;
-			}
-		}
-
-	}
-	
 	img {
 		height: 30px;
 		width: 30px;
@@ -96,7 +45,37 @@ header {
 	.navbar-brand img {
 		margin-right: 0.5rem
 	}
+
+	.navbar-dark .navbar-nav .nav-link {
+		color: var(--header-cnt);
 	
+		@media (min-width: $bs-breakpoint-md) {
+	
+			border-radius: .25rem;
+			transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+			margin-left: 0.125rem;
+	
+			&:hover,
+			&:not(:disabled):not(.disabled).active,
+			&.focus, &:focus {
+				color: $bs-default-black;
+				background-color: white;
+				border-color: white;
+			}
+			
+			&.focus, &:focus {
+				box-shadow: 0 0 0 .2rem rgba(216,217,219,.5);
+			}
+		
+			&.disabled, &:disabled {
+				background-color: #f8f9fa;
+				border-color: #f8f9fa;
+			}
+	
+		}
+		
+	}
+		
 }
 
 footer {
@@ -154,8 +133,7 @@ main > h1:nth-of-type(1),
 	text-align: center;
 }
 
-.btn-white,
-body.dark .dark-btn-white {
+@mixin btn-white {
 	color: $bs-default-black;
 	background-color: white;
 	border-color: white;
@@ -175,8 +153,48 @@ body.dark .dark-btn-white {
 		border-color: #dae0e5;
 		box-shadow: 0 0 0 .2rem rgba(216,217,219,.5);
 	}
+
+	&.disabled, &:disabled {
+		background-color: #f8f9fa;
+		border-color: #f8f9fa;
+	}
+
 }
 
+.btn-white,
+body.dark .dark-btn-white {
+	@include btn-white()
+}
+
+#install-nav .nav-link {
+	@media (min-width: $bs-breakpoint-md) {
+		@include btn-white()
+	}
+}
+
+#dark-toggle {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background-color: black;
+	position: fixed;
+	top: calc(100% - 5rem);
+	left: calc(100% - 5rem);
+	opacity: 25%;
+	padding: 1rem;
+	color: white;
+	z-index: 1100;
+	transition: opacity .15s ease-in-out;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	&:hover {
+		opacity: 90%
+	}
+}
 
 // =============================================================
 //                            COLORS
@@ -205,6 +223,19 @@ body.dark {
 	--intro-heading-cnt: white;
 	--footer-bg: #{$dark-dp-2};
 	--footer-cnt: white;
+
+}
+
+body.extension-styled {
+
+	background-color: $light-ext-level-1;
+	color: $bs-default-black;
+	--header-bg: #{$scratch-orange};
+	--header-cnt: white;
+	--intro-heading-bg: #{$scratch-orange};
+	--intro-heading-cnt: white;
+	--footer-bg: #{$light-ext-level-3};
+	--footer-cnt: #{$bs-default-black};
 
 }
 
@@ -266,6 +297,15 @@ body.dark {
 		background-color: $dark-dp-4;
 	}
 
+	.text-muted {
+		color: $dark-low-emphasis !important
+	}
+
+	#dark-toggle {
+		color: white;
+		background-color: $scratch-orange;
+	}
+
 }
 
 // =============================================================
@@ -273,7 +313,9 @@ body.dark {
 // =============================================================
 
 body.extension-styled {
-	font-family: "Sora",$bs-font-family-sans-serif;
+	@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+	font-family: "Sora", $bs-font-family-sans-serif;
 	font-size-adjust: 0.47;
 
 	header {
@@ -288,6 +330,19 @@ body.extension-styled {
 		}
 
 	}
+
+	.card {
+		border-color: $light-ext-level-3;
+	}
+
+	.card-body {
+		background-color: $light-ext-level-2;
+	}
+
+	.card-header, .card-footer {
+		background-color: $light-ext-level-2
+	}
+	
 }
 
 // =============================================================
@@ -295,6 +350,12 @@ body.extension-styled {
 // =============================================================
 
 body.dark.extension-styled {
+
+	header {
+		img {
+			transform: scale(1.75);
+		}
+	}
 
 	textarea, input {
 		background-color: $dark-dp-1;
@@ -332,28 +393,9 @@ body.dark.extension-styled {
 //               OTHER STUFF RELATED TO THEMEING
 // =============================================================
 
-#dark-toggle {
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
-	background-color: gray;
-	position: fixed;
-	top: calc(100% - 5rem);
-	left: calc(100% - 5rem);
-	opacity: 50%;
-	padding: 1rem;
-	color: white;
-	z-index: 1100;
-
-	svg {
-		width: 100%;
-		height: 100%;
-	}
-}
-
 .no-animation {
 	* {
-		transition-duration: 0s !important
+		transition: none !important
 	}
 }
 

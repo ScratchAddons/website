@@ -27,7 +27,7 @@ const waitForElement = (selector) => {
                          INSTALL BUTTON
 ============================================================= */
 
-window.addEventListener('load', () => {
+$(() => {
 
     let browser; // "chrome", "firefox", null
     const bowserResult = bowser.getParser(navigator.userAgent).parsedResult;
@@ -87,19 +87,11 @@ window.addEventListener('load', () => {
 let darkTheme = false
 let extensionStyledTheme = false
 let toggle
-let soraAdded = false
 
 const updateExtensionStyledTheme = () => {
     document.body.classList.toggle("extension-styled")
     extensionStyledTheme = !extensionStyledTheme
     localStorage.setItem("extensionStyledTheme", extensionStyledTheme)
-    if (!soraAdded) {
-        soraAdded = true
-        var linkEl = document.createElement('link')
-        linkEl.href = "https://fonts.googleapis.com/css2?family=Sora&amp;display=swap"
-        linkEl.rel = "stylesheet"
-        document.head.appendChild(linkEl)
-    }
 }
 
 const updateDarkTheme = (shiftPressed = false) => {
@@ -155,13 +147,13 @@ waitForElement("#dark-toggle").then(() => {
                             TOOLTIPS
 ============================================================= */
 
-window.addEventListener('load', () => {
+$(() => {
     $(document.querySelectorAll('[data-toggle="tooltip"]')).tooltip()
 })
 
 let lastTooltipsAmount = 0
 
-var tooltipsObserver = new MutationObserver(mutations => {
+const tooltipsObserver = new MutationObserver(mutations => {
     currentTooltipsAmount = document.querySelectorAll('[data-toggle="tooltip"]').length
     if (lastTooltipsAmount !== currentTooltipsAmount) {
         lastTooltipsAmount = currentTooltipsAmount
@@ -188,10 +180,22 @@ tooltipsObserver.observe(document.body, {
 })
 
 /* =============================================================
+                      MOVE JSON-LD TO HEAD
+            (generally not needed, but just in case)
+============================================================= */
+
+$(() => {
+    document.querySelectorAll("main script[type='application/ld+json']").forEach(element => {
+        document.head.appendChild(element.cloneNode(true))
+        element.remove()
+    })
+})
+
+/* =============================================================
                        CONSOLE EASTER EGG
 ============================================================= */
 
-window.addEventListener('load', () => {
+$(() => {
 	console.log(
 `%cHello, console log readers!
 %c

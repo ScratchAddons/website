@@ -8,11 +8,16 @@
 <link rel="icon" href="/assets/images/icon.png">
 
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://scratchaddons.com{{ page.url }}">
-<meta property="og:title" content='{% if page.title != "Index" %}{{ page.title }} - {% else %}Scratch Addons{% endif %}' />
-<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="https://scratchaddons.com{{ page.url }}" />
+<meta property="og:title" content='{% if page.title != "Index" %}{{ page.title }}{% else %}Scratch Addons{% endif %}' />
+<meta property="og:description" content="{{ page.description }}" />
 <meta property="og:site_name" content="Scratch Addons" />
 <meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://scratchaddons.com/assets/images/icon-square.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="384" />
+<meta property="og:image:height" content="384" />
+<meta property="og:image:alt" content="Scratch Addons logo /">
 
 <meta name="twitter:card" content="summary" />
 <!-- <meta name="twitter:site" content="@ScratchAddons" />
@@ -20,6 +25,8 @@
 <meta name="twitter:url" content="https://scratchaddons.com{{ page.url }}" />
 <meta name="twitter:title" content='{% if page.title != "Index" %}{{ page.title }} - {% endif %}Scratch Addons' />
 <meta name="twitter:description" content="{{ page.description }}" />
+<meta name="twitter:image" content="https://scratchaddons.com/assets/images/icon-square.png" />
+<meta name="twitter:image:alt" content="Scratch Addons logo" />
 
 <!-- Require Script and Loading Page -->
 
@@ -27,14 +34,16 @@
 <link rel="stylesheet" href="/assets/css/base.css" />
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-loading-bar.min.css" /> -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1,npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js,npm/@iconify/iconify@1.0.7,npm/bowser@2.11.0" crossorigin></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin></script>
 <script async src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin></script>
-<!-- <script data-pace-options='{ "eventLag": false, "restartOnRequestAfter": false }' src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script> -->
 <script async src="https://code.iconify.design/1/1.0.7/iconify.min.js" crossorigin></script>
-<script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js" crossorigin></script>
+<script src="https://cdn.jsdelivr.net/npm/bowser@2.11.0/es5.min.js" crossorigin></script> -->
 <script async src="/assets/js/website-base.js"></script>
 
 {% unless page.no-analytics %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144464383-2"></script>
 <script>window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments)}; gtag("js", new Date); gtag("config", "UA-144464383-2")</script>
 {% endunless %}
+
+<!-- <script data-pace-options='{ "eventLag": false, "restartOnRequestAfter": false }' src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script> -->

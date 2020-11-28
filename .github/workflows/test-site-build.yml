@@ -1,0 +1,40 @@
+on: 
+  pull_request:
+    branches:
+      - master
+    paths:
+      - .github/workflows/*
+      - site/**
+      - _config.yml
+      - CNAME
+      - Gemfile
+      - Gemfile.lock
+
+name: Site Build Testing
+
+jobs:
+  test:
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.6
+      - name: Build site
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+          jekyll_src: site
+          custom_opts: --config _config.yml --trace
+        env:
+          JEKYLL_ENV: production
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.1
+        with:
+          name: Built Site
+          path: ./_site
+
+        

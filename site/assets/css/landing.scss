@@ -36,7 +36,6 @@
 
 	}
 	
-
 	#intro-info {
 		display: flex;
 		flex-direction: column;
@@ -49,7 +48,10 @@
 	}
 
 	#install-intro {
-		box-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.75);
+		
+		&:not(:focus) {
+			box-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.75);
+		}
 		
 		p {
 			margin-bottom: 0;
@@ -72,6 +74,37 @@
 		background-size: 10px 1.5px;
 	}
 	
+}
+
+#highlights {
+	
+	.highlights-addon {
+		display: flex;
+	}
+
+	.highlights-img {
+		height: 200px;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.highlights-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 1 0 0;
+
+		h3 {
+			margin-bottom: 0.5rem
+		}
+
+		p {
+			margin-bottom: 0
+		}
+	}
+
 }
 
 #features {

@@ -2,7 +2,13 @@ on:
   push:
     branches:
       - master
-
+    paths:
+      - site/.github/workflows/*
+      - site/**
+      - _config.yml
+      - CNAME
+      - Gemfile
+      - Gemfile.lock
 
 name: Site Deployment
 
@@ -22,7 +28,7 @@ jobs:
         with:
           enable_cache: true
           jekyll_src: site
-          custom_opts: --config _config.yml
+          custom_opts: --config _config.yml --trace
         env:
           JEKYLL_ENV: production
       - name: Deploy site

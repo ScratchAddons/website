@@ -4,12 +4,16 @@ description: ""
 baseurl: ""
 url: "https://scratchaddons.com"
 
+incremental: true
+livereload: true
+
 source: site
 markdown: kramdown
 
 plugins:
 - jekyll-autoprefixer
 - jekyll-minifier
+- jekyll-sitemap
 
 autoprefixer:
   browsers:
