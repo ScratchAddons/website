@@ -106,13 +106,11 @@ You can do so by doing it on [our Discussion tab](https://github.com/ScratchAddo
 
 ### I think Scratch Addons slows down Scratch. What can I do?
 
-Most times you turned on addons that utilise the so-called "traps" on the process. These addons often include a warning, so turn those off and try again. The warnings are look like this.
-
-![warning](/assets/images/faq/warning.png)
+Try to turn off addons that you don't need. Also, the notice and warning could help you decide which addons that needed to be turned off for your comfort. 
 
 ### Are there any consequences for enabling everything?
 
-If you have a mid-end computer, chances are the performance won't be dropped significantly, unless if you turned on addons that utilise "traps". Otherwise, it will just be a major change. Feel free to go through again and turn off addons that you don't need.
+If you have a mid-end computer, chances are the performance won't be dropped significantly. Feel free to go through the list again and turn off addons that you don't need.
 
 ### I got more questions!
 
