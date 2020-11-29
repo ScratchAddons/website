@@ -8,6 +8,7 @@ description: Sorry! That page doesn't exist!
 
 <div class="container">
 	<h2>Sorry! That page doesn't exist!</h2>
+	<p id='closest'></p>
 	<p>Here are some things you can do:</p>
 	<ul>
 		<li><a href="https://github.com/ScratchAddons/website/issues">Create a new issue suggesting it</a></li>
@@ -15,3 +16,51 @@ description: Sorry! That page doesn't exist!
 		<li><a href="https://findtheinvisiblecow.com/">Find the invisible cow</a></li>
 	</ul>
 </div>
+<script>
+	// Function for load
+	
+	//Strip '.html' and leading '/'s from the pathname
+	var url = window.location.pathname;
+	url = url.replace('.html', '');
+	url = url.replace(/\//, '');
+  if(editDistance(closest(url), url) < 3) {
+    window.location.href = `https://scratchaddons.com/${closest(url)}`;
+  }
+	var newurl = closest(url);
+	document.getElementById(
+		'closest'
+	).innerHTML = `Did you mean "<a href='${newurl}.html'>${newurl}.html</a>"?`;
+	if (url === '404') {
+		document.getElementById('closest').innerHTML =
+			'Why would you purposely navigate to this page.';
+	}
+	// Functions
+	function closest(str) {
+		var urls = ['index', 'blog', 'projects'];
+		urls.sort((a, b) => editDistance(a, str) - editDistance(str, b));
+		return urls[0];
+	}
+	function editDistance(s1, s2) {
+		s1 = s1.toLowerCase();
+		s2 = s2.toLowerCase();
+
+		var costs = new Array();
+		for (var i = 0; i <= s1.length; i++) {
+			var lastValue = i;
+			for (var j = 0; j <= s2.length; j++) {
+				if (i == 0) costs[j] = j;
+				else {
+					if (j > 0) {
+						var newValue = costs[j - 1];
+						if (s1.charAt(i - 1) != s2.charAt(j - 1))
+							newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+						costs[j - 1] = lastValue;
+						lastValue = newValue;
+					}
+				}
+			}
+			if (i > 0) costs[s2.length] = lastValue;
+		}
+		return costs[s2.length];
+	}
+</script>
