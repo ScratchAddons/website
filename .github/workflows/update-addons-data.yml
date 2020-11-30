@@ -1,5 +1,10 @@
 on: 
   workflow_dispatch:
+    inputs:
+      ref:
+        description: Reference on the ScratchAddons/ScratchAddons repository
+        required: false
+        default: master
 
 name: Addons Data Update
 
@@ -29,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: npm install --prefix script
       - name: Update addons data
-        run: node script/index.js
+        run: node script/index.js ${{ github.event.inputs.ref }}
       - name: Move ScratchAddons/addons-data-updater to outside of the workspace
         run: mv script/ ../
       - name: Generate token 
