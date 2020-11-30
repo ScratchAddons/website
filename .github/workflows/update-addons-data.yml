@@ -15,13 +15,14 @@ jobs:
       - name: Checkout ScratchAddons/addons-data-updater
         uses: actions/checkout@v2
         with:
+          path: script
           repository: ScratchAddons/addons-data-updater
       - name: Install dependencies
         run: |
-          npm install
+          npm --prefix ./script install ./script
       - name: Update addons data
         run: |
-          npm start
+          node
       - name: Generate token 
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -30,13 +31,13 @@ jobs:
           private_key: ${{ secrets.BOT_PRIVATE_KEY }}
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
+        working-directory: website
         with:
           token: ${{ steps.generate-token.outputs.token }}
           commit-message: Update addons data
           branch: create-pull-request/changelog
           committer: scratchaddons-bot[bot] <73682299+scratchaddons-bot[bot]@users.noreply.github.com>
           delete-branch: true
-          path: ./website 
           title: Update addons data
           body: |
             This updates the addons data based on the main repo.
