@@ -10,19 +10,31 @@ jobs:
     steps:
       - name: Checkout ScratchAddons/Website
         uses: actions/checkout@v2
-        with:
-          path: website
       - name: Checkout ScratchAddons/addons-data-updater
         uses: actions/checkout@v2
         with:
-          path: script
           repository: ScratchAddons/addons-data-updater
+          path: script
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x 
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Install dependencies
-        run: |
-          npm --prefix ./script install ./script
+        run: npm install --prefix script
       - name: Update addons data
-        run: |
-          node
+        run: npm start --prefix script
+      - name: Create commit
+        uses: EndBug/add-and-commit@v5 # You can change this to use a specific version
+        with:
+          add: site/_data/addons.json
+          message: Update addons data
+          push: false
       - name: Generate token 
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -31,7 +43,6 @@ jobs:
           private_key: ${{ secrets.BOT_PRIVATE_KEY }}
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
-        working-directory: website
         with:
           token: ${{ steps.generate-token.outputs.token }}
           commit-message: Update addons data
