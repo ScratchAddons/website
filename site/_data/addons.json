@@ -42,6 +42,14 @@
 		"image": "/assets/images/addons/bitmap-copy.png"
 	},
 	{
+		"id": "block-switching",
+		"name": "Block switching",
+		"description": "Right click on a block to switch it to a related block.",
+		"tags": ["editor", "recommended"],
+		"credits": [{ "name": "GarboMuffin" }],
+		"image": "/assets/images/addons/block-switching.png"
+	},
+	{
 		"id": "clones",
 		"name": "Clone counter",
 		"description": "Adds a counter in the editor which shows the total amount of clones.",
@@ -56,6 +64,45 @@
 		"tags": ["community", "recommended"],
 		"credits": [{ "name": "World_Languages" }, { "name": "griffpatch" }],
 		"image": "/assets/images/addons/cloud-games.png"
+	},
+	{
+		"id": "confirm-actions",
+		"name": "Confirm actions",
+		"description": "Asks if you're sure when committing actions under your Scratch account, such as sharing projects. ",
+		"tags": ["community", "recommended"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/confirm-actions.png"
+	},
+	{
+		"id": "curator-link",
+		"name": "Curator Link",
+		"description": "Creates a clickable link for the curator of the front page.",
+		"tags": ["community"],
+		"credits": [
+			{
+				"name": "Hans5958",
+				"link": "https://github.com/Hans5958/userscripts/blob/master/Scratch/Curator%20Links.user.js"
+			}
+		],
+		"image": "/assets/images/addons/curator-link.png"
+	},
+	{
+		"id": "dark-www",
+		"name": "Website dark mode",
+		"description": "Dark theme for the Scratch website, both for 2.0 and 3.0 pages. Multiple options by different authors available.",
+		"tags": ["community", "theme"],
+		"credits": [
+			{
+				"name": "Maximouse (Experimental Dark)",
+				"link": "https://github.com/mxmou/customize-scratch"
+			}
+		],
+		"image": "/assets/images/addons/dark-www.png"
 	},
 	{
 		"id": "discuss-button",
@@ -79,8 +126,15 @@
 		"description": "Dark mode for the Scratch 3.0 project editor. Multiple options by different authors available.",
 		"tags": ["editor", "theme"],
 		"credits": [
-			{ "name": "infinitytec (3.Dark, 3.Darker)" },
-			{ "name": "_nix (Dark editor)" }
+			{
+				"name": "infinitytec (3.Dark, 3.Darker)",
+				"link": "https://github.com/infinitytec"
+			},
+			{ "name": "_nix (Dark editor)", "link": "https://github.com/towerofnix" },
+			{
+				"name": "Maximouse (Experimental Dark)",
+				"link": "https://github.com/mxmou/customize-scratch"
+			}
 		],
 		"image": "/assets/images/addons/editor-dark-mode.png"
 	},
@@ -91,6 +145,14 @@
 		"tags": ["editor", "recommended"],
 		"credits": [{ "name": "griffpatch" }],
 		"image": "/assets/images/addons/editor-devtools.png"
+	},
+	{
+		"id": "editor-messages",
+		"name": "Messages in editor",
+		"description": "Displayes your message count in the editor.",
+		"tags": ["editor"],
+		"credits": [{ "name": "TheColaber" }],
+		"image": "/assets/images/addons/editor-messages.png"
 	},
 	{
 		"id": "editor-searchable-dropdowns",
@@ -139,11 +201,42 @@
 		"image": "/assets/images/addons/exact-count.png"
 	},
 	{
+		"id": "feature-unshared",
+		"name": "Feature unshared projects",
+		"description": "Allows you to choose unshared projects after clicking \"change featured project\" in your profile.",
+		"tags": ["community"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/feature-unshared.png"
+	},
+	{
+		"id": "fix-uploaded-svgs",
+		"name": "Fix broken SVG uploads",
+		"description": "Fixes a bug in the Scratch editor that fails to properly upload SVG files created with some image editors, such as Affinity Designer.",
+		"tags": ["editor"],
+		"image": "/assets/images/addons/fix-uploaded-svgs.png"
+	},
+	{
+		"id": "forum-quote-code-beautifier",
+		"name": "Customized quotes & code blocks on forums",
+		"description": "Shows nicer code and quote blocks on the forums.",
+		"tags": ["forums"],
+		"credits": [
+			{ "name": "GrahamSH (Port)" },
+			{ "name": "Boomer001 (Userstyle)" }
+		],
+		"image": "/assets/images/addons/forum-quote-code-beautifier.png"
+	},
+	{
 		"id": "forum-search",
-		"name": "Forums search",
+		"name": "Forum Search",
 		"description": "Adds a post search to the forum homepage. Uses ScratchDB for information.",
 		"tags": ["forums", "community"],
-		"credits": [{ "name": "DatOneLefty" }],
+		"credits": [{ "name": "DatOneLefty" }, { "name": "Hans5958" }],
 		"image": "/assets/images/addons/forum-search.png"
 	},
 	{
@@ -235,6 +328,14 @@
 		"image": "/assets/images/addons/msg-count-badge.png"
 	},
 	{
+		"id": "my-ocular",
+		"name": "Show my-ocular status",
+		"description": "Shows my-ocular statuses under usernames on the forums. Uses my-ocular.jeffalo.net to obtain status data. Statuses are moderated and filtered.",
+		"tags": ["forums", "community"],
+		"credits": [{ "name": "Jeffalo" }],
+		"image": "/assets/images/addons/my-ocular.png"
+	},
+	{
 		"id": "pause",
 		"name": "Pause button",
 		"description": "Adds a pause button next to the green flag. You can also programmatically pause a project in Scratch (also known as breakpoints) by creating a custom block with name \"sa-pause\" and using that block.",
@@ -249,6 +350,26 @@
 		"tags": ["editor", "recommended"],
 		"credits": [{ "name": "GarboMuffin" }],
 		"image": "/assets/images/addons/progress-bar.png"
+	},
+	{
+		"id": "project-info",
+		"name": "Sprite and script count",
+		"description": "Shows the number of sprites and scripts a project has.",
+		"tags": ["community"],
+		"image": "/assets/images/addons/project-info.png"
+	},
+	{
+		"id": "project-notes-tabs",
+		"name": "Project notes tabs",
+		"description": "Creates tabs on a project page for the \"Intructions\" section and the \"Notes and Credits\" section.",
+		"tags": ["community"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/project-notes-tabs.png"
 	},
 	{
 		"id": "remix-tree-button",
@@ -307,10 +428,18 @@
 		"image": "/assets/images/addons/scratchr2.png"
 	},
 	{
+		"id": "search-load-more-fix",
+		"name": "Fix \"Load more\" scrolling in search results",
+		"description": "Makes the \"Load more\" button not scroll the page down in search results.",
+		"tags": ["community", "recommended"],
+		"image": "/assets/images/addons/search-load-more-fix.png"
+	},
+	{
 		"id": "search-profile",
 		"name": "Search profile",
 		"description": "Allows you to go to a user's profile when you search their username.",
 		"tags": ["community"],
+		"credits": [{ "name": "Geotale" }, { "name": "pufferfish101007" }],
 		"image": "/assets/images/addons/search-profile.png"
 	},
 	{
