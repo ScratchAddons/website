@@ -30,14 +30,8 @@ jobs:
         run: npm install --prefix script
       - name: Update addons data
         run: npm start --prefix script
-      - name: Create commit
-        uses: EndBug/add-and-commit@v5 # You can change this to use a specific version
-        with:
-          add: ./site/_data/addons.json
-          message: Update addons data
-          author_name: scratchaddons-bot[bot]
-          author_email: 73682299+scratchaddons-bot[bot]@users.noreply.github.com
-          push: false
+      - name: Move ScratchAddons/addons-data-updater to outside of the workspace
+        run: mv script/ ../
       - name: Generate token 
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -48,10 +42,14 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ steps.generate-token.outputs.token }}
-          branch: create-pull-request/changelog
+          commit-message: Update addons data
+          branch: create-pull-request/addon-data
+          committer: scratchaddons-bot[bot] <73682299+scratchaddons-bot[bot]@users.noreply.github.com>
           delete-branch: true
           title: Update addons data
           body: |
             This updates the addons data based on the main repo.
 
             It is recommended to do a rebase merge than other methods. Also, make sure to not merge something that isn't released yet!
+      - name: Move ScratchAddons/addons-data-updater back to inside of the workspace
+        run: mv ../script/ .
