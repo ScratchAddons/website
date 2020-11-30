@@ -36,6 +36,7 @@ jobs:
           branch: create-pull-request/changelog
           committer: scratchaddons-bot[bot] <73682299+scratchaddons-bot[bot]@users.noreply.github.com>
           delete-branch: true
+          path: ./website 
           title: Update addons data
           body: |
             This updates the addons data based on the main repo.
