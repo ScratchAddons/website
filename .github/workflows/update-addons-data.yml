@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: npm install --prefix script
       - name: Update addons data
-        run: npm start --prefix script
+        run: node script/index.js
       - name: Move ScratchAddons/addons-data-updater to outside of the workspace
         run: mv script/ ../
       - name: Generate token 
