@@ -80,7 +80,7 @@
 	},
 	{
 		"id": "curator-link",
-		"name": "Curator Link",
+		"name": "Curator link",
 		"description": "Creates a clickable link for the curator of the front page.",
 		"tags": ["community"],
 		"credits": [
@@ -149,7 +149,7 @@
 	{
 		"id": "editor-messages",
 		"name": "Messages in editor",
-		"description": "Displayes your message count in the editor.",
+		"description": "Displays your message count in the editor.",
 		"tags": ["editor"],
 		"credits": [{ "name": "TheColaber" }],
 		"image": "/assets/images/addons/editor-messages.png"
@@ -233,7 +233,7 @@
 	},
 	{
 		"id": "forum-search",
-		"name": "Forum Search",
+		"name": "Forum search",
 		"description": "Adds a post search to the forum homepage. Uses ScratchDB for information.",
 		"tags": ["forums", "community"],
 		"credits": [{ "name": "DatOneLefty" }, { "name": "Hans5958" }],
