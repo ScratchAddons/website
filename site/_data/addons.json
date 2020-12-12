@@ -35,6 +35,14 @@
 		"image": "/assets/images/addons/better-emojis.png"
 	},
 	{
+		"id": "better-featured-project",
+		"name": "Profile page banner",
+		"description": "Makes the featured project on any user's profile page into a nice-looking banner.",
+		"tags": ["community"],
+		"credits": [{ "name": "Ezlambry", "link": "https://ezlambry.github.io/" }],
+		"image": "/assets/images/addons/better-featured-project.png"
+	},
+	{
 		"id": "bitmap-copy",
 		"name": "Bitmap images copying",
 		"description": "Allows you to actually copy a bitmap image from the paint editor, so that you can paste it in other websites or software.",
@@ -182,7 +190,13 @@
 		"name": "Customizable block colors",
 		"description": "Edit block colors for each category in the editor.",
 		"tags": ["editor", "theme"],
-		"credits": [{ "name": "NitroCipher/ZenithRogue" }],
+		"credits": [
+			{ "name": "NitroCipher/ZenithRogue" },
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
 		"image": "/assets/images/addons/editor-theme3.png"
 	},
 	{
@@ -224,7 +238,7 @@
 		"id": "forum-quote-code-beautifier",
 		"name": "Customized quotes & code blocks on forums",
 		"description": "Shows nicer code and quote blocks on the forums.",
-		"tags": ["forums"],
+		"tags": ["forums", "theme"],
 		"credits": [
 			{ "name": "GrahamSH (Port)" },
 			{ "name": "Boomer001 (Userstyle)" }
@@ -334,6 +348,14 @@
 		"tags": ["forums", "community"],
 		"credits": [{ "name": "Jeffalo" }],
 		"image": "/assets/images/addons/my-ocular.png"
+	},
+	{
+		"id": "onion-skinning",
+		"name": "Onion skinning",
+		"description": "Shows transparent overlays of previous or next costumes when editing a costume. Controlled by buttons under the editor by the zoom buttons.",
+		"tags": ["editor", "recommended"],
+		"credits": [{ "name": "GarboMuffin" }],
+		"image": "/assets/images/addons/onion-skinning.png"
 	},
 	{
 		"id": "pause",
