@@ -21,6 +21,11 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 
 <!-- sa-changelog-start -->
 
+## [v1.5.1]
+
+- Bug fix: Onion skin addon groups together every vector costume ([#1035](https://github.com/ScratchAddons/ScratchAddons/issues/1035))
+- Bug fix: loading comment section not black with website dark mode enabled
+
 ## [v1.5.0]
 
 - New addon: onion skinning
@@ -171,6 +176,7 @@ Not released due to a permissions issue. See [v1.1.1].
 
 Initial release.
 
+[v1.5.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.5.1
 [v1.5.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.5.0
 [v1.4.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.4.1
 [v1.4.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.4.0
