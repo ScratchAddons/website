@@ -199,10 +199,10 @@ $(() => {
 	console.log(
 `%cHello, console log readers!
 %c
-It seems that you wanted to know what happened behind the scenes. Well, there is not much happening here because the is quite simple.
-This site is built using Bootstrap 4 as the main theme, Jekyll as the site generator, and GitHub Pages as the hosting provider. Also, this site has been compressed before it reaches to you, so if you want to see the uncompressed source code, then go to https://github.com/ScratchAddons/website.
+It seems that you wanted to know what happenes behind the scenes. Well, there is not much happening here because it is quite simple.
+This site is built using Bootstrap 4 as the main theme, Jekyll as the site generator, and GitHub Pages as the hosting provider. Also, this site has been compressed before it reaches you, so if you want to see the uncompressed source code, then go to https://github.com/ScratchAddons/website.
 
-If you wanted to report issues or wanted to suggest something about the website, please create an issue on https://github.com/ScratchAddons/website/issues (GitHub account required) or tell us on https://scratchaddons.com/feedback.
+If you want to report issues or want to suggest something about the website, please create an issue on https://github.com/ScratchAddons/website/issues (GitHub account required) or tell us on https://scratchaddons.com/feedback.
 
 We thank you for visiting the website, and enjoy using the extension if you do!
 -Hans5958
