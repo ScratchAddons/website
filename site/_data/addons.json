@@ -11,7 +11,7 @@
 		"id": "animated-thumb",
 		"name": "Thumbnails setter",
 		"description": "Adds a button to the editor to set the thumbnail of your project to any image (including gifs).",
-		"tags": ["editor", "community", "recommended"],
+		"tags": ["editor", "recommended"],
 		"credits": [
 			{
 				"name": "World_Languages",
@@ -72,6 +72,20 @@
 		"tags": ["community", "recommended"],
 		"credits": [{ "name": "World_Languages" }, { "name": "griffpatch" }],
 		"image": "/assets/images/addons/cloud-games.png"
+	},
+	{
+		"id": "color-picker",
+		"name": "Hex color picker",
+		"description": "Adds hex code inputs to color pickers.",
+		"tags": ["editor", "recommended"],
+		"credits": [
+			{
+				"name": "Richie Bendall",
+				"link": "https://github.com/ScratchAddons/ScratchAddons/issues/311#issuecomment-699510743"
+			},
+			{ "name": "apple502j" }
+		],
+		"image": "/assets/images/addons/color-picker.png"
 	},
 	{
 		"id": "confirm-actions",
@@ -319,10 +333,17 @@
 		"image": "/assets/images/addons/live-featured-project.png"
 	},
 	{
+		"id": "mediarecorder",
+		"name": "Record project video",
+		"description": "Adds a \"start recording\" button to the editor that allows you to record the project's stage (no sound). After recording, a .webm video will be downloaded.",
+		"tags": ["editor", "beta"],
+		"image": "/assets/images/addons/mediarecorder.png"
+	},
+	{
 		"id": "more-links",
 		"name": "More links",
 		"description": "Adds links for URLs pointing outside scratch.mit.edu.",
-		"tags": ["community"],
+		"tags": ["community", "beta"],
 		"credits": [{ "name": "Hans5958" }],
 		"image": "/assets/images/addons/more-links.png"
 	},
@@ -344,7 +365,7 @@
 	{
 		"id": "my-ocular",
 		"name": "Show my-ocular status",
-		"description": "Shows my-ocular statuses under usernames on the forums. Uses my-ocular.jeffalo.net to obtain status data. Statuses are moderated and filtered.",
+		"description": "Shows ocular statuses and favorite colours. Uses my-ocular.jeffalo.net to obtain status data. Statuses are moderated and filtered.",
 		"tags": ["forums", "community"],
 		"credits": [{ "name": "Jeffalo" }],
 		"image": "/assets/images/addons/my-ocular.png"
@@ -469,7 +490,13 @@
 		"name": "Studio manager tools",
 		"description": "Lets you easily promote or remove anyone from your studios, as well as leaving any studio, through the \"curators\" tab.",
 		"tags": ["community", "recommended"],
-		"credits": [{ "name": "World_Languages" }],
+		"credits": [
+			{ "name": "World_Languages" },
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
 		"image": "/assets/images/addons/studio-tools.png"
 	},
 	{
