@@ -4,7 +4,13 @@
 		"name": "60FPS player mode",
 		"description": "Alt+Click the green flag to toggle 60FPS.",
 		"tags": ["editor", "recommended"],
-		"credits": [{ "name": "Jeffalo" }],
+		"credits": [
+			{ "name": "Jeffalo", "link": "https://scratch.mit.edu/users/Jeffalo" },
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
 		"image": "/assets/images/addons/60fps.png"
 	},
 	{
@@ -43,6 +49,19 @@
 		"image": "/assets/images/addons/better-featured-project.png"
 	},
 	{
+		"id": "better-quoter",
+		"name": "Better forum quoter",
+		"description": "Select text in a forum post and click quote in the bottom right corner to only quote the select text.",
+		"tags": ["forums", "community"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/better-quoter.png"
+	},
+	{
 		"id": "bitmap-copy",
 		"name": "Bitmap images copying",
 		"description": "Allows you to actually copy a bitmap image from the paint editor, so that you can paste it in other websites or software.",
@@ -56,6 +75,14 @@
 		"tags": ["editor", "recommended"],
 		"credits": [{ "name": "GarboMuffin" }],
 		"image": "/assets/images/addons/block-switching.png"
+	},
+	{
+		"id": "cat-blocks",
+		"name": "Cat blocks",
+		"description": "Brings back editor cat hat blocks from April Fools 2020.",
+		"tags": ["easterEgg"],
+		"credits": [{ "name": "TheColaber" }],
+		"image": "/assets/images/addons/cat-blocks.png"
 	},
 	{
 		"id": "clones",
@@ -125,6 +152,14 @@
 			}
 		],
 		"image": "/assets/images/addons/dark-www.png"
+	},
+	{
+		"id": "data-category-tweaks-v2",
+		"name": "Data category tweaks",
+		"description": "Provides tweaks for the Data (\"Variables\") category in the editor.",
+		"tags": ["editor", "beta"],
+		"credits": [{ "name": "GarboMuffin" }],
+		"image": "/assets/images/addons/data-category-tweaks-v2.png"
 	},
 	{
 		"id": "discuss-button",
@@ -363,6 +398,19 @@
 		"image": "/assets/images/addons/msg-count-badge.png"
 	},
 	{
+		"id": "mute-project",
+		"name": "Mute project player",
+		"description": "Ctrl+Click the green flag to mute/unmute the project.",
+		"tags": ["editor", "recommended"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/mute-project.png"
+	},
+	{
 		"id": "my-ocular",
 		"name": "Show my-ocular status",
 		"description": "Shows ocular statuses and favorite colours. Uses my-ocular.jeffalo.net to obtain status data. Statuses are moderated and filtered.",
@@ -381,7 +429,7 @@
 	{
 		"id": "pause",
 		"name": "Pause button",
-		"description": "Adds a pause button next to the green flag. You can also programmatically pause a project in Scratch (also known as breakpoints) by creating a custom block with name \"sa-pause\" and using that block.",
+		"description": "Adds a pause button next to the green flag.",
 		"tags": ["editor", "beta"],
 		"credits": [{ "name": "Jeffalo" }],
 		"image": "/assets/images/addons/pause.png"
@@ -399,12 +447,18 @@
 		"name": "Sprite and script count",
 		"description": "Shows the number of sprites and scripts a project has.",
 		"tags": ["community"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
 		"image": "/assets/images/addons/project-info.png"
 	},
 	{
 		"id": "project-notes-tabs",
 		"name": "Project notes tabs",
-		"description": "Creates tabs on a project page for the \"Intructions\" section and the \"Notes and Credits\" section.",
+		"description": "Creates tabs on a project page for the \"Instructions\" section and the \"Notes and Credits\" section.",
 		"tags": ["community"],
 		"credits": [
 			{
@@ -484,6 +538,14 @@
 		"tags": ["community"],
 		"credits": [{ "name": "Geotale" }, { "name": "pufferfish101007" }],
 		"image": "/assets/images/addons/search-profile.png"
+	},
+	{
+		"id": "semicolon",
+		"name": "Semicolon glitch",
+		"description": "Adds the semicolon glitch back to Scratch.",
+		"tags": ["easterEgg"],
+		"credits": [{ "name": "GrahamSH" }],
+		"image": "/assets/images/addons/semicolon.png"
 	},
 	{
 		"id": "studio-tools",
