@@ -4,6 +4,9 @@ description: ""
 baseurl: ""
 url: "https://scratchaddons.com"
 
+sa_version: 1.7.0 # Not currently used
+contributors_issue: 71
+
 incremental: true
 livereload: true
 

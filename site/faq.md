@@ -82,7 +82,7 @@ We're also open for contributons of other aspects than the extension. You can vi
 
 ### How can I put my name on the [contributors page](contributors.html)?
 
-Please read and follow the instruction of [this issue](https://github.com/ScratchAddons/contributors/issues/12) in order to have your name on said page.
+Please read and follow the instruction of [this issue](https://github.com/ScratchAddons/contributors/issues/{{ site.contributors_issue }}) in order to have your name on said page.
 
 ### How can I remove my name on the [contributors page](contributors.html)?
 
