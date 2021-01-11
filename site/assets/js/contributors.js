@@ -227,7 +227,7 @@ const run = async () => {
 		// Link wrapper
 		let linkEl = document.createElement("a")
 		linkEl.target = "_blank"
-		linkEl.href = `https://github.com/${contributor.login}`
+		linkEl.href = contributor.profile ? contributor.profile : `https://github.com/${contributor.login}`
 		linkEl.appendChild(iconEl)
 		linkEl.appendChild(infoWrap)
 
