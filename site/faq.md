@@ -86,7 +86,7 @@ Please read and follow the instruction of [this issue](https://github.com/Scratc
 
 ### How can I remove my name on the [contributors page](contributors.html)?
 
-If you don't want your name to be removed on the page, please tell us by creating an issue on [our contributors repository](https://github.com/ScratchAddons/contributors/issues/), or by other means of contact. We're sorry for the inconvenience.
+If you don't want your name on the page, please tell us by creating an issue on [our contributors repository](https://github.com/ScratchAddons/contributors/issues/), or by other means of contact. We're sorry for the inconvenience.
 
 ### What can I do if I find a problem?
 
