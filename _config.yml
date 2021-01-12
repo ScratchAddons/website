@@ -4,10 +4,11 @@ description: ""
 baseurl: ""
 url: "https://scratchaddons.com"
 
-sa_version: 1.7.0 # Not currently used
+sa_version: 1.7.1 # Not currently used
 contributors_issue: 71
+copyright_year: 2021
 
-incremental: true
+# incremental: true
 livereload: true
 
 source: site
