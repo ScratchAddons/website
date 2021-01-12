@@ -12,7 +12,6 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
     execjs (2.7.0)
     ffi (1.14.2)
     ffi (1.14.2-x64-mingw32)

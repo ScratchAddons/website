@@ -1,4 +1,13 @@
+# NOTE: Do this steps when updating!
+#
+# 1. Remove `Gemfile.lock`.
+# 2. Do `bundle install`.
+# 3. Do `bundle lock --add-platform x86_64-linux`.
+# 4. Do `bundle lock --add-platform ruby`.
+# 5. Remove `eventmachine (1.2.7-x64-mingw32)` or similar! (or Windows can't develop it!)
+
 source "https://rubygems.org"
+
 gem "jekyll", "~> 4.2.0"
 # gem "github-pages", group: :jekyll_plugins
 group :jekyll_plugins do
