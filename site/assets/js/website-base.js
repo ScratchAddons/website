@@ -197,18 +197,9 @@ $(() => {
 
 $(() => {
 	console.log(
-`%cHello, console log readers!
-%c
-It seems that you wanted to know what happened behind the scenes. Well, there is not much happening here because the is quite simple.
-This site is built using Bootstrap 4 as the main theme, Jekyll as the site generator, and GitHub Pages as the hosting provider. Also, this site has been compressed before it reaches to you, so if you want to see the uncompressed source code, then go to https://github.com/ScratchAddons/website.
+`Repository: https://github.com/ScratchAddons/website
+Report issues: https://github.com/ScratchAddons/website/issues or https://scratchaddons.com/feedback
 
-If you wanted to report issues or wanted to suggest something about the website, please create an issue on https://github.com/ScratchAddons/website/issues (GitHub account required) or tell us on https://scratchaddons.com/feedback.
-
-We thank you for visiting the website, and enjoy using the extension if you do!
--Hans5958
-
-%cBy the way, here's a little secret: You can toggle the similar style to the extension if you click the dark theme switch button while holding SHIFT. Keep in mind that the secret theme is made seperate because the current theme minds readability and accessibility better than the secret.`, 
-	"font-size: 1.5rem; font-weight: 500", 
-	"",
+%cA little secret: You can toggle the similar style to the extension if you click the dark theme switch button while holding SHIFT.`,
 	"font-style: italic; font-size: 0.75rem")
 })
