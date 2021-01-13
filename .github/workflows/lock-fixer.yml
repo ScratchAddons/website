@@ -1,0 +1,20 @@
+on: 
+  workflow_dispatch:
+
+name: Fix Gemfile.lock
+
+jobs:
+  fix:
+    name: Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6.6
+      - run: bundle install
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Fix gemfile.lock
