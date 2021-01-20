@@ -280,7 +280,9 @@ body.dark {
 
 	header {
 		img {
-			transform: scale(1.25);
+			height: 30px;
+			width: 30px;
+			transform: scale(1.75);
 		}
 	}
 
@@ -373,6 +375,8 @@ body.dark.extension-styled {
 
 	header {
 		img {
+			height: 30px;
+			width: 30px;
 			transform: scale(1.75);
 		}
 	}
