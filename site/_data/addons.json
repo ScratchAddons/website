@@ -14,6 +14,16 @@
 		"image": "/assets/images/addons/60fps.png"
 	},
 	{
+		"id": "a11y",
+		"name": "Project screen reader support",
+		"description": "Adds limited support for screen readers to the Scratch player. It currently supports say and think bubbles. Functionality that allows projects to explicitly share labels and roles is still being tested.",
+		"tags": ["editor", "beta"],
+		"credits": [
+			{ "name": "A-E-", "link": "https://scratch.mit.edu/users/A-E-/" }
+		],
+		"image": "/assets/images/addons/a11y.png"
+	},
+	{
 		"id": "animated-thumb",
 		"name": "Thumbnails setter",
 		"description": "Adds a button to the editor to set the thumbnail of your project to any image (including gifs).",
@@ -57,6 +67,10 @@
 			{
 				"name": "TheColaber",
 				"link": "https://scratch.mit.edu/users/TheColaber"
+			},
+			{
+				"name": "pufferfish101007",
+				"link": "https://scratch.mit.edu/users/pufferfish101007"
 			}
 		],
 		"image": "/assets/images/addons/better-quoter.png"
@@ -81,7 +95,12 @@
 		"name": "Cat blocks",
 		"description": "Brings back editor cat hat blocks from April Fools 2020.",
 		"tags": ["easterEgg"],
-		"credits": [{ "name": "TheColaber" }],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
 		"image": "/assets/images/addons/cat-blocks.png"
 	},
 	{
@@ -113,6 +132,19 @@
 			{ "name": "apple502j" }
 		],
 		"image": "/assets/images/addons/color-picker.png"
+	},
+	{
+		"id": "comments-linebreaks",
+		"name": "Linebreaks in comments",
+		"description": "Shows the linebreaks (pressing enter) in comments.",
+		"tags": ["community"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/comments-linebreaks.png"
 	},
 	{
 		"id": "confirm-actions",
@@ -157,9 +189,22 @@
 		"id": "data-category-tweaks-v2",
 		"name": "Data category tweaks",
 		"description": "Provides tweaks for the Data (\"Variables\") category in the editor.",
-		"tags": ["editor", "beta"],
+		"tags": ["editor", "recommended"],
 		"credits": [{ "name": "GarboMuffin" }],
 		"image": "/assets/images/addons/data-category-tweaks-v2.png"
+	},
+	{
+		"id": "disable-auto-save",
+		"name": "Disable auto-save",
+		"description": "Disables the automatic saving of projects while editing.",
+		"tags": ["editor"],
+		"credits": [
+			{
+				"name": "RustingRobot",
+				"link": "https://scratch.mit.edu/users/RustingRobot"
+			}
+		],
+		"image": "/assets/images/addons/disable-auto-save.png"
 	},
 	{
 		"id": "discuss-button",
@@ -325,6 +370,19 @@
 		"image": "/assets/images/addons/full-signature.png"
 	},
 	{
+		"id": "hide-flyout",
+		"name": "Auto-hide block palette",
+		"description": "Hides the block palette if not hovered. Click the lock icon to lock it in place temporarily. Alternatively, use \"category click\" mode.",
+		"tags": ["editor", "recommended"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			}
+		],
+		"image": "/assets/images/addons/hide-flyout.png"
+	},
+	{
 		"id": "image-uploader",
 		"name": "Forums image uploader",
 		"description": "Integrates image uploading into the forums.",
@@ -370,15 +428,15 @@
 	{
 		"id": "mediarecorder",
 		"name": "Record project video",
-		"description": "Adds a \"start recording\" button to the editor that allows you to record the project's stage (no sound). After recording, a .webm video will be downloaded.",
-		"tags": ["editor", "beta"],
+		"description": "Adds a \"start recording\" button to the editor that allows you to record the project's stage.",
+		"tags": ["editor", "recommended"],
 		"image": "/assets/images/addons/mediarecorder.png"
 	},
 	{
 		"id": "more-links",
 		"name": "More links",
 		"description": "Adds links for URLs pointing outside scratch.mit.edu.",
-		"tags": ["community", "beta"],
+		"tags": ["community"],
 		"credits": [{ "name": "Hans5958" }],
 		"image": "/assets/images/addons/more-links.png"
 	},
@@ -523,13 +581,6 @@
 			}
 		],
 		"image": "/assets/images/addons/scratchr2.png"
-	},
-	{
-		"id": "search-load-more-fix",
-		"name": "Fix \"Load more\" scrolling in search results",
-		"description": "Makes the \"Load more\" button not scroll the page down in search results.",
-		"tags": ["community", "recommended"],
-		"image": "/assets/images/addons/search-load-more-fix.png"
 	},
 	{
 		"id": "search-profile",
