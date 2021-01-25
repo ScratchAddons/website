@@ -31,7 +31,7 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 - Record project video addon: you can now record up to 5 minutes of project video and audio
 - Data category tweaks addon: new “move data blocks above variable list” setting
 - Removed addon: “fix ‘Load more’ scrolling in search results”, the bug was fixed in newer browser versions
-- Bug fix: unreadable search bar input with "website dark mode" enabled and "Scratch 2.0→3.0" disabled
+- Bug fix: unreadable search bar input with "website dark mode" enabled and "Scratch 2.0 → 3.0" disabled
 - Bug fix: permission prompts not working in Firefox
 
 #### Addon development changes:
@@ -228,7 +228,7 @@ Not released due to a permissions issue. See [v1.1.1].
 
 Initial release.
 
-[v1.7.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.8.0
+[v1.8.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.8.0
 [v1.7.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.7.1
 [v1.7.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.7.0
 [v1.6.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.6.1
