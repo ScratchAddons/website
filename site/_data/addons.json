@@ -24,6 +24,13 @@
 		"image": "/assets/images/addons/a11y.png"
 	},
 	{
+		"id": "account-settings-capitalize",
+		"name": "Fix capitalization of Account Settings",
+		"description": "Changes \"Account settings\" in the account menu to \"Account Settings\".",
+		"tags": ["easterEgg"],
+		"image": "/assets/images/addons/account-settings-capitalize.png"
+	},
+	{
 		"id": "animated-thumb",
 		"name": "Thumbnails setter",
 		"description": "Adds a button to the editor to set the thumbnail of your project to any image (including gifs).",
@@ -597,6 +604,14 @@
 		"tags": ["easterEgg"],
 		"credits": [{ "name": "GrahamSH" }],
 		"image": "/assets/images/addons/semicolon.png"
+	},
+	{
+		"id": "show-bbcode",
+		"name": "Show BBCode",
+		"description": "Adds a button to the forums that shows the BBCode source of a post.",
+		"tags": ["community", "forums"],
+		"credits": [{ "name": "Maximouse" }],
+		"image": "/assets/images/addons/show-bbcode.png"
 	},
 	{
 		"id": "studio-tools",
