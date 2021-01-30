@@ -24,7 +24,7 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 ## [v1.8.1] - 2021-01-29
 
 - Bug fix: "more links" treating non-links as links
-- Bug fix: "Scratch 2.0→3.0" showing gray text on page load by default
+- Bug fix: "Scratch 2.0 → 3.0" showing gray text on page load by default
 - Bug fix: "Website dark mode" causing unreadable text on "Forums image uploader"
 - Bug fix: "Auto-hide block palette" causing reporter return value bubbles to remain on screen
 
