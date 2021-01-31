@@ -16,12 +16,13 @@ This page lists frequently asked questions related to the Scratch Addons extensi
 - [Can I tell people about Scratch Addons on Scratch?](#can-i-tell-people-about-scratch-addons-on-scratch)
 - [How can I contribute to Scratch Addons?](#how-can-i-contribute-to-scratch-addons)
 - [How can I put my name on the contributors page?](#how-can-i-put-my-name-on-the-contributors-page)
-- [How can I remove my name on the contributors page?](#how-can-i-remove-my-name-on-the-contributors-page)
+- [How can I remove my name from the contributors page?](#how-can-i-remove-my-name-from-the-contributors-page)
 - [What can I do if I find a problem?](#what-can-i-do-if-i-find-a-problem)
 - [I think you missed a feature. What can I do?](#i-think-you-missed-a-feature-what-can-i-do)
 - [Where can I discuss about Scratch Addons?](#where-can-i-discuss-about-scratch-addons)
 - [I think Scratch Addons slows down Scratch. What can I do?](#i-think-scratch-addons-slows-down-scratch-what-can-i-do)
 - [Are there any consequences for enabling everything?](#are-there-any-consequences-for-enabling-everything)
+- [How can you activate the easter egg addons?](#how-can-you-activate-the-easter-egg-addons)
 - [I got more questions!](#i-got-more-questions)
 
 ### What is Scratch Addons?
@@ -80,13 +81,13 @@ Contributing to Scratch Addons is not that hard.
 
 We're also open for contributons of other aspects than the extension. You can view our repositories on [our GitHub organization page](https://github.com/ScratchAddons) and help us build them.
 
-### How can I put my name on the [contributors page](contributors.html)?
+### How can I put my name on the [contributors page](/contributors)?
 
 Please read and follow the instruction of [this issue](https://github.com/ScratchAddons/contributors/issues/{{ site.contributors_issue }}) in order to have your name on said page.
 
-### How can I remove my name on the [contributors page](contributors.html)?
+### How can I remove my name from the [contributors page](/contributors)?
 
-If you don't want your name on the page, please tell us by creating an issue on [our contributors repository](https://github.com/ScratchAddons/contributors/issues/), or by other means of contact. We're sorry for the inconvenience.
+If you don't want your name to be on the page, please tell us by creating an issue on [our contributors repository](https://github.com/ScratchAddons/contributors/issues/), or by other means of contact. We're sorry for the inconvenience.
 
 ### What can I do if I find a problem?
 
@@ -111,6 +112,10 @@ Try to turn off addons that you don't need. Also, the notice and warning could h
 ### Are there any consequences for enabling everything?
 
 If you have a mid-end computer, chances are the performance won't be dropped significantly. Feel free to go through the list again and turn off addons that you don't need.
+
+### How can you activate the easter egg addons?
+
+To reveal the easter egg addons, do the Konami Code with your keyboard on the settings page. After that, the easter egg addons will be shown, letting you to activate them. (↑↑↓↓←→←→BA)
 
 ### I got more questions!
 
