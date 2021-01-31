@@ -192,6 +192,14 @@ body.dark .dark-btn-white {
 	}
 }
 
+.show-only-light {
+	display: inherit
+}
+
+.show-only-dark {
+	display: none
+}
+
 #dark-toggle {
 	width: 4rem;
 	height: 4rem;
@@ -324,6 +332,14 @@ body.dark {
 	#dark-toggle {
 		color: white;
 		background-color: $scratch-orange;
+	}
+
+	.show-only-light {
+		display: none
+	}
+
+	.show-only-dark {
+		display: inherit
 	}
 
 }
