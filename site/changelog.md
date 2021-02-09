@@ -21,7 +21,7 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 
 <!-- sa-changelog-start -->
 
-## [v1.9.0] - 2021-02-08
+## [v1.9.1] - 2021-02-09
 
 - New addon: show BBCode [forums]
 - New easter egg addon: fix capitalization of Account Settings. You can access easter egg addons by typing the konami code in the settings page.
@@ -32,6 +32,10 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 - Mute project player addon: now shows an icon when the project is muted
 - Bug fixes in "linebreaks in comments" addon
 - Clone counter addon: improve performance
+
+## [v1.9.0] - 2021-02-08 [YANKED]
+
+Only released on Firefox for a brief moment due to the finding of a bug that would make the extension crash if browser language not set to English.
 
 ## [v1.8.1] - 2021-01-29
 
@@ -247,6 +251,7 @@ Not released due to a permissions issue. See [v1.1.1].
 
 Initial release.
 
+[v1.9.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.9.1
 [v1.9.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.9.0
 [v1.8.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.8.1
 [v1.8.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.8.0
