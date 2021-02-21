@@ -6,6 +6,10 @@ description: All notable changes to this project will be documented in this page
 
 All notable changes to this project will be documented in this page.
 
+**Note:** This changelog is summarised. Check [the detailed changelog](https://github.com/ScratchAddons/ScratchAddons/blob/changelog-detailed/CHANGELOG.md) for all of the changes.
+
+
+
 <!-- 
 
 NOTE: 
