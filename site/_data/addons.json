@@ -167,6 +167,16 @@
 		"image": "/assets/images/addons/confirm-actions.png"
 	},
 	{
+		"id": "copy-message-link",
+		"name": "Copy link to comment button",
+		"description": "Adds a \"Copy Link\" button to all Scratch comments, next to the \"Report\" button.",
+		"tags": ["community", "recommended"],
+		"credits": [
+			{ "name": "Sly-Little-Fox", "link": "https://github.com/Sly-Little-Fox/" }
+		],
+		"image": "/assets/images/addons/copy-message-link.png"
+	},
+	{
 		"id": "curator-link",
 		"name": "Curator link",
 		"description": "Creates a clickable link for the curator of the front page.",
@@ -433,6 +443,13 @@
 		"image": "/assets/images/addons/live-featured-project.png"
 	},
 	{
+		"id": "load-extensions",
+		"name": "Auto-show editor extensions",
+		"description": "Adds music, pen, video sensing, and other editor extensions automatically to the block category list.",
+		"tags": ["editor"],
+		"image": "/assets/images/addons/load-extensions.png"
+	},
+	{
 		"id": "mediarecorder",
 		"name": "Record project video",
 		"description": "Adds a \"start recording\" button to the editor that allows you to record the project's stage.",
@@ -495,8 +512,8 @@
 		"id": "pause",
 		"name": "Pause button",
 		"description": "Adds a pause button next to the green flag.",
-		"tags": ["editor", "beta"],
-		"credits": [{ "name": "Jeffalo" }],
+		"tags": ["editor", "recommended"],
+		"credits": [{ "name": "Jeffalo" }, { "name": "GarboMuffin" }],
 		"image": "/assets/images/addons/pause.png"
 	},
 	{
