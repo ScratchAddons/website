@@ -192,6 +192,20 @@ body.dark .dark-btn-white {
 	}
 }
 
+.white-underline {
+	color: white;
+	background-image: linear-gradient(to right, white 60%, transparent 40%);
+	background-position: 0 1.15em;
+	background-repeat: repeat-x;
+	background-size: 5px 0.8px;
+
+	&:hover {
+		color: #e2e6ea;
+		text-decoration: none;
+		background-image: linear-gradient(to right, #e2e6ea 100%, transparent 0%);
+	}
+}
+
 .show-only-light {
 	display: inherit
 }
@@ -232,6 +246,8 @@ body {
 
 	background-color: white;
 	color: $bs-default-black;
+	--content-bg: white;
+	--content-cnt: #{$bs-default-black};
 	--header-bg: #{$scratch-orange};
 	--header-cnt: white;
 	--intro-heading-bg: #{$scratch-orange};
@@ -245,6 +261,8 @@ body.dark {
 
 	background-color: $dark-neutral;
 	color: white;
+	--content-bg: #{$dark-neutral};
+	--content-cnt: white;
 	--header-bg: #{$dark-dp-2};
 	--header-cnt: white;
 	--intro-heading-bg: #{$dark-dp-2};
@@ -258,6 +276,8 @@ body.extension-styled {
 
 	background-color: $light-ext-level-1;
 	color: $bs-default-black;
+	--content-bg: #{$light-ext-level-1};
+	--content-cnt: #{$bs-default-black};
 	--header-bg: #{$scratch-orange};
 	--header-cnt: white;
 	--intro-heading-bg: #{$scratch-orange};
@@ -271,6 +291,8 @@ body.dark.extension-styled {
 
 	background-color: $dark-ext-level-1;
 	color: white;
+	--content-bg: #{$dark-ext-level-1};
+	--content-cnt: white;
 	--header-bg: #{$scratch-orange};
 	--header-cnt: white;
 	--intro-heading-bg: #{$dark-ext-level-2};
