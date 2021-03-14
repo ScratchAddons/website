@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths:
-      - site/.github/workflows/*
+      - .github/workflows/*
       - site/**
       - _config.yml
       - CNAME
