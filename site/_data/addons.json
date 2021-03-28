@@ -1,5 +1,13 @@
 [
 	{
+		"id": "2d-color-picker",
+		"name": "2D color picker",
+		"description": "Replaces saturation and brightness sliders with a 2D color picker. Hold Shift while dragging the cursor to change the values on a single axis.",
+		"tags": ["editor", "beta"],
+		"credits": [{ "name": "Ucrash", "link": "https://github.com/gducrash" }],
+		"image": "/assets/images/addons/2d-color-picker.png"
+	},
+	{
 		"id": "60fps",
 		"name": "Alt+GreenFlag 60FPS player mode",
 		"description": "Alt+Click the green flag to toggle 60FPS.",
@@ -203,6 +211,48 @@
 		"image": "/assets/images/addons/curator-link.png"
 	},
 	{
+		"id": "custom-block-shape",
+		"name": "Custom block shape",
+		"description": "Adjust the padding, corner radius, and notch height of Scratch blocks.",
+		"tags": ["editor", "theme"],
+		"credits": [
+			{
+				"name": "SheepTester",
+				"link": "https://scratch.mit.edu/users/Sheep_maker/"
+			},
+			{
+				"name": "lisa_wolfgang",
+				"link": "https://scratch.mit.edu/users/lisa_wolfgang"
+			},
+			{
+				"name": "GarboMuffin",
+				"link": "https://scratch.mit.edu/users/GarboMuffin"
+			}
+		],
+		"image": "/assets/images/addons/custom-block-shape.png"
+	},
+	{
+		"id": "dango-rain",
+		"name": "Dango rain on profiles (April Fools Day)",
+		"description": "Users that include the word \"dango\" on their \"About Me\" will have dango emojis raining on the sides of their profile.",
+		"tags": ["easterEgg"],
+		"credits": [
+			{
+				"name": "TheColaber",
+				"link": "https://scratch.mit.edu/users/TheColaber"
+			},
+			{
+				"name": "World_Languages",
+				"link": "https://scratch.mit.edu/users/World_Languages"
+			},
+			{
+				"name": "griffpatch",
+				"link": "https://scratch.mit.edu/users/griffpatch"
+			}
+		],
+		"image": "/assets/images/addons/dango-rain.png"
+	},
+	{
 		"id": "dark-www",
 		"name": "Website dark mode",
 		"description": "Dark theme for the Scratch website, both for 2.0 and 3.0 pages. Multiple options by different authors available.",
@@ -243,6 +293,14 @@
 		"tags": ["community", "forums"],
 		"credits": [{ "name": "Maximouse" }, { "name": "World_Languages" }],
 		"image": "/assets/images/addons/discuss-button.png"
+	},
+	{
+		"id": "drag-drop",
+		"name": "Drag and drop files",
+		"description": "Lets you drag images and sounds from your file explorer into the sprites pane or costume/sound list.",
+		"tags": ["editor", "recommended"],
+		"credits": [{ "name": "Sheep_maker" }],
+		"image": "/assets/images/addons/drag-drop.png"
 	},
 	{
 		"id": "editor-colored-context-menus",
@@ -362,7 +420,7 @@
 		"id": "folders",
 		"name": "Sprite folders",
 		"description": "Adds folders to sprite lists, as well as costume and sound lists. To create a folder, right click any sprite and click \"create folder\". Click a folder to open or close it. Right click a sprite to see what folders you can move it to, or alternatively drag and drop it into an open folder.",
-		"tags": ["editor", "beta"],
+		"tags": ["editor", "recommended"],
 		"credits": [{ "name": "GarboMuffin" }],
 		"image": "/assets/images/addons/folders.png"
 	},
@@ -395,7 +453,7 @@
 	{
 		"id": "full-signature",
 		"name": "Show full areas",
-		"description": "Shows the full signature of users on the forums, and shows full What I've been doing on profiles.",
+		"description": "Makes some elements with limited height resizable or scrollable, such as user signatures on the forums and What I've been doing on profiles.",
 		"tags": ["community", "forums", "recommended"],
 		"credits": [
 			{ "name": "GrahamSH" },
@@ -403,7 +461,8 @@
 			{
 				"name": "TheColaber",
 				"link": "https://scratch.mit.edu/users/TheColaber"
-			}
+			},
+			{ "name": "RedGuy7", "link": "https://paul-s-reid.com/web-dev" }
 		],
 		"image": "/assets/images/addons/full-signature.png"
 	},
@@ -695,7 +754,7 @@
 		"id": "variable-manager",
 		"name": "Variable manager",
 		"description": "Adds a tab next to \"sounds\" in the editor for easily updating variables and lists.",
-		"tags": ["editor", "beta"],
+		"tags": ["editor", "recommended"],
 		"credits": [{ "name": "Jeffalo" }, { "name": "GarboMuffin" }],
 		"image": "/assets/images/addons/variable-manager.png"
 	},
