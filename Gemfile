@@ -1,3 +1,6 @@
+# Batch command: 
+# del /f /s /q Gemfile.lock && bundle install && bundle lock --add-platform ruby x86_64-linux
+
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2.0"
