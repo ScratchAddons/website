@@ -25,6 +25,14 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 
 <!-- sa-changelog-start -->
 
+## [v1.12.1] - 2021-04-01
+
+- Bug fix: follow button unclickable with "profile page banner" enabled
+- Bug fix: "2D color picker" not working on Firefox
+- Bug fix: issues with "auto-hide block palette" addon
+- Bug fix: issues with "profile page statistics" followers over time chart
+- Bug fix: "sprite folders" crashing the editor when dragging a folder into an empty backpack
+
 ## [v1.12.0] - 2021-03-28
 
 - New addon: drag and drop files [recommended]
@@ -324,6 +332,7 @@ Not released due to a permissions issue. See [v1.1.1].
 
 Initial release.
 
+[v1.12.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.12.1
 [v1.12.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.12.0
 [v1.11.2]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.11.2
 [v1.11.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.11.1
