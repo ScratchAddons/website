@@ -36,7 +36,7 @@ description: This page lists all of the addons that are implemented on Scratch A
 			<div class="card{% for tag in addon.tags %} tag-{{ tag }}{% endfor %}">
 				{% capture image %}{% file_exists {{ addon.image }} %}{% endcapture %}
 				{% if image == "true" %}
-					<img src="{{ addon.image }}" class="card-img-top" alt="{{ addon.name }}">
+					<img src="{{ addon.image }}" class="card-img-top d-none d-md-block" alt="{{ addon.name }}">
 				{% endif %}
 				<div class="card-body">
 					<h5 class="card-title">{{ addon.name }}</h5>
