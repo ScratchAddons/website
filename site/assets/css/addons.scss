@@ -17,6 +17,10 @@
             border-top-left-radius: 0;
             border-bottom-right-radius: calc(.25rem - 1px);
             margin-top: auto inherit;
+
+            @media (max-width: $bs-breakpoint-md) {
+                display: none
+            }
         }
     }
 
@@ -30,6 +34,10 @@
 
 .card-columns:not(.show-egg) .card.tag-easterEgg {
 	display: none;
+}
+
+.card {
+
 }
 
 .lds-ellipsis {
