@@ -28,14 +28,9 @@
 
 }
 
-.card-columns .card.tag-easterEgg {
+.card-columns:not(.show-egg) .card.tag-easterEgg {
 	display: none;
 }
-
-.card-columns.show-egg .card.tag-easterEgg {
-	display: inherit
-}
-
 
 .lds-ellipsis {
 	display: block;
