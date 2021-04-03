@@ -23,6 +23,9 @@ const waitForElement = (selector) => {
     })
 }
 
+// https://stackoverflow.com/a/66378318
+const stringToBoolean = (string) => string === 'false' ? false : !!string
+
 /* =============================================================
                          INSTALL BUTTON
 ============================================================= */
@@ -86,59 +89,68 @@ $(() => {
 
 let darkTheme = false
 let extensionStyledTheme = false
+let isUserSelected = false
 let toggle
 
-const updateExtensionStyledTheme = () => {
-    document.body.classList.toggle("extension-styled")
-    extensionStyledTheme = !extensionStyledTheme
-    localStorage.setItem("extensionStyledTheme", extensionStyledTheme)
+const updateExtensionStyledTheme = (active, updateLocalStorage = false) => {
+    if (active === extensionStyledTheme) return
+    document.body.classList[active ? "add" : "remove"]("extension-styled")
+    extensionStyledTheme = active
+    if (updateLocalStorage) localStorage.setItem("extensionStyledTheme", active)
 }
 
-const updateDarkTheme = (shiftPressed = false) => {
+const updateDarkTheme = (active, updateLocalStorage = false) => {
+    if (active === darkTheme) return
     document.body.classList.toggle("no-animation")
-
-    if (shiftPressed || [...document.body.classList].indexOf(".extension-styled") + 1) {
-        updateExtensionStyledTheme()
-    } 
-
-    document.body.classList.toggle("dark")
     setTimeout(() => document.body.classList.toggle("no-animation"), 200)
-    darkTheme = !darkTheme
-    localStorage.setItem("darkTheme", darkTheme)
+    document.body.classList[active ? "add" : "remove"]("dark")
+    darkTheme = active
+    if (updateLocalStorage) localStorage.setItem("darkTheme", active)
 }
     
-if (localStorage.getItem("extensionStyledTheme") === "true") {
-    updateExtensionStyledTheme()
-} else {
-    localStorage.setItem("extensionStyledTheme", false)
-}
-
-if (localStorage.getItem("darkTheme") === "true") {
-    updateDarkTheme()
-} else {
-    localStorage.setItem("darkTheme", false)
-}
-
-document.body.dataset.themeLoaded = true
-    
-waitForElement("#dark-toggle").then(() => {
-
-    toggle = document.querySelector("#dark-toggle")
-    
-    if (darkTheme) {
+const updateDarkToggle = (active) => {
+    if (toggle === undefined) return
+    if (active) {
         toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>'
     } else {
         toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
     }
+}
 
+if (localStorage.getItem("extensionStyledTheme") !== null) {
+    updateDarkTheme(stringToBoolean(localStorage.getItem("extensionStyledTheme")))
+    isUserSelected = true
+}
+
+if (localStorage.getItem("darkTheme") !== null) {
+    updateDarkTheme(stringToBoolean(localStorage.getItem("extensionStyledTheme")))
+    isUserSelected = true
+}
+
+document.body.dataset.themeLoaded = true
+
+if (!isUserSelected) colorChangeListener = window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (isUserSelected) return
+    updateDarkTheme(e.matches, false)
+    updateDarkToggle(darkTheme)
+})
+
+waitForElement("#dark-toggle").then(() => {
+
+    toggle = document.querySelector("#dark-toggle")
+    updateDarkToggle(darkTheme)
+    
     toggle.addEventListener("click", event => {
-        if (event && event.shiftKey) updateExtensionStyledTheme()
-        updateDarkTheme()
-            if (darkTheme) {
-                toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:sun" data-inline="false"></span>'
-            } else {
-                toggle.innerHTML = '<span class="iconify" data-icon="fa-solid:moon" data-inline="false"></span>'
-            }
+        isUserSelected = true
+        if (event && event.ctrlKey) {
+            localStorage.removeItem("darkTheme")
+            localStorage.removeItem("extensionStyledTheme")
+            document.location.reload()
+            return
+        }
+        updateDarkTheme(!darkTheme)
+        if (event && event.shiftKey) updateExtensionStyledTheme(!extensionStyledTheme)
+        updateDarkToggle(darkTheme)
     })
         
 })
