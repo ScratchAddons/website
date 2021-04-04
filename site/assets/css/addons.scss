@@ -3,7 +3,7 @@
 
 @import "variables";
 
-.list-view {
+.card-columns[data-list-view="true"] {
 
     column-count: 1;
 
@@ -32,7 +32,7 @@
 
 }
 
-.card-columns:not(.show-egg) .card.tag-easterEgg {
+.card-columns:not([data-show-easter-egg="true"]) .card.tag-easterEgg {
 	display: none;
 }
 
