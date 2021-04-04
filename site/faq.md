@@ -15,6 +15,7 @@ This page lists frequently asked questions related to the Scratch Addons extensi
 - [Will my account be safe when using Scratch Addons?](#will-my-account-be-safe-when-using-scratch-addons)
 - [Can I tell people about Scratch Addons on Scratch?](#can-i-tell-people-about-scratch-addons-on-scratch)
 - [How can I contribute to Scratch Addons?](#how-can-i-contribute-to-scratch-addons)
+- [How can I create my own addon?](#how-can-i-create-my-own-addon)
 - [How can I put my name on the contributors page?](#how-can-i-put-my-name-on-the-contributors-page)
 - [How can I remove my name from the contributors page?](#how-can-i-remove-my-name-from-the-contributors-page)
 - [What can I do if I find a problem?](#what-can-i-do-if-i-find-a-problem)
@@ -67,19 +68,55 @@ You can't, and please don't. There is a policy that forbids advertising browser 
 
 ### How can I contribute to Scratch Addons?
 
-Firstly, thank you for your interest of contributing to Scratch Addons. We appreciate your interest and your later contibutions. 
+Firstly, thank you for your interest of contributing to Scratch Addons. We appreciate your interest and your later contributions. 
 
-Contributing to Scratch Addons is not that hard.
+As an open-source project, we welcome any kind of contributions. You don't even need to ask us or to have a certain rank. Anyone is welcome. There's even a chance that you didn't realized that you have contributed to the project! 
 
-- If you can code on JavaScript, simply do some code, whether it's an addon or a new feature, and create to a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and some of us will review your pull request. If we think that it fits, we will accept your PR, and if it's an addon, it will be an addon on our extension. Read more about how to create an addon [here](https://github.com/ScratchAddons/ScratchAddons/wiki/Creating-an-addon).
+Anyway, back to the point. You can contribute in many ways, and some of it is really easy.
 
-- If you can't code or would just like to help with discussions and suggestions for the addon, feel free to say something on [our issues tab](https://github.com/ScratchAddons/ScratchAddons/issues) or [our Discussions tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can suggest new addons to be added, help with a little bit with the development, and much more!
+- **Contribute some code**
+  
+  If you can code on JavaScript, HTML5, and CSS, you can contribute by doing some coding/programming. You can fix bugs, tackle some requests, or create your own addon.
 
-- If you can speak a language other than English, you can help translate/localize Scratch Addons to your language. Read more about how you can do it [here](https://github.com/ScratchAddons/ScratchAddons/wiki/Localization). <!-- TODO -->
+  After that, you need to create a pull request. You can do so by forking [the repository](https://github.com/ScratchAddons/ScratchAddons/), do your necessary changes, and create a pull request. If it is deemed feasible, we will merge it.
 
-- Lastly, you can send a feedback on [our feedback page](https://scratchaddons.com/feedback). Your small feedback give us a different point-of-view in the extension development, and, in most times, help us point things that needed attention and fix problems that we didn't think of.
+  We're also open for contributions of other aspects than the extension. You can view our repositories on [our GitHub organization page](https://github.com/ScratchAddons) and help us build them
 
-We're also open for contributons of other aspects than the extension. You can view our repositories on [our GitHub organization page](https://github.com/ScratchAddons) and help us build them.
+- **Suggest an idea**  
+  
+  Have something that you think would be a good addition to Scratch Addons? [Tell us!](#i-think-you-missed-a-feature-what-can-i-do)
+
+- **Report a bug**
+  
+  Found a bug in one of our addon, the settings page, or basically anything on our extension? [Send us a bug report](#what-can-i-do-if-i-find-a-problem).
+
+- **Translate Scratch Addons**  
+  
+  If you can speak other language than English, you can help translate/localize Scratch Addons to your language. You can start from [here](https://github.com/ScratchAddons/ScratchAddons/wiki/How-to-join-the-localization-team).
+
+- **Write the documentation**
+
+  Are you familiar enough with Scratch Addons? If so, you can write the documentation for it. The documentation can include how to use it, or how it works. Please contact us on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) for further information.
+
+- **Send a feedback**  
+  
+  You can send a feedback on our form, located at [the feedback page](https://scratchaddons.com/feedback). Your feedback may give us a different perspective in the extension development and help us know things needed attention and fix bugs.
+
+- **Leave a review on the stores**
+
+  You can leave us a review about Scratch Addons on [the Chrome extension page](https://chrome.google.com/webstore/detail/fbeffbjdlemaoicjdapfpikkikjoneco) or [the Firefox addon page](https://addons.mozilla.org/firefox/addon/scratch-messaging-extension/).
+
+- **Star our repository**
+
+  Basically, the GitHub star is similar to the Scratch star/favorite. You can do this by going to [our repository](https://github.com/ScratchAddons/ScratchAddons) and click the "Star" button on the top-right corner.
+
+- **Spread the word**
+
+  You can tell Scratch Addons to anyone, like your friends, your relatives, your family members, or even your teacher, if you want. We're just asking you to [not do this on the Scratch website](#can-i-tell-people-about-scratch-addons-on-scratch).
+
+### How can I create my own addon?
+
+Read more about how to create an addon on Scratch Addons [here](https://github.com/ScratchAddons/ScratchAddons/wiki/Creating-an-addon).
 
 ### How can I put my name on the [contributors page](/contributors)?
 
@@ -91,19 +128,20 @@ If you don't want your name to be on the page, please tell us by creating an iss
 
 ### What can I do if I find a problem?
 
-You can tell us using one of these three methods.
+You can tell us using one of these methods.
 
-- Send a feedback on [our feedback page](https://scratchaddons.com/feedback).
-- Create an issue on [the extension repository](https://github.com/ScratchAddons/ScratchAddons/issues) (or [the website repository](https://github.com/ScratchAddons/website/issues)).
+- Send it through [our feedback form](https://scratchaddons.com/feedback).
+- Create an issue on [the repository](https://github.com/ScratchAddons/ScratchAddons/issues).
 - Create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions).
+- Tell us on [our Discord server](https://discord.gg/R5NBqwMjNc).
 
 ### I think you missed a feature. What can I do?
 
-If you think a feature is missing, or you wanted to suggest an addon to the extension, send a feedback on [our feedback page](https://scratchaddons.com/feedback), or create an issue directly on [our repository](https://github.com/ScratchAddons/ScratchAddons/issues).
+If you think a feature is missing, or you want to suggest an addon to the extension, or you have a good idea, tell us by [following one of the methods mentioned above](#what-can-i-do-if-i-find-a-problem).
 
 ### Where can I discuss about Scratch Addons?
 
-You can do so by doing it on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). There, you can discuss about it and ask questions if you have difficulties.
+You can do it on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) or [our Discord server](https://discord.gg/R5NBqwMjNc). There, you can discuss about it and ask questions if you have difficulties.
 
 ### I think Scratch Addons slows down Scratch. What can I do?
 
@@ -117,6 +155,8 @@ If you have a mid-end computer, chances are the performance won't be dropped sig
 
 To reveal the easter egg addons, do the Konami Code with your keyboard on the settings page. After that, the easter egg addons will be shown, letting you to activate them. (↑↑↓↓←→←→BA)
 
+Examples of the easter egg addons are "Cat blocks" and "Semicolon glitch". Check out [the addons tab](/addons) for a complete list.
+
 ### I got more questions!
 
-If you have more questions that needed answers, you can create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions). Someone will try to answer it for you.
+If you have more questions that needed answers, you can create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) or send a message [on our Discord server](https://discord.gg/R5NBqwMjNc). Someone will try to answer it for you.
