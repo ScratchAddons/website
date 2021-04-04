@@ -3,7 +3,7 @@
 
 @import "variables";
 
-main {
+main > .container > {
 
     h1, h2, h3, h4, h5, h6 {
         margin-top: 1.5rem;
@@ -14,8 +14,8 @@ main {
         margin-bottom: 1rem
     }
 
-    :last-child {
-        margin-bottom: 0
-    }
+}
 
+main > .container:last-child {
+    margin-bottom: 0
 }
