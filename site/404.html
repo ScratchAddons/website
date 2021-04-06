@@ -35,8 +35,18 @@ description: Sorry! That page doesn't exist!
 			'Why would you purposely navigate to this page.';
 	}
 	// Functions
-	function closest(str) {
-		var urls = ['index', 'blog', 'projects'];
+	async function closest(str) {
+		var parser, xmlDoc;
+		var res = await fetch('https://scratchaddons.com/sitemap.xml')
+		var text = await res.text()
+		parser = new DOMParser();
+		xmlDoc = parser.parseFromString(text,"text/xml");
+		//console.log(xmlDoc.getElementsByTagName("loc"))
+		urls = []
+		for (node of xmlDoc.getElementsByTagName("loc")) {
+			text = node.childNodes[0].nodeValue.replace('https://scratchaddons.com','').replace('.html', '');
+			urls.push(text)
+		}
 		urls.sort((a, b) => editDistance(a, str) - editDistance(str, b));
 		return urls[0];
 	}
