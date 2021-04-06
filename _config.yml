@@ -4,13 +4,19 @@ description: ""
 baseurl: ""
 url: "https://scratchaddons.com"
 
+sa_version: 1.12.0 # Not currently used
+contributors_issue: 71
+copyright_year: 2021
+
+# incremental: true
+livereload: true
 source: site
 markdown: kramdown
 
 plugins:
-- jekyll-autoprefixer
-- jekyll-minifier
-- jekyll-sitemap
+  - jekyll-autoprefixer
+  - jekyll-minifier
+  - jekyll-sitemap
 
 autoprefixer:
   browsers:

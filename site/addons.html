@@ -4,25 +4,45 @@ title: Addons
 description: This page lists all of the addons that are implemented on Scratch Addons.
 ---
 
+<link rel="stylesheet" href="/assets/css/addons.css" />
+
 <h1>Addons</h1>
 
 <div class="container">
 
 	<p>This page lists all of the addons that are implemented on Scratch Addons.</p>
-
 	<p class="font-italic">This page is incomplete, and we need your help to complete the images. Read more <a href="https://github.com/ScratchAddons/website/issues/61">here</a>.</p>
 
-	<hr />
+	<div class="d-flex align-items-center" hidden>
+		<div class="flex-grow-1">
+			<hr />
+		</div>
+		<div class="pl-2">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="checkbox-list-view" onchange="changeView(event)">
+				<label class="form-check-label" for="checkbox-list-view">List view</label>
+			</div>
+		</div>
+		<div class="pl-2">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="checkbox-easter-egg" onchange="changeEgg(event)">
+				<label class="form-check-label" for="checkbox-easter-egg" title="To activate the addons, do the Konami Code (↑↑↓↓←→←→BA) on the settings page. Read the FAQ page for more information.<br class='mb-1'/>In this page, an easter egg addon will have an egg symbol (🥚) besides its name." data-toggle="tooltip" data-placement="left" data-html="true">Easter egg</label>
+			</div>
+		</div>
+	</div>
 
 	<div class="card-columns">
 		{% for addon in site.data.addons %}
-			<div class="card">
+			<div class="card{% for tag in addon.tags %} tag-{{ tag }}{% endfor %}">
 				{% capture image %}{% file_exists {{ addon.image }} %}{% endcapture %}
 				{% if image == "true" %}
 					<img src="{{ addon.image }}" class="card-img-top" alt="{{ addon.name }}">
 				{% endif %}
 				<div class="card-body">
-					<h5 class="card-title">{{ addon.name }}</h5>
+					<h5 class="card-title">
+						{{ addon.name }}
+						{% if addon.tags contains "easterEgg" %}<span data-toggle="tooltip" title="This is an easter egg addon.">🥚</span>{% endif %}{% if addon.tags contains "recommended" %}<span data-toggle="tooltip" title="This is a recommended addon.">⭐</span>{% endif %}
+					</h5>
 					<h6 class="card-subtitle mb-2 text-muted">{{ addon.id }}</h6>
 					<p class="card-text">{{ addon.description }}</p>
 				</div>
@@ -31,3 +51,18 @@ description: This page lists all of the addons that are implemented on Scratch A
 	</div>
 
 </div>
+
+<script>
+	document.querySelector(".card-columns").dataset.listView = document.querySelector("#checkbox-list-view").checked
+	document.querySelector(".card-columns").dataset.showEasterEgg = document.querySelector("#checkbox-easter-egg").checked
+
+	document.querySelector(".card-columns").removeAttribute("hidden")
+
+	const changeView = event => {
+		document.querySelector(".card-columns").dataset.listView = event.target.checked
+	}    
+
+	const changeEgg = event => {
+		document.querySelector(".card-columns").dataset.showEasterEgg = event.target.checked
+	}  
+</script>
