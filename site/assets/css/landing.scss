@@ -208,7 +208,7 @@ body.dark.extension-styled {
 
 }
 
-.ytp-large-play-button {
+.yt-thumb-button {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -217,14 +217,7 @@ body.dark.extension-styled {
     margin-left: -34px;
     margin-top: -24px;
     transition: opacity .25s cubic-bezier(0,0,0.2,1);
-}
-
-.ytp-button:focus, .ytp-button {
-    outline: 0;
-}
-
-.ytp-button {
-    border: none;
+	border: none;
     background-color: transparent;
     padding: 0;
     color: inherit;
@@ -233,22 +226,28 @@ body.dark.extension-styled {
     font-family: inherit;
     cursor: default;
     line-height: inherit;
+	outline: 0;
+
+	&:focus {
+		outline: 0;
+	}
 }
 
-.ytp-large-play-button-bg {
+
+.yt-thumb-button-bg {
     transition: fill .1s cubic-bezier(0.4,0,1,1),fill-opacity .1s cubic-bezier(0.4,0,1,1);
     fill: #212121;
     fill-opacity: .8;
 }
 
-.ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg {
+.yt-thumb:hover .yt-thumb-button-bg {
     transition: fill .1s cubic-bezier(0,0,0.2,1), fill-opacity .1s cubic-bezier(0,0,0.2,1);
     fill: #f00;
     fill-opacity: 1;
 }
 
 #modal-presentation {
-	.youtube-wrapper {
+	.yt-wrapper {
 		position: relative;
 		&:before {
 			display: block;

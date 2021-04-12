@@ -7,7 +7,7 @@ $('#modal-presentation').on('hide.bs.modal', () => {
 })
 
 $('#modal-presentation').on('shown.bs.modal', () => {
-	if (!player) player = new YTPlayer('.youtube-iframe', {
+	if (!player) player = new YTPlayer('.yt-iframe', {
         width: "1280",
 		height: "720",
 		related: 0,
@@ -18,6 +18,6 @@ $('#modal-presentation').on('shown.bs.modal', () => {
 		player.load("nQ4N9zlzj0M", true)
 		playerLoaded = true
 	}
-	
+
 	player.play()
 })

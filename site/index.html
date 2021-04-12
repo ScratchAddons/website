@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Index
-description: Scratch Addons is an browser extension that provides new features and themes for the Scratch (scratch.mit.edu) website and project editor. It has a mission to collect, archive, and put into use userstyles and userscripts, developed by several members of the Scratch community.
+description: Scratch Addons is a browser extension that provides new features and themes for the Scratch (scratch.mit.edu) website and project editor. It has a mission to collect, archive, and put into use userstyles and userscripts, developed by several members of the Scratch community.
 ---
 
 <link rel="stylesheet" href="/assets/css/landing.css" />
@@ -10,7 +10,7 @@ description: Scratch Addons is an browser extension that provides new features a
 <section id="intro" class="row px-4 py-5 mb-0 intro-heading text-left">
 	<div class="col-12 col-md-6 py-4 px-3 px-md-4 d-flex flex-column justify-content-center" id="intro-info">
 		<h1 class="display-4 m-0 mb-3 p-0 text-left">All in one browser extension for Scratch</h1>
-		<p class="lead mb-4">Scratch Addons is an browser extension that provides <span class="white-underline" title='The "Addons" part of Scratch Addons.' data-toggle="tooltip" data-placement="right">new features and themes</span> for <a href="https://scratch.mit.edu" class="white-underline" title='The "Scratch" part of Scratch Addons.' data-toggle="tooltip" data-placement="right" rel="noopener">the Scratch website and project editor</a>. It has a mission to collect, archive, and put into use userstyles and userscripts, developed by several members of the Scratch community.</p>
+		<p class="lead mb-4">Scratch Addons is a browser extension that provides <span class="white-underline" title='The "Addons" part of Scratch Addons.' data-toggle="tooltip" data-placement="right">new features and themes</span> for <a href="https://scratch.mit.edu" class="white-underline" title='The "Scratch" part of Scratch Addons.' data-toggle="tooltip" data-placement="right" rel="noopener">the Scratch website and project editor</a>. It has a mission to collect, archive, and put into use userstyles and userscripts, developed by several members of the Scratch community.</p>
 		<div id="intro-buttons" class="d-flex align-items-md-center flex-column flex-md-row">
 			<a id="install-intro" class="btn btn-white btn-lg install-btn disabled">
 				<p><span id="install-browser-icon"><span class="iconify" data-icon="fa-solid:hourglass-start"></span></span> <span id="install-browser">Loading...</span></p>
@@ -32,11 +32,11 @@ description: Scratch Addons is an browser extension that provides new features a
 			<div class="carousel-inner h-100">
 				<div class="carousel-item h-100">
 					<div class="carousel-item-wrapper h-100 d-flex justify-content-center align-items-center p-3">
-						<div class="ytp-cued-thumbnail-overlay" style="" data-layer="4" data-toggle="modal" data-target="#modal-presentation">
-							<img class="ytp-cued-thumbnail-overlay-image w-100" src="https://i.ytimg.com/vi_webp/nQ4N9zlzj0M/maxresdefault.webp">
-							<button class="ytp-large-play-button ytp-button" aria-label="Play">
+						<div class="yt-thumb" data-layer="4" data-toggle="modal" data-target="#modal-presentation">
+							<img class="yt-thumb-image w-100" src="https://i.ytimg.com/vi_webp/nQ4N9zlzj0M/maxresdefault.webp">
+							<button class="yt-thumb-button" aria-label="Play">
 								<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
-									<path class="ytp-large-play-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
+									<path class="yt-thumb-button-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
 									<path d="M 45,24 27,14 27,34" fill="#fff"></path>
 								</svg>
 							</button>
@@ -215,13 +215,9 @@ description: Scratch Addons is an browser extension that provides new features a
 				</button>
 			</div>
 			<div class="modal-body">
-				<div class="youtube-wrapper">
-					<div class="youtube-iframe"></div>
-					<!-- <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/nQ4N9zlzj0M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-100 h-100"></iframe> -->
+				<div class="yt-wrapper">
+					<div class="yt-iframe"></div>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 			</div>
 		</div>
 	</div>
@@ -230,21 +226,53 @@ description: Scratch Addons is an browser extension that provides new features a
 <script type="application/ld+json">
 {
 	"@context": "https://schema.org",
-	"@type": "SoftwareApplication",
+	"@type": "WebApplication",
 	"name": "Scratch Addons",
-	"operatingSystem": "CHROME",
-	"applicationCategory": "UtilitiesApplication",
+	"url": "https://scratchaddons.com",
+	"image": "http://scratchaddons.com/assets/images/showcase/demo-1.png",
+	"screenshot": "http://scratchaddons.com/assets/images/showcase/demo-1.png",
+	"description": "Scratch Addons is a browser extension that provides new features and themes for the <a href='https://scratch.mit.edu'>Scratch</a> website and project editor.",
+	"applicationCategory": "http://schema.org/OtherApplication",
+	"operatingSystem": "Chrome",
 	"aggregateRating": {
 		"@type": "AggregateRating",
-		"ratingValue": "4.5",
-		"ratingCount": "162"
+		"ratingValue": "4.644",
+		"ratingCount": "332"
 	},
 	"offers": {
 		"@type": "Offer",
-		"price": "0"
+		"availability": "http://schema.org/InStock",
+		"price": 0,
+		"priceCurrency": "USD"
 	}
 }
 </script>
+	
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "WebApplication",
+	"name": "Scratch Addons",
+	"url": "https://scratchaddons.com",
+	"image": "http://scratchaddons.com/assets/images/showcase/demo-1.png",
+	"screenshot": "http://scratchaddons.com/assets/images/showcase/demo-1.png",
+	"description": "Scratch Addons is a browser extension that provides new features and themes for the <a href='https://scratch.mit.edu'>Scratch</a> website and project editor.",
+	"applicationCategory": "http://schema.org/OtherApplication",
+	"operatingSystem": "Firefox",
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": "4.644",
+		"ratingCount": "332"
+	},
+	"offers": {
+		"@type": "Offer",
+		"availability": "http://schema.org/InStock",
+		"price": 0,
+		"priceCurrency": "USD"
+	}
+}
+</script>
+		
 <script type="application/ld+json">
 {
 	"@context": "https://schema.org",
