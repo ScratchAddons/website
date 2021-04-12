@@ -123,7 +123,7 @@ if (localStorage.getItem("extensionStyledTheme") !== null) {
 }
 
 if (localStorage.getItem("darkTheme") !== null) {
-    updateDarkTheme(stringToBoolean(localStorage.getItem("extensionStyledTheme")))
+    updateDarkTheme(stringToBoolean(localStorage.getItem("darkTheme")))
     isUserSelected = true
 }
 
@@ -148,9 +148,8 @@ waitForElement("#dark-toggle").then(() => {
             document.location.reload()
             return
         }
-        updateDarkTheme(!darkTheme)
-        if (event && event.shiftKey) updateExtensionStyledTheme(!extensionStyledTheme)
-        updateDarkToggle(darkTheme)
+        updateDarkTheme(!darkTheme, true)
+        if (event && event.shiftKey) updateExtensionStyledTheme(!extensionStyledTheme, true)
     })
         
 })
