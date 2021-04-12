@@ -7,18 +7,17 @@ $('#modal-presentation').on('hide.bs.modal', () => {
 })
 
 $('#modal-presentation').on('shown.bs.modal', () => {
-	if (!playerLoaded) {
-		player.load("nQ4N9zlzj0M", true)
-		playerLoaded = true
-	}
-	player.play()
-})
-
-$(() => {
 	if (!player) player = new YTPlayer('.youtube-iframe', {
         width: "1280",
 		height: "720",
 		related: 0,
 		host: "https://www.youtube-nocookie.com"
     })
+
+	if (!playerLoaded) {
+		player.load("nQ4N9zlzj0M", true)
+		playerLoaded = true
+	}
+	
+	player.play()
 })
