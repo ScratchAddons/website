@@ -119,6 +119,16 @@
 		"image": "/assets/images/addons/block-switching.png"
 	},
 	{
+		"id": "blocks2image",
+		"name": "Save blocks as image",
+		"description": "Right click the editor workspace to export blocks as SVG/PNG images.",
+		"tags": ["editor", "beta"],
+		"credits": [
+			{ "name": "summerscar", "link": "https://github.com/summerscar" }
+		],
+		"image": "/assets/images/addons/blocks2image.png"
+	},
+	{
 		"id": "cat-blocks",
 		"name": "Cat blocks",
 		"description": "Brings back editor cat hat blocks from April Fools 2020.",
@@ -232,6 +242,19 @@
 		"image": "/assets/images/addons/custom-block-shape.png"
 	},
 	{
+		"id": "custom-zoom",
+		"name": "Custom scripts area zoom settings",
+		"description": "Adjust the minimum, maximum, speed, and start size of the zoom in the project code editor, and autohide the controls.",
+		"tags": ["editor"],
+		"credits": [
+			{
+				"name": "ErrorGamer2000",
+				"link": "https://scratch.mit.edu/users/ErrorGamer2000/"
+			}
+		],
+		"image": "/assets/images/addons/custom-zoom.png"
+	},
+	{
 		"id": "dango-rain",
 		"name": "Dango rain on profiles (April Fools Day)",
 		"description": "Users that include the word \"dango\" on their \"About Me\" will have dango emojis raining on the sides of their profile.",
@@ -312,19 +335,19 @@
 	},
 	{
 		"id": "editor-dark-mode",
-		"name": "Editor dark mode",
-		"description": "Dark mode for the Scratch 3.0 project editor. Multiple options by different authors available.",
+		"name": "Editor dark mode and customizable colors",
+		"description": "Customize colors used by the project editor. Multiple dark themes by different authors available. If you don't need dark mode but want to change the default colors you can select the \"Scratch's default colors\" preset and tweak it.",
 		"tags": ["editor", "theme"],
 		"credits": [
+			{
+				"name": "Maximouse (addon, \"Experimental\" Dark)",
+				"link": "https://github.com/mxmou/customize-scratch"
+			},
 			{
 				"name": "infinitytec (3.Dark, 3.Darker)",
 				"link": "https://github.com/infinitytec"
 			},
-			{ "name": "_nix (Dark editor)", "link": "https://github.com/towerofnix" },
-			{
-				"name": "Maximouse (Experimental Dark)",
-				"link": "https://github.com/mxmou/customize-scratch"
-			}
+			{ "name": "_nix (Dark editor)", "link": "https://github.com/towerofnix" }
 		],
 		"image": "/assets/images/addons/editor-dark-mode.png"
 	},
@@ -496,15 +519,29 @@
 		"image": "/assets/images/addons/infinite-scroll.png"
 	},
 	{
+		"id": "initialise-sprite-position",
+		"name": "Change new sprite default position",
+		"description": "Moves sprites to a specified x/y position when they are created.",
+		"tags": ["editor"],
+		"credits": [
+			{
+				"name": "pufferfish101007",
+				"link": "https://scratch.mit.edu/users/pufferfish101007"
+			}
+		],
+		"image": "/assets/images/addons/initialise-sprite-position.png"
+	},
+	{
 		"id": "last-edit-tooltip",
-		"name": "Last edit tooltip",
-		"description": "Hover over a project's share date for information on when it was last edited.",
+		"name": "Shared/edited dates tooltip",
+		"description": "Hover over a project's share date for information on when exactly it was shared and last edited.",
 		"tags": ["community"],
 		"credits": [
 			{
 				"name": "TheColaber",
 				"link": "https://scratch.mit.edu/users/TheColaber"
-			}
+			},
+			{ "name": "9gr", "link": "https://scratch.mit.edu/users/9gr" }
 		],
 		"image": "/assets/images/addons/last-edit-tooltip.png"
 	},
