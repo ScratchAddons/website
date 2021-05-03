@@ -153,7 +153,7 @@ If you have a mid-end computer, chances are the performance won't drop significa
 
 ### How can you activate the easter egg addons?
 
-To reveal the easter egg addons, do the Konami Code with your keyboard on the settings page. After that, the easter egg addons will be shown, letting you to activate them. (↑↑↓↓←→←→BA)
+To reveal the easter egg addons, do the Konami Code (↑↑↓↓←→←→BA) with your keyboard on the settings page. After that, the easter egg addons will be shown, letting you to activate them.
 
 Some easter egg addons are "Cat blocks" and "Semicolon glitch". Check out [the addons tab](/addons) for a complete list.
 
