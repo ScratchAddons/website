@@ -92,7 +92,7 @@ Anyway, back to the point. You can contribute in many ways, and some of it is re
 
 - **Translate Scratch Addons**  
   
-  If you can speak an other language than English fluently, you can help translate/localize Scratch Addons to your language. You can start from [here](https://github.com/ScratchAddons/ScratchAddons/wiki/How-to-join-the-localization-team).
+  If you can speak another language than English fluently, you can help translate/localize Scratch Addons to your language. You can start from [here](https://github.com/ScratchAddons/ScratchAddons/wiki/How-to-join-the-localization-team).
 
 - **Write the documentation**
 
