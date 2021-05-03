@@ -24,7 +24,7 @@ This page lists frequently asked questions related to the Scratch Addons extensi
 - [I think Scratch Addons slows down Scratch. What can I do?](#i-think-scratch-addons-slows-down-scratch-what-can-i-do)
 - [Are there any consequences for enabling everything?](#are-there-any-consequences-for-enabling-everything)
 - [How can you activate the easter egg addons?](#how-can-you-activate-the-easter-egg-addons)
-- [I got more questions!](#i-got-more-questions)
+- [I have more questions!](#i-have-more-questions)
 
 ### What is Scratch Addons?
 
@@ -70,7 +70,7 @@ You can't, and please don't. There is a policy that forbids advertising browser 
 
 Firstly, thank you for your interest of contributing to Scratch Addons. We appreciate your interest and your later contributions. 
 
-As an open-source project, we welcome any kind of contributions. You don't even need to ask us or to have a certain rank. Anyone is welcome. There's even a chance that you didn't realized that you have contributed to the project! 
+As an open-source project, we welcome any kind of contributions. You don't even need to ask us or to have a certain rank. Anyone is welcome. There's even a chance that you don't even realize that you have contributed to the project! 
 
 Anyway, back to the point. You can contribute in many ways, and some of it is really easy.
 
@@ -88,15 +88,15 @@ Anyway, back to the point. You can contribute in many ways, and some of it is re
 
 - **Report a bug**
   
-  Found a bug in one of our addon, the settings page, or basically anything on our extension? [Send us a bug report](#what-can-i-do-if-i-find-a-problem).
+  Found a bug in one of our addon, the settings page, or anything else on our extension? [Send us a bug report](#what-can-i-do-if-i-find-a-problem).
 
 - **Translate Scratch Addons**  
   
-  If you can speak other language than English, you can help translate/localize Scratch Addons to your language. You can start from [here](https://github.com/ScratchAddons/ScratchAddons/wiki/How-to-join-the-localization-team).
+  If you can speak an other language than English fluently, you can help translate/localize Scratch Addons to your language. You can start from [here](https://github.com/ScratchAddons/ScratchAddons/wiki/How-to-join-the-localization-team).
 
 - **Write the documentation**
 
-  Are you familiar enough with Scratch Addons? If so, you can write the documentation for it. The documentation can include how to use it, or how it works. Please contact us on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) for further information.
+  Are you familiar with Scratch Addons? If so, you can write the documentation for it. The documentation can include how to use it, or how it works. Please contact us on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) for further information.
 
 - **Send a feedback**  
   
@@ -112,7 +112,7 @@ Anyway, back to the point. You can contribute in many ways, and some of it is re
 
 - **Spread the word**
 
-  You can tell Scratch Addons to anyone, like your friends, your relatives, your family members, or even your teacher, if you want. We're just asking you to [not do this on the Scratch website](#can-i-tell-people-about-scratch-addons-on-scratch).
+  You can tell anyone about Scratch Addons, like your friends, your relatives, your family members, or even your teacher, if you want. We're just asking you to [not do this on the Scratch website](#can-i-tell-people-about-scratch-addons-on-scratch).
 
 ### How can I create my own addon?
 
@@ -141,22 +141,22 @@ If you think a feature is missing, or you want to suggest an addon to the extens
 
 ### Where can I discuss about Scratch Addons?
 
-You can do it on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) or [our Discord server](https://discord.gg/R5NBqwMjNc). There, you can discuss about it and ask questions if you have difficulties.
+You can do it on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) or [our Discord server](https://discord.gg/R5NBqwMjNc). There, you can discuss about it and ask questions if you're having trouble.
 
 ### I think Scratch Addons slows down Scratch. What can I do?
 
-Try to turn off addons that you don't need. Also, the notice and warning could help you decide which addons that needed to be turned off for your comfort. 
+Try to turn off addons that you don't need. Also, check addon notices and warnings to decide which addons should be turned off for better performance. 
 
 ### Are there any consequences for enabling everything?
 
-If you have a mid-end computer, chances are the performance won't be dropped significantly. Feel free to go through the list again and turn off addons that you don't need.
+If you have a mid-end computer, chances are the performance won't drop significantly. Feel free to go through the list again and turn off addons that you don't need.
 
 ### How can you activate the easter egg addons?
 
 To reveal the easter egg addons, do the Konami Code with your keyboard on the settings page. After that, the easter egg addons will be shown, letting you to activate them. (↑↑↓↓←→←→BA)
 
-Examples of the easter egg addons are "Cat blocks" and "Semicolon glitch". Check out [the addons tab](/addons) for a complete list.
+Some easter egg addons are "Cat blocks" and "Semicolon glitch". Check out [the addons tab](/addons) for a complete list.
 
-### I got more questions!
+### I have more questions!
 
-If you have more questions that needed answers, you can create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) or send a message [on our Discord server](https://discord.gg/R5NBqwMjNc). Someone will try to answer it for you.
+If you have more questions that need answers, you can create a post on [our Discussion tab](https://github.com/ScratchAddons/ScratchAddons/discussions) or send a message [on our Discord server](https://discord.gg/R5NBqwMjNc). Someone will try to answer it for you.
