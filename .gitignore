@@ -1,4 +1,6 @@
-_site
-.sass-cache
-.jekyll-*
-.vscode
+_site/
+.vscode/
+**/**/.jekyll-metadata
+**/.git-metadata/
+**/.sass-cache/
+**/.jekyll-cache/
