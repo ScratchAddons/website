@@ -31,7 +31,7 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 - New addon: editor sound effects
 - New addon: remove curved stage border
 - New addon: better forums post editor buttons
-- Customizable block colors: new "white" and "black" presets, new "block input" and "text color" settings
+- Customizable block colors: new "dark" and "black" presets, new "block input" and "text color" settings
 - Scratch Addons settings page now has subcategories. Click in a main category (like "Scratch Editor Features") to explore its subcategories: code editor, costume editor, project player, others
 - Scratch Addons settings page now splits the addon list into collapsible groups, for easier browsing: new, enabled, recommended, others, beta
 - Enhanced performance of project editor addons, specially when dragging blocks or browsing the workspace
