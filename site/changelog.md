@@ -25,6 +25,10 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 
 <!-- sa-changelog-start -->
 
+## [v1.14.1] - 2021-05-05
+
+- Bug fix: "pause button" addon (as well as some other editor addons) not working
+
 ## [v1.14.0] - 2021-05-05
 
 - New addon: gamepad support
@@ -367,6 +371,7 @@ Not released due to a permissions issue. See [v1.1.1].
 
 Initial release.
 
+[v1.14.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.14.1
 [v1.14.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.14.0
 [v1.13.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.13.0
 [v1.12.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.12.1
