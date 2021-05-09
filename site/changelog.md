@@ -25,6 +25,12 @@ Updates on the file mentioned will create a PR on the website to synchronize the
 
 <!-- sa-changelog-start -->
 
+## [v1.14.2] - 2021-05-09
+
+- "Scratch 2.0→3.0" addon: all 404 error pages are now converted to 3.0 style
+- Bug fix: own unshared projects returning 404 error
+- Bug fix: some addons not working if conflicting extensions also installed
+
 ## [v1.14.1] - 2021-05-05
 
 - Bug fix: "pause button" addon (as well as some other editor addons) not working
@@ -371,6 +377,7 @@ Not released due to a permissions issue. See [v1.1.1].
 
 Initial release.
 
+[v1.14.2]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.14.2
 [v1.14.1]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.14.1
 [v1.14.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.14.0
 [v1.13.0]: https://github.com/ScratchAddons/ScratchAddons/releases/tag/v1.13.0
