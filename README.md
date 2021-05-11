@@ -1,3 +1,7 @@
+> ## Notice
+>
+> This version of the Scratch Addons website is now deprecated in favor of [ScratchAddons/website-v2](https://github.com/ScratchAddons/website-v2). All contributions should go to the linked repository.
+
 # Scratch Addons website
 
 ![Site Deployment workflow status](https://img.shields.io/github/workflow/status/ScratchAddons/website/Site%20Deployment?label=deploy&style=flat-square) [![Website: scratchaddons.com](https://img.shields.io/badge/website-scratchaddons.com-ff7b26.svg?style=flat-square)](https://scratchaddons.com) [![License](https://img.shields.io/github/license/ScratchAddons/website?style=flat-square)](https://github.com/ScratchAddons/website/blob/master/LICENSE)
