@@ -84,6 +84,40 @@ $(() => {
 })
 
 /* =============================================================
+                         COOKIE CONSENT
+============================================================= */
+
+var cookiesBanner = new CookiesEuBanner(function () {
+    window.dataLayer = window.dataLayer || []; function gtag() {dataLayer.push(arguments)}; gtag("js", new Date); gtag("config", "UA-144464383-2")
+    let s = document.createElement("script")
+    s.src ="https://www.googletagmanager.com/gtag/js?id=UA-144464383-2";
+    document.head.appendChild(s)
+    // this.deleteCookie(this.cookieName)
+    // window.location.reload()
+}, false)
+
+// cookiesBanner.deleteCookie(cookiesBanner.cookieName);
+// console.log(cookiesBanner.hasConsent())
+
+// function updateCookiesEuState() {
+//     var hasConsent = cookiesBanner.hasConsent()
+//     var state = '❔ Nor accepted nor rejected';
+
+//     if (hasConsent === true) {
+//         state = '✅ Accepted';
+//     } else if (hasConsent === false) {
+//         state = '❌ Rejected';
+//         cookiesBanner.deleteCookie(cookiesBanner.cookieName)
+//         cookiesBanner.setConsent(false);
+//     }
+
+//     console.log(state)
+// }
+
+// updateCookiesEuState();
+// setInterval(updateCookiesEuState, 100);
+
+/* =============================================================
                            DARK THEME
 ============================================================= */
 
